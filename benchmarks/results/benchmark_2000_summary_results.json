@@ -1,0 +1,59 @@
+{
+  "benchmark": "Extended 2,000-Clip Multilingual Benchmark (1,000 EN Earnings22 + 1,000 JA ReazonSpeech)",
+  "total_clips": 2000,
+  "english_clips": 1000,
+  "japanese_clips": 1000,
+  "elapsed_seconds": 7565.11,
+  "results": [
+    {
+      "model": "Emotion2Vec+ Large Standalone",
+      "en_acc": 0.802,
+      "en_correct": 802,
+      "en_total": 1000,
+      "ja_acc": 0.261,
+      "ja_correct": 261,
+      "ja_total": 1000,
+      "overall_acc": 0.5315,
+      "overall_correct": 1063,
+      "overall_total": 2000
+    },
+    {
+      "model": "Kev-0.8B Pre-Quantized",
+      "en_acc": 0.83,
+      "en_correct": 830,
+      "en_total": 1000,
+      "ja_acc": 0.473,
+      "ja_correct": 473,
+      "ja_total": 1000,
+      "overall_acc": 0.6515,
+      "overall_correct": 1303,
+      "overall_total": 2000,
+      "avg_latency_ms": 712.371231250756
+    },
+    {
+      "model": "Kev-4B INT4 (Q4_K_M)",
+      "en_acc": 0.835,
+      "en_correct": 835,
+      "en_total": 1000,
+      "ja_acc": 0.442,
+      "ja_correct": 442,
+      "ja_total": 1000,
+      "overall_acc": 0.6385,
+      "overall_correct": 1277,
+      "overall_total": 2000,
+      "avg_latency_ms": 3272.6747124525136
+    },
+    {
+      "model": "Vocalis Production Hybrid (0.8B EN + 4B JA)",
+      "en_acc": 0.83,
+      "en_correct": 830,
+      "en_total": 1000,
+      "ja_acc": 0.442,
+      "ja_correct": 442,
+      "ja_total": 1000,
+      "overall_acc": 0.636,
+      "overall_correct": 1272,
+      "overall_total": 2000
+    }
+  ]
+}

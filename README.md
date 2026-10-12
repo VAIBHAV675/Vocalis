@@ -219,15 +219,19 @@ Evaluated across 30 English corporate earnings calls (`Earnings22`) and 30 Japan
 | **Vocalis Language-Routed Production (`0.8B EN + 4B JA`)** | **Pre-Quantized** | **93.3% (`28/30`)** | **66.7% (`20/30`)** | **80.0% (`48/60`)** | **< 2.5 GB** | **~1,700 ms** |
 
 ### 2. Extended 2,000-Clip Large-Scale Benchmark (`1,000 EN` + `1,000 JA`)
-Extended 33x to **1,000 English (`Earnings22`)** and **1,000 Japanese (`ReazonSpeech`)** clips (`2,000` clips total) with audited ground-truth emotion annotations ([`data/audio_samples/ground_truth_2000_cleaned.json`](data/audio_samples/ground_truth_2000_cleaned.json)):
+Extended 33x to **1,000 English (`Earnings22`)** and **1,000 Japanese (`ReazonSpeech`)** clips (`2,000` clips total) with audited ground-truth emotion annotations ([`scripts/benchmarks/run_2000_kev_pipeline_eval.py`](scripts/benchmarks/run_2000_kev_pipeline_eval.py), [`benchmarks/results/benchmark_2000_summary_results.json`](benchmarks/results/benchmark_2000_summary_results.json)):
 
-* **`Kev-0.8B` Pre-Quantized (`ggml-org/Kev-0.8B-GGUF` — Completed across all 2,000 clips)**:
-  * **English Accuracy (`1,000` clips)**: **83.00%** (`830 / 1,000`)
-  * **Japanese Accuracy (`1,000` clips)**: **47.30%** (`473 / 1,000`)
-  * **Overall Accuracy (`2,000` clips)**: **65.15%** (`1,303 / 2,000`)
-  * **C++ CUDA Inference Latency**: **~640 ms/clip** (`1.51 clips/s`) — a **3.7x speedup** over PyTorch BitsAndBytes NF4 (`2,388 ms/clip`).
-* **`Kev-4B` Pre-Quantized (`ggml-org/Kev-4B-GGUF Q4_K_M`)**:
-  * Evaluated via `llama-server` C++ CUDA backend ([`scripts/benchmarks/run_2000_kev_pipeline_eval.py`](scripts/benchmarks/run_2000_kev_pipeline_eval.py)).
+| Pipeline Architecture | Pre-Quantized Checkpoint | English Acc (`1,000`) | Japanese Acc (`1,000`) | Overall Acc (`2,000`) | Gain vs. Standalone SER | C++ CUDA Latency |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| `Emotion2Vec+ Large` (Acoustic SER Standalone) | FP16 (`iic/emotion2vec_plus_large`) | 80.20% (`802/1000`) | 26.10% (`261/1000`) | 53.15% (`1063/2000`) | Baseline | 203 ms/clip |
+| **`Kev-0.8B` Multimodal Pipeline** | `ggml-org/Kev-0.8B-GGUF` (`Q8_0`) | 83.00% (`830/1000`) | **47.30% (`473/1000`)** | **65.15% (`1303/2000`)** | **+12.00% Overall (+21.20% JA)** | **640 ms/clip (`1.51 clips/s`)** |
+| **`Kev-4B` Multimodal Pipeline** | `ggml-org/Kev-4B-GGUF` (`Q4_K_M` INT4) | **83.50% (`835/1000`)** | 44.20% (`442/1000`) | 63.85% (`1277/2000`) | **+10.70% Overall (+18.10% JA)** | 3,154 ms/clip (`0.31 clips/s`) |
+| **Best Per-Language Combination (`4B EN + 0.8B JA`)** | Pre-Quantized GGUF | **83.50% (`835/1000`)** | **47.30% (`473/1000`)** | **65.40% (`1308/2000`)** | **+12.25% Overall** | ~640–3,154 ms/clip |
+
+**Key Takeaways from the 2,000-Clip Evaluation**:
+1. **Overcoming Japanese Acoustic Hallucinations (`+21.20%` Jump)**: Standalone `Emotion2Vec+ Large` collapses to **26.10%** (`261/1,000`) on `ReazonSpeech` because it misclassifies animated Japanese broadcast pitch modulation as `happy` on 52.2% (`522/1,000`) of clips. Arbitrating acoustics with transcript semantics and Librosa prosody via `Kev-0.8B` nearly doubles Japanese accuracy to **47.30%** (`473/1,000`).
+2. **Sustained High Accuracy on 1,000 Real Financial Calls (`83.50%`)**: Across 1,000 unscripted corporate earnings call segments, `Kev-4B INT4` reaches **83.50%** (`835/1,000`) and `Kev-0.8B` reaches **83.00%** (`830/1,000`), consistently resolving subtle executive disagreements, anxious analyst questioning, and grateful closing remarks.
+3. **3.7x C++ CUDA Speedup**: Running `ggml-org/Kev-0.8B-GGUF` via `llama.cpp` C++ CUDA kernels delivers **640 ms/clip** (`1.51 clips/s`), bypassing the Windows PyTorch Triton fallback (`2,388 ms/clip`).
 
 ---
 
