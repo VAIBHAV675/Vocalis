@@ -1,0 +1,2055 @@
+{
+  "benchmark_timestamp": "2026-10-08 09:37:31",
+  "total_samples": 60,
+  "overall_accuracy": 0.43333333333333335,
+  "english_accuracy": 0.5,
+  "japanese_accuracy": 0.36666666666666664,
+  "latency_breakdown_ms": {
+    "prosody_avg_ms": 169.49456332755895,
+    "ser_avg_ms": 203.40078666534586,
+    "laya_avg_ms": 1204.5651050032272,
+    "total_avg_ms": 1577.460454996132
+  },
+  "records": [
+    {
+      "sample_id": "en_ib_sample_01",
+      "language": "en",
+      "filename": "en_ib_sample_01.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.6844,
+      "sarcasm_probability": 0.0001,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9999473094940186,
+      "prosody": {
+        "duration_sec": 3.5400625,
+        "pitch_str": "145.6 Hz (std: 83.2 Hz, natural melodic modulation)",
+        "energy_str": "69.4 dB (moderate baseline business volume)",
+        "tempo_str": "5.1 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 145.6066415715407,
+          "std_f0": 83.22377320404357,
+          "rms_db": 69.44368673205135,
+          "syll_rate": 5.084655991243093,
+          "centroid": 934.108316628806,
+          "flatness": 0.0006549625541083515
+        },
+        "latency_ms": 6139.438800048083
+      },
+      "latencies": {
+        "prosody_ms": 6139.438800048083,
+        "ser_ms": 1266.571400105022,
+        "laya_ms": 2133.2184000639245,
+        "total_ms": 9539.22860021703
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_02",
+      "language": "en",
+      "filename": "en_ib_sample_02.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.937,
+      "sarcasm_probability": 0.0,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9849430322647095,
+      "prosody": {
+        "duration_sec": 6.1004375,
+        "pitch_str": "127.5 Hz (std: 46.0 Hz, downward falling terminal contour)",
+        "energy_str": "75.5 dB (moderate baseline business volume)",
+        "tempo_str": "7.0 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 127.45609031863677,
+          "std_f0": 45.98203179531376,
+          "rms_db": 75.46910581492347,
+          "syll_rate": 7.048674787668917,
+          "centroid": 920.3224895042699,
+          "flatness": 0.00017707400547806174
+        },
+        "latency_ms": 57.13309999555349
+      },
+      "latencies": {
+        "prosody_ms": 57.13309999555349,
+        "ser_ms": 220.60559992678463,
+        "laya_ms": 1293.4645999921486,
+        "total_ms": 1571.2032999144867
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_03",
+      "language": "en",
+      "filename": "en_ib_sample_03.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "laya_confidence": 0.4739,
+      "sarcasm_probability": 0.0002,
+      "match": false,
+      "ser_prior": "<unk>",
+      "ser_confidence": 0.508136510848999,
+      "prosody": {
+        "duration_sec": 3.1800625,
+        "pitch_str": "209.7 Hz (std: 115.0 Hz, downward falling terminal contour)",
+        "energy_str": "62.3 dB (moderate baseline business volume)",
+        "tempo_str": "3.5 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 209.74250078292684,
+          "std_f0": 114.95991538954452,
+          "rms_db": 62.31824753618024,
+          "syll_rate": 3.4590515123523518,
+          "centroid": 1438.0780923273653,
+          "flatness": 0.0028918790630996227
+        },
+        "latency_ms": 34.49769993312657
+      },
+      "latencies": {
+        "prosody_ms": 34.49769993312657,
+        "ser_ms": 87.3583999928087,
+        "laya_ms": 1253.4787999466062,
+        "total_ms": 1375.3348998725414
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_04",
+      "language": "en",
+      "filename": "en_ib_sample_04.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "disappointed_sad",
+      "laya_confidence": 0.5768,
+      "sarcasm_probability": 0.0149,
+      "match": false,
+      "ser_prior": "<unk>",
+      "ser_confidence": 0.564531147480011,
+      "prosody": {
+        "duration_sec": 11.3401875,
+        "pitch_str": "203.9 Hz (std: 50.3 Hz, downward falling terminal contour)",
+        "energy_str": "69.2 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 203.92601678572174,
+          "std_f0": 50.307473753391335,
+          "rms_db": 69.23570872227812,
+          "syll_rate": 7.054557078531549,
+          "centroid": 1425.8122947970123,
+          "flatness": 0.0031349030323326588
+        },
+        "latency_ms": 114.92880003061146
+      },
+      "latencies": {
+        "prosody_ms": 114.92880003061146,
+        "ser_ms": 308.5571000119671,
+        "laya_ms": 1267.964500002563,
+        "total_ms": 1691.4504000451416
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_05",
+      "language": "en",
+      "filename": "en_ib_sample_05.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "laya_confidence": 0.6539,
+      "sarcasm_probability": 0.0002,
+      "match": false,
+      "ser_prior": "<unk>",
+      "ser_confidence": 0.9459455013275146,
+      "prosody": {
+        "duration_sec": 3.7000625,
+        "pitch_str": "139.0 Hz (std: 69.0 Hz, rising intonation / questioning / tension)",
+        "energy_str": "73.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.0 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 139.02500384061193,
+          "std_f0": 68.95404350859795,
+          "rms_db": 73.25893351734402,
+          "syll_rate": 7.026908329251195,
+          "centroid": 1347.799017632941,
+          "flatness": 0.006199148017913103
+        },
+        "latency_ms": 38.226100034080446
+      },
+      "latencies": {
+        "prosody_ms": 38.226100034080446,
+        "ser_ms": 106.65420000441372,
+        "laya_ms": 1264.0798999927938,
+        "total_ms": 1408.960200031288
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_06",
+      "language": "en",
+      "filename": "en_ib_sample_06.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.3175,
+      "sarcasm_probability": 0.0001,
+      "match": true,
+      "ser_prior": "<unk>",
+      "ser_confidence": 0.7827308773994446,
+      "prosody": {
+        "duration_sec": 23.6800625,
+        "pitch_str": "141.6 Hz (std: 80.7 Hz, natural melodic modulation)",
+        "energy_str": "72.2 dB (moderate baseline business volume)",
+        "tempo_str": "7.3 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 141.59867763526586,
+          "std_f0": 80.71179192613275,
+          "rms_db": 72.2155344551633,
+          "syll_rate": 7.305723960821473,
+          "centroid": 1966.8263264234372,
+          "flatness": 0.016102692112326622
+        },
+        "latency_ms": 253.16409999504685
+      },
+      "latencies": {
+        "prosody_ms": 253.16409999504685,
+        "ser_ms": 748.658699914813,
+        "laya_ms": 1454.8313999548554,
+        "total_ms": 2456.6541998647153
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_07",
+      "language": "en",
+      "filename": "en_ib_sample_07.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9,
+      "sarcasm_probability": 0.0,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9837042689323425,
+      "prosody": {
+        "duration_sec": 7.6,
+        "pitch_str": "161.0 Hz (std: 71.4 Hz, downward falling terminal contour)",
+        "energy_str": "77.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 161.04382682118504,
+          "std_f0": 71.38482712091705,
+          "rms_db": 77.3214782547973,
+          "syll_rate": 7.5,
+          "centroid": 1382.1901029326484,
+          "flatness": 0.00017252523684874177
+        },
+        "latency_ms": 65.34550001379102
+      },
+      "latencies": {
+        "prosody_ms": 65.34550001379102,
+        "ser_ms": 188.72550001833588,
+        "laya_ms": 1278.8938999874517,
+        "total_ms": 1532.9649000195786
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_08",
+      "language": "en",
+      "filename": "en_ib_sample_08.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.7417,
+      "sarcasm_probability": 0.0001,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9930620789527893,
+      "prosody": {
+        "duration_sec": 4.3601875,
+        "pitch_str": "160.3 Hz (std: 48.6 Hz, natural melodic modulation)",
+        "energy_str": "70.5 dB (moderate baseline business volume)",
+        "tempo_str": "7.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 160.33660586176183,
+          "std_f0": 48.606997434529106,
+          "rms_db": 70.5475524065329,
+          "syll_rate": 7.568481860011754,
+          "centroid": 1456.897106661835,
+          "flatness": 0.0002534489904064685
+        },
+        "latency_ms": 45.05509999580681
+      },
+      "latencies": {
+        "prosody_ms": 45.05509999580681,
+        "ser_ms": 106.64930008351803,
+        "laya_ms": 1259.628599975258,
+        "total_ms": 1411.333000054583
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_09",
+      "language": "en",
+      "filename": "en_ib_sample_09.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9579,
+      "sarcasm_probability": 0.0005,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.99985671043396,
+      "prosody": {
+        "duration_sec": 6.5399375,
+        "pitch_str": "127.4 Hz (std: 42.8 Hz, downward falling terminal contour)",
+        "energy_str": "70.2 dB (moderate baseline business volume)",
+        "tempo_str": "6.9 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 127.42250318083968,
+          "std_f0": 42.77553742734487,
+          "rms_db": 70.18160797316189,
+          "syll_rate": 6.8807997018320135,
+          "centroid": 1213.158840778666,
+          "flatness": 0.007177028339356184
+        },
+        "latency_ms": 56.42549996264279
+      },
+      "latencies": {
+        "prosody_ms": 56.42549996264279,
+        "ser_ms": 166.4272000780329,
+        "laya_ms": 1272.273400099948,
+        "total_ms": 1495.1261001406237
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_10",
+      "language": "en",
+      "filename": "en_ib_sample_10.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.6299,
+      "sarcasm_probability": 0.0002,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9774850010871887,
+      "prosody": {
+        "duration_sec": 8.48,
+        "pitch_str": "159.0 Hz (std: 41.0 Hz, natural melodic modulation)",
+        "energy_str": "76.9 dB (moderate baseline business volume)",
+        "tempo_str": "7.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 158.95482479905925,
+          "std_f0": 41.00396270998094,
+          "rms_db": 76.85224276480425,
+          "syll_rate": 7.429245283018868,
+          "centroid": 868.3735177941652,
+          "flatness": 0.00028862530598416924
+        },
+        "latency_ms": 74.20789997559041
+      },
+      "latencies": {
+        "prosody_ms": 74.20789997559041,
+        "ser_ms": 204.1889000684023,
+        "laya_ms": 1214.0248999930918,
+        "total_ms": 1492.4217000370845
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_11",
+      "language": "en",
+      "filename": "en_ib_sample_11.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.5877,
+      "sarcasm_probability": 0.0019,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9999878406524658,
+      "prosody": {
+        "duration_sec": 3.8799375,
+        "pitch_str": "143.0 Hz (std: 68.6 Hz, downward falling terminal contour)",
+        "energy_str": "66.6 dB (moderate baseline business volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 142.99479797586034,
+          "std_f0": 68.57278043663096,
+          "rms_db": 66.63924129644765,
+          "syll_rate": 8.247555534077547,
+          "centroid": 1320.822309388809,
+          "flatness": 0.0005938506801612675
+        },
+        "latency_ms": 43.08089998085052
+      },
+      "latencies": {
+        "prosody_ms": 43.08089998085052,
+        "ser_ms": 109.22370001208037,
+        "laya_ms": 1243.4469000436366,
+        "total_ms": 1395.7515000365674
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_12",
+      "language": "en",
+      "filename": "en_ib_sample_12.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "disappointed_sad",
+      "laya_confidence": 0.9982,
+      "sarcasm_probability": 0.0,
+      "match": false,
+      "ser_prior": "<unk>",
+      "ser_confidence": 0.4104556143283844,
+      "prosody": {
+        "duration_sec": 17.2600625,
+        "pitch_str": "189.5 Hz (std: 90.1 Hz, natural melodic modulation)",
+        "energy_str": "76.0 dB (moderate baseline business volume)",
+        "tempo_str": "6.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 189.4933294981022,
+          "std_f0": 90.11635144051222,
+          "rms_db": 75.98511729993875,
+          "syll_rate": 6.720717262756146,
+          "centroid": 1296.3405462992002,
+          "flatness": 0.003628672333434224
+        },
+        "latency_ms": 165.75879999436438
+      },
+      "latencies": {
+        "prosody_ms": 165.75879999436438,
+        "ser_ms": 430.30310003086925,
+        "laya_ms": 1371.6088000219315,
+        "total_ms": 1967.6707000471652
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_13",
+      "language": "en",
+      "filename": "en_ib_sample_13.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "laya_confidence": 0.4613,
+      "sarcasm_probability": 0.0002,
+      "match": false,
+      "ser_prior": "<unk>",
+      "ser_confidence": 0.9751660823822021,
+      "prosody": {
+        "duration_sec": 6.0200625,
+        "pitch_str": "169.0 Hz (std: 90.1 Hz, natural melodic modulation)",
+        "energy_str": "72.8 dB (moderate baseline business volume)",
+        "tempo_str": "7.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 169.03840612761678,
+          "std_f0": 90.10592936455998,
+          "rms_db": 72.82402365531033,
+          "syll_rate": 7.475005450524808,
+          "centroid": 1561.9752144820282,
+          "flatness": 0.0013777022249996662
+        },
+        "latency_ms": 56.81780003942549
+      },
+      "latencies": {
+        "prosody_ms": 56.81780003942549,
+        "ser_ms": 152.79159997589886,
+        "laya_ms": 1241.361299995333,
+        "total_ms": 1450.9707000106573
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_14",
+      "language": "en",
+      "filename": "en_ib_sample_14.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.7058,
+      "sarcasm_probability": 0.0001,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9957764744758606,
+      "prosody": {
+        "duration_sec": 4.36,
+        "pitch_str": "126.4 Hz (std: 57.6 Hz, downward falling terminal contour)",
+        "energy_str": "60.6 dB (moderate baseline business volume)",
+        "tempo_str": "6.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 126.44724466861697,
+          "std_f0": 57.56279173063129,
+          "rms_db": 60.62200874908338,
+          "syll_rate": 6.192660550458715,
+          "centroid": 1214.061696854328,
+          "flatness": 0.01566915027797222
+        },
+        "latency_ms": 43.688499950803816
+      },
+      "latencies": {
+        "prosody_ms": 43.688499950803816,
+        "ser_ms": 109.05899992212653,
+        "laya_ms": 1250.4538999637589,
+        "total_ms": 1403.2013998366892
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_15",
+      "language": "en",
+      "filename": "en_ib_sample_15.wav",
+      "expected_emotion": "disappointed_sad",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.8204,
+      "sarcasm_probability": 0.0005,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9981704950332642,
+      "prosody": {
+        "duration_sec": 10.960125,
+        "pitch_str": "144.5 Hz (std: 64.3 Hz, natural melodic modulation)",
+        "energy_str": "75.0 dB (moderate baseline business volume)",
+        "tempo_str": "6.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 144.50011568161696,
+          "std_f0": 64.34683135341652,
+          "rms_db": 74.9904864541862,
+          "syll_rate": 6.113068965910517,
+          "centroid": 1002.154255149732,
+          "flatness": 0.00046350734191946685
+        },
+        "latency_ms": 102.95959992799908
+      },
+      "latencies": {
+        "prosody_ms": 102.95959992799908,
+        "ser_ms": 271.8260999536142,
+        "laya_ms": 1274.156600004062,
+        "total_ms": 1648.9422998856753
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_16",
+      "language": "en",
+      "filename": "en_ib_sample_16.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9514,
+      "sarcasm_probability": 0.0,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.991346538066864,
+      "prosody": {
+        "duration_sec": 11.9000625,
+        "pitch_str": "138.5 Hz (std: 58.6 Hz, natural melodic modulation)",
+        "energy_str": "65.9 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 138.51586471245298,
+          "std_f0": 58.55126177464251,
+          "rms_db": 65.85816933949124,
+          "syll_rate": 7.058786455953487,
+          "centroid": 1457.5199184274366,
+          "flatness": 0.014087092131376266
+        },
+        "latency_ms": 122.02869995962828
+      },
+      "latencies": {
+        "prosody_ms": 122.02869995962828,
+        "ser_ms": 289.8754000198096,
+        "laya_ms": 1280.879299971275,
+        "total_ms": 1692.783399950713
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_17",
+      "language": "en",
+      "filename": "en_ib_sample_17.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9228,
+      "sarcasm_probability": 0.0001,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.996817946434021,
+      "prosody": {
+        "duration_sec": 13.9600625,
+        "pitch_str": "126.7 Hz (std: 47.5 Hz, natural melodic modulation)",
+        "energy_str": "61.1 dB (moderate baseline business volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 126.73644648720186,
+          "std_f0": 47.49067402825465,
+          "rms_db": 61.077318199984504,
+          "syll_rate": 8.166152551251114,
+          "centroid": 798.0573394298962,
+          "flatness": 0.0006616977625526488
+        },
+        "latency_ms": 119.30509994272143
+      },
+      "latencies": {
+        "prosody_ms": 119.30509994272143,
+        "ser_ms": 343.06830004788935,
+        "laya_ms": 1282.6920999214053,
+        "total_ms": 1745.065499912016
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_18",
+      "language": "en",
+      "filename": "en_ib_sample_18.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.8081,
+      "sarcasm_probability": 0.0002,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.46572741866111755,
+      "prosody": {
+        "duration_sec": 3.660125,
+        "pitch_str": "167.8 Hz (std: 84.1 Hz, downward falling terminal contour)",
+        "energy_str": "64.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.9 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 167.81120798940182,
+          "std_f0": 84.11045956391231,
+          "rms_db": 64.32002892993339,
+          "syll_rate": 7.923226665755951,
+          "centroid": 1136.962294079964,
+          "flatness": 0.00028106439276598394
+        },
+        "latency_ms": 37.501499988138676
+      },
+      "latencies": {
+        "prosody_ms": 37.501499988138676,
+        "ser_ms": 85.2366000181064,
+        "laya_ms": 1242.5716000143439,
+        "total_ms": 1365.309700020589
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_19",
+      "language": "en",
+      "filename": "en_ib_sample_19.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.869,
+      "sarcasm_probability": 0.0,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.8865982890129089,
+      "prosody": {
+        "duration_sec": 10.3800625,
+        "pitch_str": "170.8 Hz (std: 95.8 Hz, natural melodic modulation)",
+        "energy_str": "62.6 dB (moderate baseline business volume)",
+        "tempo_str": "3.8 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 170.7614533980993,
+          "std_f0": 95.84667646538122,
+          "rms_db": 62.60430763029331,
+          "syll_rate": 3.757202810676718,
+          "centroid": 1495.9932419225581,
+          "flatness": 0.003034191904589534
+        },
+        "latency_ms": 94.15499994065613
+      },
+      "latencies": {
+        "prosody_ms": 94.15499994065613,
+        "ser_ms": 254.67039993964136,
+        "laya_ms": 1254.4371000258252,
+        "total_ms": 1603.2624999061227
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_20",
+      "language": "en",
+      "filename": "en_ib_sample_20.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9563,
+      "sarcasm_probability": 0.0003,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.8517888188362122,
+      "prosody": {
+        "duration_sec": 8.04,
+        "pitch_str": "146.1 Hz (std: 59.2 Hz, natural melodic modulation)",
+        "energy_str": "63.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 146.13854782502744,
+          "std_f0": 59.24624960412183,
+          "rms_db": 63.26948271743088,
+          "syll_rate": 7.089552238805971,
+          "centroid": 1767.8095582797241,
+          "flatness": 0.024097273126244545
+        },
+        "latency_ms": 68.36389994714409
+      },
+      "latencies": {
+        "prosody_ms": 68.36389994714409,
+        "ser_ms": 191.54530006926507,
+        "laya_ms": 1276.5986999729648,
+        "total_ms": 1536.507899989374
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_21",
+      "language": "en",
+      "filename": "en_ib_sample_21.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.5552,
+      "sarcasm_probability": 0.0004,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 1.0,
+      "prosody": {
+        "duration_sec": 4.2600625,
+        "pitch_str": "159.1 Hz (std: 49.5 Hz, downward falling terminal contour)",
+        "energy_str": "81.8 dB (high intensity / elevated volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 159.10297539480808,
+          "std_f0": 49.49011922865299,
+          "rms_db": 81.78975403090826,
+          "syll_rate": 8.215841903727938,
+          "centroid": 1453.0135209502878,
+          "flatness": 0.0009878015844151378
+        },
+        "latency_ms": 48.721699975430965
+      },
+      "latencies": {
+        "prosody_ms": 48.721699975430965,
+        "ser_ms": 115.75149989221245,
+        "laya_ms": 1246.9006000319496,
+        "total_ms": 1411.373799899593
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_22",
+      "language": "en",
+      "filename": "en_ib_sample_22.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "laya_confidence": 0.9572,
+      "sarcasm_probability": 0.0004,
+      "match": false,
+      "ser_prior": "sad",
+      "ser_confidence": 0.8902201652526855,
+      "prosody": {
+        "duration_sec": 11.2600625,
+        "pitch_str": "168.4 Hz (std: 95.1 Hz, rising intonation / questioning / tension)",
+        "energy_str": "81.4 dB (high intensity / elevated volume)",
+        "tempo_str": "5.7 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 168.35132656048316,
+          "std_f0": 95.11247416201257,
+          "rms_db": 81.37300303219297,
+          "syll_rate": 5.683805041046619,
+          "centroid": 1611.1906381794674,
+          "flatness": 0.011516660451889038
+        },
+        "latency_ms": 105.99840001668781
+      },
+      "latencies": {
+        "prosody_ms": 105.99840001668781,
+        "ser_ms": 284.50599999632686,
+        "laya_ms": 1282.6965000713244,
+        "total_ms": 1673.200900084339
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_23",
+      "language": "en",
+      "filename": "en_ib_sample_23.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.8196,
+      "sarcasm_probability": 0.0006,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9502571821212769,
+      "prosody": {
+        "duration_sec": 4.8600625,
+        "pitch_str": "150.5 Hz (std: 74.3 Hz, natural melodic modulation)",
+        "energy_str": "73.4 dB (moderate baseline business volume)",
+        "tempo_str": "9.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 150.50129864121288,
+          "std_f0": 74.28633421424475,
+          "rms_db": 73.40286135526873,
+          "syll_rate": 9.053381515155413,
+          "centroid": 1506.0634905452948,
+          "flatness": 0.0004459007759578526
+        },
+        "latency_ms": 47.68399999011308
+      },
+      "latencies": {
+        "prosody_ms": 47.68399999011308,
+        "ser_ms": 110.51649996079504,
+        "laya_ms": 1282.404200057499,
+        "total_ms": 1440.6047000084072
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_24",
+      "language": "en",
+      "filename": "en_ib_sample_24.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.8803,
+      "sarcasm_probability": 0.0023,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9993898868560791,
+      "prosody": {
+        "duration_sec": 10.2200625,
+        "pitch_str": "146.6 Hz (std: 76.7 Hz, downward falling terminal contour)",
+        "energy_str": "68.0 dB (moderate baseline business volume)",
+        "tempo_str": "6.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 146.63143169255537,
+          "std_f0": 76.66842474303368,
+          "rms_db": 67.99015746587823,
+          "syll_rate": 6.066499104090607,
+          "centroid": 1913.2884704589464,
+          "flatness": 0.02502651885151863
+        },
+        "latency_ms": 87.23059995099902
+      },
+      "latencies": {
+        "prosody_ms": 87.23059995099902,
+        "ser_ms": 249.17159997858107,
+        "laya_ms": 1248.0569999897853,
+        "total_ms": 1584.4591999193653
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_25",
+      "language": "en",
+      "filename": "en_ib_sample_25.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "laya_confidence": 0.3339,
+      "sarcasm_probability": 0.0003,
+      "match": false,
+      "ser_prior": "<unk>",
+      "ser_confidence": 0.9145742654800415,
+      "prosody": {
+        "duration_sec": 11.4200625,
+        "pitch_str": "138.8 Hz (std: 79.0 Hz, natural melodic modulation)",
+        "energy_str": "77.4 dB (moderate baseline business volume)",
+        "tempo_str": "5.7 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 138.79449514162494,
+          "std_f0": 78.97726785981885,
+          "rms_db": 77.36925479352925,
+          "syll_rate": 5.691737676567007,
+          "centroid": 893.0290241339117,
+          "flatness": 8.911014447221532e-05
+        },
+        "latency_ms": 131.1950000235811
+      },
+      "latencies": {
+        "prosody_ms": 131.1950000235811,
+        "ser_ms": 279.2115999618545,
+        "laya_ms": 1285.8267000410706,
+        "total_ms": 1696.2333000265062
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_26",
+      "language": "en",
+      "filename": "en_ib_sample_26.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.7592,
+      "sarcasm_probability": 0.001,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.7855308651924133,
+      "prosody": {
+        "duration_sec": 2.9600625,
+        "pitch_str": "120.2 Hz (std: 26.8 Hz, natural melodic modulation)",
+        "energy_str": "78.3 dB (high intensity / elevated volume)",
+        "tempo_str": "7.8 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 120.17169899164601,
+          "std_f0": 26.826717011965822,
+          "rms_db": 78.31887206736181,
+          "syll_rate": 7.770106205527755,
+          "centroid": 1668.1923426735357,
+          "flatness": 0.023349925875663757
+        },
+        "latency_ms": 36.141399992629886
+      },
+      "latencies": {
+        "prosody_ms": 36.141399992629886,
+        "ser_ms": 81.3516000052914,
+        "laya_ms": 1317.2381999902427,
+        "total_ms": 1434.731199988164
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_27",
+      "language": "en",
+      "filename": "en_ib_sample_27.wav",
+      "expected_emotion": "frustration_irritation",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.7967,
+      "sarcasm_probability": 0.0035,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.7733321785926819,
+      "prosody": {
+        "duration_sec": 3.42025,
+        "pitch_str": "151.1 Hz (std: 77.1 Hz, rising intonation / questioning / tension)",
+        "energy_str": "70.5 dB (moderate baseline business volume)",
+        "tempo_str": "8.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 151.14272863330967,
+          "std_f0": 77.05699796525617,
+          "rms_db": 70.5054101946692,
+          "syll_rate": 8.478912360207588,
+          "centroid": 988.070225254854,
+          "flatness": 0.0011508857132866979
+        },
+        "latency_ms": 34.688199986703694
+      },
+      "latencies": {
+        "prosody_ms": 34.688199986703694,
+        "ser_ms": 83.90929992310703,
+        "laya_ms": 1116.5891999844462,
+        "total_ms": 1235.186699894257
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_28",
+      "language": "en",
+      "filename": "en_ib_sample_28.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.8881,
+      "sarcasm_probability": 0.0002,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.7220156192779541,
+      "prosody": {
+        "duration_sec": 4.820125,
+        "pitch_str": "146.9 Hz (std: 81.7 Hz, natural melodic modulation)",
+        "energy_str": "65.2 dB (moderate baseline business volume)",
+        "tempo_str": "8.3 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 146.86546745187545,
+          "std_f0": 81.74411533185109,
+          "rms_db": 65.24750031374896,
+          "syll_rate": 8.298539975623038,
+          "centroid": 1285.1740544174065,
+          "flatness": 0.0004588342271745205
+        },
+        "latency_ms": 51.10989999957383
+      },
+      "latencies": {
+        "prosody_ms": 51.10989999957383,
+        "ser_ms": 116.91280000377446,
+        "laya_ms": 1139.723000000231,
+        "total_ms": 1307.7457000035793
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_29",
+      "language": "en",
+      "filename": "en_ib_sample_29.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.7758,
+      "sarcasm_probability": 0.0171,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9994713664054871,
+      "prosody": {
+        "duration_sec": 4.68,
+        "pitch_str": "147.4 Hz (std: 89.5 Hz, rising intonation / questioning / tension)",
+        "energy_str": "69.9 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 147.37395106871793,
+          "std_f0": 89.47854951469694,
+          "rms_db": 69.91496992556225,
+          "syll_rate": 7.051282051282052,
+          "centroid": 1329.4787790612986,
+          "flatness": 0.004628732800483704
+        },
+        "latency_ms": 46.396299963817
+      },
+      "latencies": {
+        "prosody_ms": 46.396299963817,
+        "ser_ms": 113.13290009275079,
+        "laya_ms": 1123.3273999532685,
+        "total_ms": 1282.8566000098363
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_30",
+      "language": "en",
+      "filename": "en_ib_sample_30.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9421,
+      "sarcasm_probability": 0.0,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.8077964782714844,
+      "prosody": {
+        "duration_sec": 9.3599375,
+        "pitch_str": "153.2 Hz (std: 78.1 Hz, downward falling terminal contour)",
+        "energy_str": "65.4 dB (moderate baseline business volume)",
+        "tempo_str": "5.8 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 153.21785127451804,
+          "std_f0": 78.09349261201906,
+          "rms_db": 65.42289584253035,
+          "syll_rate": 5.769269292663546,
+          "centroid": 1283.8859108071542,
+          "flatness": 0.000746427511330694
+        },
+        "latency_ms": 92.86889992654324
+      },
+      "latencies": {
+        "prosody_ms": 92.86889992654324,
+        "ser_ms": 226.62949992809445,
+        "laya_ms": 1132.532799965702,
+        "total_ms": 1452.0311998203397
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_01",
+      "language": "ja",
+      "filename": "ja_ib_sample_01.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.8934,
+      "sarcasm_probability": 0.0043,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9063956141471863,
+      "prosody": {
+        "duration_sec": 7.1883125,
+        "pitch_str": "147.9 Hz (std: 38.1 Hz, downward falling terminal contour)",
+        "energy_str": "72.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 147.8615720699683,
+          "std_f0": 38.05186551336775,
+          "rms_db": 72.31660962290287,
+          "syll_rate": 7.651308982462852,
+          "centroid": 1606.9382667808477,
+          "flatness": 0.029765993356704712
+        },
+        "latency_ms": 55.53680006414652
+      },
+      "latencies": {
+        "prosody_ms": 55.53680006414652,
+        "ser_ms": 163.29270007554442,
+        "laya_ms": 1285.4376999894157,
+        "total_ms": 1504.2672001291066
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_02",
+      "language": "ja",
+      "filename": "ja_ib_sample_02.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.8341,
+      "sarcasm_probability": 0.0317,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.5775315165519714,
+      "prosody": {
+        "duration_sec": 2.9360625,
+        "pitch_str": "188.6 Hz (std: 68.6 Hz, downward falling terminal contour)",
+        "energy_str": "73.2 dB (moderate baseline business volume)",
+        "tempo_str": "6.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 188.63474117977822,
+          "std_f0": 68.59207451614564,
+          "rms_db": 73.24245651787083,
+          "syll_rate": 6.471251889222386,
+          "centroid": 2296.354068982779,
+          "flatness": 0.09808702021837234
+        },
+        "latency_ms": 29.50900001451373
+      },
+      "latencies": {
+        "prosody_ms": 29.50900001451373,
+        "ser_ms": 80.83260001149029,
+        "laya_ms": 1082.7105999924242,
+        "total_ms": 1193.0522000184283
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_03",
+      "language": "ja",
+      "filename": "ja_ib_sample_03.wav",
+      "expected_emotion": "anxiety_confusion",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.6392,
+      "sarcasm_probability": 0.0048,
+      "match": false,
+      "ser_prior": "sad",
+      "ser_confidence": 0.552989661693573,
+      "prosody": {
+        "duration_sec": 3.6035,
+        "pitch_str": "105.7 Hz (std: 29.0 Hz, rising intonation / questioning / tension)",
+        "energy_str": "74.2 dB (moderate baseline business volume)",
+        "tempo_str": "5.3 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 105.74960215272864,
+          "std_f0": 28.99937191192987,
+          "rms_db": 74.16142929460136,
+          "syll_rate": 5.272651588733177,
+          "centroid": 1778.4691322450224,
+          "flatness": 0.04929026588797569
+        },
+        "latency_ms": 38.57510001398623
+      },
+      "latencies": {
+        "prosody_ms": 38.57510001398623,
+        "ser_ms": 151.7129000276327,
+        "laya_ms": 1111.3309999927878,
+        "total_ms": 1301.6190000344068
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_04",
+      "language": "ja",
+      "filename": "ja_ib_sample_04.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9148,
+      "sarcasm_probability": 0.0002,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.4037970006465912,
+      "prosody": {
+        "duration_sec": 3.28,
+        "pitch_str": "147.1 Hz (std: 60.8 Hz, downward falling terminal contour)",
+        "energy_str": "72.8 dB (moderate baseline business volume)",
+        "tempo_str": "7.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 147.1304122977056,
+          "std_f0": 60.8071990561416,
+          "rms_db": 72.78313077593789,
+          "syll_rate": 7.621951219512195,
+          "centroid": 1297.2382746726935,
+          "flatness": 0.010567269288003445
+        },
+        "latency_ms": 37.866099970415235
+      },
+      "latencies": {
+        "prosody_ms": 37.866099970415235,
+        "ser_ms": 95.13179992791265,
+        "laya_ms": 1075.683500035666,
+        "total_ms": 1208.6813999339938
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_05",
+      "language": "ja",
+      "filename": "ja_ib_sample_05.wav",
+      "expected_emotion": "frustration_irritation",
+      "predicted_emotion": "frustration_irritation",
+      "laya_confidence": 0.8919,
+      "sarcasm_probability": 0.062,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.8258758783340454,
+      "prosody": {
+        "duration_sec": 7.8464375,
+        "pitch_str": "203.6 Hz (std: 76.3 Hz, downward falling terminal contour)",
+        "energy_str": "72.7 dB (moderate baseline business volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 203.5860936576662,
+          "std_f0": 76.28761761911807,
+          "rms_db": 72.6887122388738,
+          "syll_rate": 8.156567869176298,
+          "centroid": 1731.5659949285719,
+          "flatness": 0.03338367119431496
+        },
+        "latency_ms": 68.102499935776
+      },
+      "latencies": {
+        "prosody_ms": 68.102499935776,
+        "ser_ms": 174.42499997559935,
+        "laya_ms": 1140.0910000083968,
+        "total_ms": 1382.6184999197721
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_06",
+      "language": "ja",
+      "filename": "ja_ib_sample_06.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.9577,
+      "sarcasm_probability": 0.0012,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.5390312671661377,
+      "prosody": {
+        "duration_sec": 4.7963125,
+        "pitch_str": "150.8 Hz (std: 57.0 Hz, downward falling terminal contour)",
+        "energy_str": "71.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 150.81851898963964,
+          "std_f0": 57.04418099991771,
+          "rms_db": 71.25547612612326,
+          "syll_rate": 7.714259652597699,
+          "centroid": 1861.6425796935366,
+          "flatness": 0.06569165736436844
+        },
+        "latency_ms": 44.454699964262545
+      },
+      "latencies": {
+        "prosody_ms": 44.454699964262545,
+        "ser_ms": 107.42969997227192,
+        "laya_ms": 1122.784800012596,
+        "total_ms": 1274.6691999491304
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_07",
+      "language": "ja",
+      "filename": "ja_ib_sample_07.wav",
+      "expected_emotion": "urgency_panic",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "laya_confidence": 0.2967,
+      "sarcasm_probability": 0.0147,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.9997177720069885,
+      "prosody": {
+        "duration_sec": 4.64,
+        "pitch_str": "182.4 Hz (std: 104.0 Hz, natural melodic modulation)",
+        "energy_str": "74.0 dB (moderate baseline business volume)",
+        "tempo_str": "7.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 182.3942934218502,
+          "std_f0": 104.00480236255385,
+          "rms_db": 73.97900896387841,
+          "syll_rate": 7.543103448275863,
+          "centroid": 2080.717406357533,
+          "flatness": 0.05947233363986015
+        },
+        "latency_ms": 45.502400025725365
+      },
+      "latencies": {
+        "prosody_ms": 45.502400025725365,
+        "ser_ms": 113.75340004451573,
+        "laya_ms": 1084.3241000548005,
+        "total_ms": 1243.5799001250416
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_08",
+      "language": "ja",
+      "filename": "ja_ib_sample_08.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.5948,
+      "sarcasm_probability": 0.0006,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.6901123523712158,
+      "prosody": {
+        "duration_sec": 4.972375,
+        "pitch_str": "169.4 Hz (std: 60.4 Hz, downward falling terminal contour)",
+        "energy_str": "73.7 dB (moderate baseline business volume)",
+        "tempo_str": "7.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 169.40417468597332,
+          "std_f0": 60.391351071372775,
+          "rms_db": 73.66718274343278,
+          "syll_rate": 7.441112144598908,
+          "centroid": 1188.4361212785361,
+          "flatness": 0.008664692752063274
+        },
+        "latency_ms": 47.66049992758781
+      },
+      "latencies": {
+        "prosody_ms": 47.66049992758781,
+        "ser_ms": 136.2993000075221,
+        "laya_ms": 1140.0573999853805,
+        "total_ms": 1324.0171999204904
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_09",
+      "language": "ja",
+      "filename": "ja_ib_sample_09.wav",
+      "expected_emotion": "frustration_irritation",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "laya_confidence": 0.3046,
+      "sarcasm_probability": 0.0559,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.7176939249038696,
+      "prosody": {
+        "duration_sec": 4.8,
+        "pitch_str": "165.1 Hz (std: 54.3 Hz, natural melodic modulation)",
+        "energy_str": "72.9 dB (moderate baseline business volume)",
+        "tempo_str": "9.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 165.08216212782372,
+          "std_f0": 54.30692057866641,
+          "rms_db": 72.85659313051019,
+          "syll_rate": 9.375,
+          "centroid": 1560.0678024386748,
+          "flatness": 0.023467982187867165
+        },
+        "latency_ms": 44.08110002987087
+      },
+      "latencies": {
+        "prosody_ms": 44.08110002987087,
+        "ser_ms": 117.25790007039905,
+        "laya_ms": 1109.913499909453,
+        "total_ms": 1271.252500009723
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_10",
+      "language": "ja",
+      "filename": "ja_ib_sample_10.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "laya_confidence": 0.4241,
+      "sarcasm_probability": 0.0022,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.6752868890762329,
+      "prosody": {
+        "duration_sec": 11.42,
+        "pitch_str": "129.0 Hz (std: 63.1 Hz, natural melodic modulation)",
+        "energy_str": "70.2 dB (moderate baseline business volume)",
+        "tempo_str": "6.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 128.97481248826682,
+          "std_f0": 63.137820217351596,
+          "rms_db": 70.18723372379176,
+          "syll_rate": 6.217162872154115,
+          "centroid": 1458.2667687190803,
+          "flatness": 0.017015930265188217
+        },
+        "latency_ms": 128.69409995619208
+      },
+      "latencies": {
+        "prosody_ms": 128.69409995619208,
+        "ser_ms": 282.75820007547736,
+        "laya_ms": 1135.8575000194833,
+        "total_ms": 1547.3098000511527
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_11",
+      "language": "ja",
+      "filename": "ja_ib_sample_11.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.6337,
+      "sarcasm_probability": 0.0012,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.6618707776069641,
+      "prosody": {
+        "duration_sec": 2.671,
+        "pitch_str": "190.4 Hz (std: 87.7 Hz, downward falling terminal contour)",
+        "energy_str": "73.0 dB (moderate baseline business volume)",
+        "tempo_str": "8.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 190.41785711038082,
+          "std_f0": 87.71029549435119,
+          "rms_db": 73.0314057727021,
+          "syll_rate": 8.61100711344066,
+          "centroid": 2259.095222709561,
+          "flatness": 0.07037623971700668
+        },
+        "latency_ms": 33.36849994957447
+      },
+      "latencies": {
+        "prosody_ms": 33.36849994957447,
+        "ser_ms": 93.15740002784878,
+        "laya_ms": 1075.0195999862626,
+        "total_ms": 1201.5454999636859
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_12",
+      "language": "ja",
+      "filename": "ja_ib_sample_12.wav",
+      "expected_emotion": "anxiety_confusion",
+      "predicted_emotion": "disappointed_sad",
+      "laya_confidence": 0.3279,
+      "sarcasm_probability": 0.0039,
+      "match": false,
+      "ser_prior": "surprised",
+      "ser_confidence": 0.9794415235519409,
+      "prosody": {
+        "duration_sec": 3.04,
+        "pitch_str": "182.1 Hz (std: 110.8 Hz, rising intonation / questioning / tension)",
+        "energy_str": "68.4 dB (moderate baseline business volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 182.06225401650775,
+          "std_f0": 110.78167961268163,
+          "rms_db": 68.35538085021884,
+          "syll_rate": 8.223684210526315,
+          "centroid": 2184.1042752272497,
+          "flatness": 0.04448574408888817
+        },
+        "latency_ms": 36.6725999629125
+      },
+      "latencies": {
+        "prosody_ms": 36.6725999629125,
+        "ser_ms": 100.06650001741946,
+        "laya_ms": 1081.5850000362843,
+        "total_ms": 1218.3241000166163
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_13",
+      "language": "ja",
+      "filename": "ja_ib_sample_13.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9182,
+      "sarcasm_probability": 0.0,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.5599103569984436,
+      "prosody": {
+        "duration_sec": 16.5303125,
+        "pitch_str": "147.6 Hz (std: 65.8 Hz, downward falling terminal contour)",
+        "energy_str": "71.6 dB (moderate baseline business volume)",
+        "tempo_str": "6.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 147.61955134796406,
+          "std_f0": 65.76627388028034,
+          "rms_db": 71.59554088998195,
+          "syll_rate": 6.109987333875266,
+          "centroid": 1587.2506467670862,
+          "flatness": 0.027576513588428497
+        },
+        "latency_ms": 156.43079997971654
+      },
+      "latencies": {
+        "prosody_ms": 156.43079997971654,
+        "ser_ms": 415.750699932687,
+        "laya_ms": 1200.4347000038251,
+        "total_ms": 1772.6161999162287
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_14",
+      "language": "ja",
+      "filename": "ja_ib_sample_14.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.7692,
+      "sarcasm_probability": 0.0004,
+      "match": true,
+      "ser_prior": "happy",
+      "ser_confidence": 0.9945468902587891,
+      "prosody": {
+        "duration_sec": 4.3336875,
+        "pitch_str": "264.5 Hz (std: 72.4 Hz, rising intonation / questioning / tension)",
+        "energy_str": "73.3 dB (moderate baseline business volume)",
+        "tempo_str": "10.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 264.54137444729963,
+          "std_f0": 72.42979889371652,
+          "rms_db": 73.27997340701407,
+          "syll_rate": 10.383766711374552,
+          "centroid": 1593.6510309655946,
+          "flatness": 0.020016074180603027
+        },
+        "latency_ms": 45.83459999412298
+      },
+      "latencies": {
+        "prosody_ms": 45.83459999412298,
+        "ser_ms": 106.63970001041889,
+        "laya_ms": 1125.5002999678254,
+        "total_ms": 1277.9745999723673
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_15",
+      "language": "ja",
+      "filename": "ja_ib_sample_15.wav",
+      "expected_emotion": "disappointed_sad",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9361,
+      "sarcasm_probability": 0.0013,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.892448902130127,
+      "prosody": {
+        "duration_sec": 7.0400625,
+        "pitch_str": "180.2 Hz (std: 75.5 Hz, rising intonation / questioning / tension)",
+        "energy_str": "72.9 dB (moderate baseline business volume)",
+        "tempo_str": "8.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 180.2250145028127,
+          "std_f0": 75.5449800534653,
+          "rms_db": 72.88846789235201,
+          "syll_rate": 8.664695803481857,
+          "centroid": 1578.6524572241412,
+          "flatness": 0.024852054193615913
+        },
+        "latency_ms": 74.57960001192987
+      },
+      "latencies": {
+        "prosody_ms": 74.57960001192987,
+        "ser_ms": 166.95870005059987,
+        "laya_ms": 1134.6668000333011,
+        "total_ms": 1376.2051000958309
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_16",
+      "language": "ja",
+      "filename": "ja_ib_sample_16.wav",
+      "expected_emotion": "frustration_irritation",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "laya_confidence": 0.4071,
+      "sarcasm_probability": 0.0172,
+      "match": false,
+      "ser_prior": "angry",
+      "ser_confidence": 0.3870261609554291,
+      "prosody": {
+        "duration_sec": 4.32,
+        "pitch_str": "160.8 Hz (std: 120.7 Hz, natural melodic modulation)",
+        "energy_str": "67.6 dB (moderate baseline business volume)",
+        "tempo_str": "5.1 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 160.82606231673682,
+          "std_f0": 120.73263286699928,
+          "rms_db": 67.58381296099155,
+          "syll_rate": 5.092592592592593,
+          "centroid": 2430.590332309018,
+          "flatness": 0.11969016492366791
+        },
+        "latency_ms": 41.647799895145
+      },
+      "latencies": {
+        "prosody_ms": 41.647799895145,
+        "ser_ms": 110.94269994646311,
+        "laya_ms": 1097.0213999971747,
+        "total_ms": 1249.6118998387828
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_17",
+      "language": "ja",
+      "filename": "ja_ib_sample_17.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.679,
+      "sarcasm_probability": 0.0,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9602857828140259,
+      "prosody": {
+        "duration_sec": 8.96,
+        "pitch_str": "112.3 Hz (std: 50.4 Hz, natural melodic modulation)",
+        "energy_str": "70.7 dB (moderate baseline business volume)",
+        "tempo_str": "9.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 112.29973902395669,
+          "std_f0": 50.44172728218114,
+          "rms_db": 70.69482032925313,
+          "syll_rate": 9.486607142857142,
+          "centroid": 1569.369258819529,
+          "flatness": 0.04317524656653404
+        },
+        "latency_ms": 79.24440002534539
+      },
+      "latencies": {
+        "prosody_ms": 79.24440002534539,
+        "ser_ms": 222.7732000174001,
+        "laya_ms": 1138.7178000295535,
+        "total_ms": 1440.735400072299
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_18",
+      "language": "ja",
+      "filename": "ja_ib_sample_18.wav",
+      "expected_emotion": "disappointed_sad",
+      "predicted_emotion": "disappointed_sad",
+      "laya_confidence": 0.9802,
+      "sarcasm_probability": 0.0,
+      "match": true,
+      "ser_prior": "happy",
+      "ser_confidence": 0.33230823278427124,
+      "prosody": {
+        "duration_sec": 21.3618125,
+        "pitch_str": "252.8 Hz (std: 71.8 Hz, downward falling terminal contour)",
+        "energy_str": "71.3 dB (moderate baseline business volume)",
+        "tempo_str": "6.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 252.79559023020346,
+          "std_f0": 71.78279621379541,
+          "rms_db": 71.34738203959989,
+          "syll_rate": 6.600563505554597,
+          "centroid": 1836.6929005616544,
+          "flatness": 0.02673620730638504
+        },
+        "latency_ms": 192.10370001383126
+      },
+      "latencies": {
+        "prosody_ms": 192.10370001383126,
+        "ser_ms": 627.5484999641776,
+        "laya_ms": 1254.228699952364,
+        "total_ms": 2073.880899930373
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_19",
+      "language": "ja",
+      "filename": "ja_ib_sample_19.wav",
+      "expected_emotion": "urgency_panic",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.7552,
+      "sarcasm_probability": 0.0006,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.9868870377540588,
+      "prosody": {
+        "duration_sec": 7.0400625,
+        "pitch_str": "163.4 Hz (std: 63.2 Hz, natural melodic modulation)",
+        "energy_str": "69.3 dB (moderate baseline business volume)",
+        "tempo_str": "6.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 163.4149329612154,
+          "std_f0": 63.19068911782851,
+          "rms_db": 69.25044578375007,
+          "syll_rate": 6.676077094486022,
+          "centroid": 2253.919391950035,
+          "flatness": 0.09720917046070099
+        },
+        "latency_ms": 62.014800030738115
+      },
+      "latencies": {
+        "prosody_ms": 62.014800030738115,
+        "ser_ms": 165.56539991870522,
+        "laya_ms": 1121.6319999657571,
+        "total_ms": 1349.2121999152005
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_20",
+      "language": "ja",
+      "filename": "ja_ib_sample_20.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.9754,
+      "sarcasm_probability": 0.0001,
+      "match": true,
+      "ser_prior": "happy",
+      "ser_confidence": 0.9990463852882385,
+      "prosody": {
+        "duration_sec": 3.52,
+        "pitch_str": "128.4 Hz (std: 58.1 Hz, natural melodic modulation)",
+        "energy_str": "72.8 dB (moderate baseline business volume)",
+        "tempo_str": "6.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 128.4395271711797,
+          "std_f0": 58.08283063936167,
+          "rms_db": 72.79342676887691,
+          "syll_rate": 6.534090909090909,
+          "centroid": 1762.7034059778157,
+          "flatness": 0.018787233158946037
+        },
+        "latency_ms": 33.95690000616014
+      },
+      "latencies": {
+        "prosody_ms": 33.95690000616014,
+        "ser_ms": 87.85919996444136,
+        "laya_ms": 1080.8213000418618,
+        "total_ms": 1202.6374000124633
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_21",
+      "language": "ja",
+      "filename": "ja_ib_sample_21.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.7941,
+      "sarcasm_probability": 0.0002,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.9995156526565552,
+      "prosody": {
+        "duration_sec": 5.2000625,
+        "pitch_str": "162.9 Hz (std: 90.9 Hz, downward falling terminal contour)",
+        "energy_str": "70.6 dB (moderate baseline business volume)",
+        "tempo_str": "7.3 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 162.86582154848492,
+          "std_f0": 90.93076458028985,
+          "rms_db": 70.5777998255235,
+          "syll_rate": 7.307604475907742,
+          "centroid": 1502.5412723384227,
+          "flatness": 0.017341699451208115
+        },
+        "latency_ms": 48.45470003783703
+      },
+      "latencies": {
+        "prosody_ms": 48.45470003783703,
+        "ser_ms": 138.40769999660552,
+        "laya_ms": 1112.6246999483556,
+        "total_ms": 1299.487099982798
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_22",
+      "language": "ja",
+      "filename": "ja_ib_sample_22.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.9529,
+      "sarcasm_probability": 0.0008,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.8631795048713684,
+      "prosody": {
+        "duration_sec": 3.12,
+        "pitch_str": "108.2 Hz (std: 43.0 Hz, downward falling terminal contour)",
+        "energy_str": "68.1 dB (moderate baseline business volume)",
+        "tempo_str": "5.1 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 108.23007344532628,
+          "std_f0": 43.0073736993539,
+          "rms_db": 68.0850960918431,
+          "syll_rate": 5.128205128205128,
+          "centroid": 2255.1123804363774,
+          "flatness": 0.08757366240024567
+        },
+        "latency_ms": 30.04230000078678
+      },
+      "latencies": {
+        "prosody_ms": 30.04230000078678,
+        "ser_ms": 76.19300007354468,
+        "laya_ms": 1075.5150000331923,
+        "total_ms": 1181.7503001075238
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_23",
+      "language": "ja",
+      "filename": "ja_ib_sample_23.wav",
+      "expected_emotion": "anxiety_confusion",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9744,
+      "sarcasm_probability": 0.0024,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.8148213624954224,
+      "prosody": {
+        "duration_sec": 3.4048125,
+        "pitch_str": "155.1 Hz (std: 65.6 Hz, downward falling terminal contour)",
+        "energy_str": "72.5 dB (moderate baseline business volume)",
+        "tempo_str": "9.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 155.09646174430506,
+          "std_f0": 65.56696922651156,
+          "rms_db": 72.50316545945743,
+          "syll_rate": 9.39846173614553,
+          "centroid": 1433.8163669264209,
+          "flatness": 0.03325967490673065
+        },
+        "latency_ms": 31.5299000358209
+      },
+      "latencies": {
+        "prosody_ms": 31.5299000358209,
+        "ser_ms": 80.98580001387745,
+        "laya_ms": 1120.663300040178,
+        "total_ms": 1233.1790000898764
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_24",
+      "language": "ja",
+      "filename": "ja_ib_sample_24.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.8977,
+      "sarcasm_probability": 0.0002,
+      "match": true,
+      "ser_prior": "happy",
+      "ser_confidence": 0.9935757517814636,
+      "prosody": {
+        "duration_sec": 2.5014375,
+        "pitch_str": "229.5 Hz (std: 64.1 Hz, downward falling terminal contour)",
+        "energy_str": "73.9 dB (moderate baseline business volume)",
+        "tempo_str": "6.0 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 229.45710307069353,
+          "std_f0": 64.0911499832472,
+          "rms_db": 73.90358058778827,
+          "syll_rate": 5.996551982609999,
+          "centroid": 1874.2741688755746,
+          "flatness": 0.008896570652723312
+        },
+        "latency_ms": 26.916800066828728
+      },
+      "latencies": {
+        "prosody_ms": 26.916800066828728,
+        "ser_ms": 75.19889995455742,
+        "laya_ms": 1080.8703999500722,
+        "total_ms": 1182.9860999714583
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_25",
+      "language": "ja",
+      "filename": "ja_ib_sample_25.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.8549,
+      "sarcasm_probability": 0.0001,
+      "match": true,
+      "ser_prior": "happy",
+      "ser_confidence": 0.8813441395759583,
+      "prosody": {
+        "duration_sec": 5.4336875,
+        "pitch_str": "188.6 Hz (std: 57.6 Hz, downward falling terminal contour)",
+        "energy_str": "71.7 dB (moderate baseline business volume)",
+        "tempo_str": "7.0 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 188.63532445537103,
+          "std_f0": 57.60316609705053,
+          "rms_db": 71.67010811153416,
+          "syll_rate": 6.993409171948148,
+          "centroid": 1532.0583055280515,
+          "flatness": 0.030871598049998283
+        },
+        "latency_ms": 45.83200009074062
+      },
+      "latencies": {
+        "prosody_ms": 45.83200009074062,
+        "ser_ms": 144.34999995864928,
+        "laya_ms": 1118.7552000628784,
+        "total_ms": 1308.9372001122683
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_26",
+      "language": "ja",
+      "filename": "ja_ib_sample_26.wav",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9536,
+      "sarcasm_probability": 0.0004,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.6106668710708618,
+      "prosody": {
+        "duration_sec": 5.435375,
+        "pitch_str": "162.4 Hz (std: 72.6 Hz, downward falling terminal contour)",
+        "energy_str": "72.3 dB (moderate baseline business volume)",
+        "tempo_str": "9.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 162.40348292581845,
+          "std_f0": 72.63059574685528,
+          "rms_db": 72.31012060282643,
+          "syll_rate": 9.56695720166502,
+          "centroid": 1657.4690259828076,
+          "flatness": 0.025725487619638443
+        },
+        "latency_ms": 53.549200063571334
+      },
+      "latencies": {
+        "prosody_ms": 53.549200063571334,
+        "ser_ms": 150.5788000067696,
+        "laya_ms": 1121.3809000328183,
+        "total_ms": 1325.5089001031592
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_27",
+      "language": "ja",
+      "filename": "ja_ib_sample_27.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "satisfaction_gratitude",
+      "laya_confidence": 0.9603,
+      "sarcasm_probability": 0.0,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.8999807238578796,
+      "prosody": {
+        "duration_sec": 5.52,
+        "pitch_str": "116.1 Hz (std: 47.4 Hz, downward falling terminal contour)",
+        "energy_str": "70.8 dB (moderate baseline business volume)",
+        "tempo_str": "6.3 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 116.0878862285397,
+          "std_f0": 47.43693749843817,
+          "rms_db": 70.81052475617157,
+          "syll_rate": 6.340579710144928,
+          "centroid": 2018.5510806281038,
+          "flatness": 0.04853949323296547
+        },
+        "latency_ms": 53.51100000552833
+      },
+      "latencies": {
+        "prosody_ms": 53.51100000552833,
+        "ser_ms": 150.98369994666427,
+        "laya_ms": 1128.0973000684753,
+        "total_ms": 1332.592000020668
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_28",
+      "language": "ja",
+      "filename": "ja_ib_sample_28.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.9159,
+      "sarcasm_probability": 0.0002,
+      "match": true,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9604488015174866,
+      "prosody": {
+        "duration_sec": 2.68175,
+        "pitch_str": "133.1 Hz (std: 53.9 Hz, natural melodic modulation)",
+        "energy_str": "73.6 dB (moderate baseline business volume)",
+        "tempo_str": "8.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 133.0761141313779,
+          "std_f0": 53.85384352000752,
+          "rms_db": 73.64532497293655,
+          "syll_rate": 8.576489232777105,
+          "centroid": 1448.6607436657614,
+          "flatness": 0.022011395543813705
+        },
+        "latency_ms": 36.86560003552586
+      },
+      "latencies": {
+        "prosody_ms": 36.86560003552586,
+        "ser_ms": 143.38519994635135,
+        "laya_ms": 1079.8771999543533,
+        "total_ms": 1260.1279999362305
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_29",
+      "language": "ja",
+      "filename": "ja_ib_sample_29.wav",
+      "expected_emotion": "disappointed_sad",
+      "predicted_emotion": "neutral_inquiry",
+      "laya_confidence": 0.8602,
+      "sarcasm_probability": 0.0536,
+      "match": false,
+      "ser_prior": "neutral",
+      "ser_confidence": 0.9061487913131714,
+      "prosody": {
+        "duration_sec": 7.226875,
+        "pitch_str": "115.2 Hz (std: 50.1 Hz, downward falling terminal contour)",
+        "energy_str": "70.7 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 115.21450667432326,
+          "std_f0": 50.05193395935101,
+          "rms_db": 70.70687127030119,
+          "syll_rate": 7.056992130070051,
+          "centroid": 1657.2519690557097,
+          "flatness": 0.052386436611413956
+        },
+        "latency_ms": 70.27080003172159
+      },
+      "latencies": {
+        "prosody_ms": 70.27080003172159,
+        "ser_ms": 221.16130008362234,
+        "laya_ms": 1124.3258999893442,
+        "total_ms": 1415.758000104688
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_30",
+      "language": "ja",
+      "filename": "ja_ib_sample_30.wav",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "laya_confidence": 0.807,
+      "sarcasm_probability": 0.0,
+      "match": false,
+      "ser_prior": "happy",
+      "ser_confidence": 0.9964938759803772,
+      "prosody": {
+        "duration_sec": 7.0150625,
+        "pitch_str": "206.6 Hz (std: 84.8 Hz, natural melodic modulation)",
+        "energy_str": "71.3 dB (moderate baseline business volume)",
+        "tempo_str": "8.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 206.64184451605632,
+          "std_f0": 84.80511762680196,
+          "rms_db": 71.27626459889713,
+          "syll_rate": 8.125373081137909,
+          "centroid": 1548.5620042996188,
+          "flatness": 0.027806781232357025
+        },
+        "latency_ms": 62.74870003107935
+      },
+      "latencies": {
+        "prosody_ms": 62.74870003107935,
+        "ser_ms": 199.55819996539503,
+        "laya_ms": 1128.6174000706524,
+        "total_ms": 1390.9243000671268
+      }
+    }
+  ]
+}

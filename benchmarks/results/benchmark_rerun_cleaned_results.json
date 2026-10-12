@@ -1,0 +1,65 @@
+{
+  "benchmark": "Cleaned Multilingual Ground Truth (60 samples)",
+  "results": [
+    {
+      "model": "Emotion2Vec+ Large Standalone",
+      "en_acc": 0.8333333333333334,
+      "en_correct": 25,
+      "en_total": 30,
+      "ja_acc": 0.4,
+      "ja_correct": 12,
+      "ja_total": 30,
+      "overall_acc": 0.6166666666666667,
+      "overall_correct": 37,
+      "overall_total": 60
+    },
+    {
+      "model": "Laya mmBERT",
+      "en_acc": 0.7,
+      "en_correct": 21,
+      "en_total": 30,
+      "ja_acc": 0.36666666666666664,
+      "ja_correct": 11,
+      "ja_total": 30,
+      "overall_acc": 0.5333333333333333,
+      "overall_correct": 32,
+      "overall_total": 60
+    },
+    {
+      "model": "Kev-0.8B FP16",
+      "en_acc": 0.9,
+      "en_correct": 27,
+      "en_total": 30,
+      "ja_acc": 0.4666666666666667,
+      "ja_correct": 14,
+      "ja_total": 30,
+      "overall_acc": 0.6833333333333333,
+      "overall_correct": 41,
+      "overall_total": 60
+    },
+    {
+      "model": "Kev-0.8B INT4 (NF4)",
+      "en_acc": 0.9333333333333333,
+      "en_correct": 28,
+      "en_total": 30,
+      "ja_acc": 0.43333333333333335,
+      "ja_correct": 13,
+      "ja_total": 30,
+      "overall_acc": 0.6833333333333333,
+      "overall_correct": 41,
+      "overall_total": 60
+    },
+    {
+      "model": "Kev-4B INT4 (Q4_K_M)",
+      "en_acc": 0.8666666666666667,
+      "en_correct": 26,
+      "en_total": 30,
+      "ja_acc": 0.6666666666666666,
+      "ja_correct": 20,
+      "ja_total": 30,
+      "overall_acc": 0.7666666666666667,
+      "overall_correct": 46,
+      "overall_total": 60
+    }
+  ]
+}

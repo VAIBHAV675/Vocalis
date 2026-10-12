@@ -1,0 +1,249 @@
+{
+  "model": "ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition",
+  "accuracy": 0.16666666666666666,
+  "correct": 5,
+  "total": 30,
+  "avg_latency_ms": 269.61245000129566,
+  "results": [
+    {
+      "sample_id": "en_ib_sample_01",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "calm",
+      "score": 0.13419920206069946,
+      "match": true,
+      "latency_ms": 741.8662999989465
+    },
+    {
+      "sample_id": "en_ib_sample_02",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "happy",
+      "score": 0.13376197218894958,
+      "match": false,
+      "latency_ms": 202.02989992685616
+    },
+    {
+      "sample_id": "en_ib_sample_03",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "calm",
+      "score": 0.1329965889453888,
+      "match": true,
+      "latency_ms": 105.58559990022331
+    },
+    {
+      "sample_id": "en_ib_sample_04",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "angry",
+      "score": 0.1317741572856903,
+      "match": false,
+      "latency_ms": 347.3638000432402
+    },
+    {
+      "sample_id": "en_ib_sample_05",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "disgust",
+      "score": 0.1341754049062729,
+      "match": false,
+      "latency_ms": 113.63249993883073
+    },
+    {
+      "sample_id": "en_ib_sample_06",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "angry",
+      "score": 0.12809911370277405,
+      "match": false,
+      "latency_ms": 866.2334000691772
+    },
+    {
+      "sample_id": "en_ib_sample_07",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "surprised",
+      "score": 0.12882401049137115,
+      "match": false,
+      "latency_ms": 217.47919998597354
+    },
+    {
+      "sample_id": "en_ib_sample_08",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "disgust",
+      "score": 0.12907305359840393,
+      "match": false,
+      "latency_ms": 144.7700000135228
+    },
+    {
+      "sample_id": "en_ib_sample_09",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "happy",
+      "score": 0.12742674350738525,
+      "match": true,
+      "latency_ms": 224.58029992412776
+    },
+    {
+      "sample_id": "en_ib_sample_10",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "disgust",
+      "score": 0.129536971449852,
+      "match": false,
+      "latency_ms": 249.41829999443144
+    },
+    {
+      "sample_id": "en_ib_sample_11",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "disgust",
+      "score": 0.13393214344978333,
+      "match": false,
+      "latency_ms": 136.24250004068017
+    },
+    {
+      "sample_id": "en_ib_sample_12",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "surprised",
+      "score": 0.1315331608057022,
+      "match": false,
+      "latency_ms": 523.7378999590874
+    },
+    {
+      "sample_id": "en_ib_sample_13",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "calm",
+      "score": 0.13334573805332184,
+      "match": true,
+      "latency_ms": 197.81090004835278
+    },
+    {
+      "sample_id": "en_ib_sample_14",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "disgust",
+      "score": 0.13084085285663605,
+      "match": false,
+      "latency_ms": 145.21710004191846
+    },
+    {
+      "sample_id": "en_ib_sample_15",
+      "expected": "disappointed_sad",
+      "ehcalabres_raw": "happy",
+      "score": 0.12918104231357574,
+      "match": false,
+      "latency_ms": 340.683399932459
+    },
+    {
+      "sample_id": "en_ib_sample_16",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "disgust",
+      "score": 0.12940829992294312,
+      "match": false,
+      "latency_ms": 361.3905000966042
+    },
+    {
+      "sample_id": "en_ib_sample_17",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "happy",
+      "score": 0.1270056962966919,
+      "match": false,
+      "latency_ms": 422.0554999774322
+    },
+    {
+      "sample_id": "en_ib_sample_18",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "calm",
+      "score": 0.13598357141017914,
+      "match": false,
+      "latency_ms": 114.27429993636906
+    },
+    {
+      "sample_id": "en_ib_sample_19",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "angry",
+      "score": 0.12904798984527588,
+      "match": false,
+      "latency_ms": 321.21940003708005
+    },
+    {
+      "sample_id": "en_ib_sample_20",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "calm",
+      "score": 0.12936383485794067,
+      "match": true,
+      "latency_ms": 224.59790005814284
+    },
+    {
+      "sample_id": "en_ib_sample_21",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "fearful",
+      "score": 0.12786801159381866,
+      "match": false,
+      "latency_ms": 144.68270004726946
+    },
+    {
+      "sample_id": "en_ib_sample_22",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "angry",
+      "score": 0.12967805564403534,
+      "match": false,
+      "latency_ms": 345.34200001508
+    },
+    {
+      "sample_id": "en_ib_sample_23",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "disgust",
+      "score": 0.13088105618953705,
+      "match": false,
+      "latency_ms": 147.5988000165671
+    },
+    {
+      "sample_id": "en_ib_sample_24",
+      "expected": "satisfaction_gratitude",
+      "ehcalabres_raw": "calm",
+      "score": 0.13007064163684845,
+      "match": false,
+      "latency_ms": 303.1561999814585
+    },
+    {
+      "sample_id": "en_ib_sample_25",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "angry",
+      "score": 0.1290588229894638,
+      "match": false,
+      "latency_ms": 349.7831999557093
+    },
+    {
+      "sample_id": "en_ib_sample_26",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "angry",
+      "score": 0.1293264478445053,
+      "match": false,
+      "latency_ms": 105.28859996702522
+    },
+    {
+      "sample_id": "en_ib_sample_27",
+      "expected": "frustration_irritation",
+      "ehcalabres_raw": "happy",
+      "score": 0.13167686760425568,
+      "match": false,
+      "latency_ms": 111.4724000217393
+    },
+    {
+      "sample_id": "en_ib_sample_28",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "disgust",
+      "score": 0.12929470837116241,
+      "match": false,
+      "latency_ms": 147.37830008380115
+    },
+    {
+      "sample_id": "en_ib_sample_29",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "surprised",
+      "score": 0.13100652396678925,
+      "match": false,
+      "latency_ms": 143.7072999542579
+    },
+    {
+      "sample_id": "en_ib_sample_30",
+      "expected": "neutral_inquiry",
+      "ehcalabres_raw": "happy",
+      "score": 0.1356869488954544,
+      "match": false,
+      "latency_ms": 289.77530007250607
+    }
+  ]
+}

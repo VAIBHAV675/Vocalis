@@ -1,0 +1,69 @@
+[
+  {
+    "model": "whisper-small.en (FP16)",
+    "desc": "English STT (Small .en FP16)",
+    "compute_type": "float16",
+    "load_time_s": 2.99,
+    "audio_dur_s": 6.1,
+    "avg_latency_ms": 2281.3,
+    "rtf": 0.374,
+    "speedup": 2.7,
+    "transcript_preview": "Just one addition to that, Steve, is that we started earlier on the wood-free co",
+    "status": "SUCCESS"
+  },
+  {
+    "model": "whisper-small.en (INT8-FP16)",
+    "desc": "English STT (Small .en INT8-FP16)",
+    "compute_type": "int8_float16",
+    "load_time_s": 3.04,
+    "audio_dur_s": 6.1,
+    "avg_latency_ms": 953.5,
+    "rtf": 0.1563,
+    "speedup": 6.4,
+    "transcript_preview": "Just one addition to that, Steve, is that we started earlier on the wood-free co",
+    "status": "SUCCESS"
+  },
+  {
+    "model": "kotoba-whisper-v2.0 (FP16)",
+    "desc": "Japanese STT (Kotoba v2.0 Distilled Large-v3 FP16)",
+    "compute_type": "float16",
+    "load_time_s": 5.55,
+    "audio_dur_s": 6.1,
+    "avg_latency_ms": 8699.1,
+    "rtf": 1.426,
+    "speedup": 0.7,
+    "transcript_preview": "\u3061\u3087\u3063\u3068\u4e00\u5ea6\u3001\u30b9\u30c6\u30a3\u30fc\u30d5\u30ea\u30fc\u30b9\u30c6\u30a3\u30fc\u30d5\u30ea\u30fc\u30b9\u30c6\u30a3\u30fc\u30d5\u30ea\u30fc\u30b9\u3001",
+    "status": "SUCCESS"
+  },
+  {
+    "model": "kotoba-whisper-v2.0 (INT8-FP16)",
+    "desc": "Japanese STT (Kotoba v2.0 Distilled Large-v3 INT8-FP16)",
+    "compute_type": "int8_float16",
+    "load_time_s": 11.67,
+    "audio_dur_s": 6.1,
+    "avg_latency_ms": 2226.6,
+    "rtf": 0.365,
+    "speedup": 2.7,
+    "transcript_preview": "\u3061\u3087\u3063\u3068\u4e00\u5ea6\u3001\u30b9\u30c6\u30a3\u30fc\u30d5\u30ea\u30fc\u30b9\u30c6\u30a3\u30fc\u30d5\u30ea\u30fc\u30b9\u30c6\u30a3\u30fc\u30d5\u30ea\u30fc\u30b9\u3001",
+    "status": "SUCCESS"
+  },
+  {
+    "model": "whisper-large-v3-turbo (INT8-FP16)",
+    "desc": "Turbo v3 Multilingual (INT8-FP16 Optimized for 4GB VRAM)",
+    "compute_type": "int8_float16",
+    "load_time_s": 18.22,
+    "audio_dur_s": 6.1,
+    "avg_latency_ms": 2174.8,
+    "rtf": 0.3565,
+    "speedup": 2.8,
+    "transcript_preview": "Just one addition to that, Steve, is that we started earlier on the wood-recoate",
+    "status": "SUCCESS"
+  },
+  {
+    "model": "whisper-large-v3-turbo (FP16)",
+    "desc": "Turbo v3 Multilingual (FP16)",
+    "compute_type": "float16",
+    "status": "FAILED",
+    "error": "CUDA Out Of Memory (Exceeds 4GB VRAM; requires INT8-FP16)"
+  }
+]

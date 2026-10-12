@@ -1,0 +1,493 @@
+{
+  "total_calls": 48,
+  "overall_accuracy": 0.7916666666666666,
+  "english_accuracy": 0.7916666666666666,
+  "japanese_accuracy": 0.7916666666666666,
+  "average_latency_ms": 1392.8142125029506,
+  "sarcasm_recall": 0.16666666666666666,
+  "sarcasm_false_positive_rate": 0.047619047619047616,
+  "english_results": [
+    {
+      "id": "EN_SAT_01",
+      "lang": "en",
+      "expected": "satisfaction_gratitude",
+      "predicted": "satisfaction_gratitude",
+      "confidence": 0.9934,
+      "sarcasm_p": 0.0006,
+      "match": true,
+      "latency_ms": 6410.9327000333
+    },
+    {
+      "id": "EN_SAT_02",
+      "lang": "en",
+      "expected": "satisfaction_gratitude",
+      "predicted": "satisfaction_gratitude",
+      "confidence": 0.9953,
+      "sarcasm_p": 0.0011,
+      "match": true,
+      "latency_ms": 1728.0064999358729
+    },
+    {
+      "id": "EN_SAT_03",
+      "lang": "en",
+      "expected": "satisfaction_gratitude",
+      "predicted": "satisfaction_gratitude",
+      "confidence": 0.9044,
+      "sarcasm_p": 0.0002,
+      "match": true,
+      "latency_ms": 1242.6042000297457
+    },
+    {
+      "id": "EN_NEU_01",
+      "lang": "en",
+      "expected": "neutral_inquiry",
+      "predicted": "neutral_inquiry",
+      "confidence": 0.9127,
+      "sarcasm_p": 0.0001,
+      "match": true,
+      "latency_ms": 1242.5434000324458
+    },
+    {
+      "id": "EN_NEU_02",
+      "lang": "en",
+      "expected": "neutral_inquiry",
+      "predicted": "neutral_inquiry",
+      "confidence": 0.8781,
+      "sarcasm_p": 0.0,
+      "match": true,
+      "latency_ms": 1233.0489000305533
+    },
+    {
+      "id": "EN_NEU_03",
+      "lang": "en",
+      "expected": "neutral_inquiry",
+      "predicted": "neutral_inquiry",
+      "confidence": 0.749,
+      "sarcasm_p": 0.0004,
+      "match": true,
+      "latency_ms": 1220.3403000021353
+    },
+    {
+      "id": "EN_FRU_01",
+      "lang": "en",
+      "expected": "frustration_irritation",
+      "predicted": "frustration_irritation",
+      "confidence": 0.6043,
+      "sarcasm_p": 0.0026,
+      "match": true,
+      "latency_ms": 1262.892400030978
+    },
+    {
+      "id": "EN_FRU_02",
+      "lang": "en",
+      "expected": "frustration_irritation",
+      "predicted": "frustration_irritation",
+      "confidence": 0.9841,
+      "sarcasm_p": 0.022,
+      "match": true,
+      "latency_ms": 1258.7045000400394
+    },
+    {
+      "id": "EN_FRU_03",
+      "lang": "en",
+      "expected": "frustration_irritation",
+      "predicted": "frustration_irritation",
+      "confidence": 0.6169,
+      "sarcasm_p": 0.0528,
+      "match": true,
+      "latency_ms": 1209.3217000365257
+    },
+    {
+      "id": "EN_OUT_01",
+      "lang": "en",
+      "expected": "outrage_hostility",
+      "predicted": "frustration_irritation",
+      "confidence": 0.2703,
+      "sarcasm_p": 0.1404,
+      "match": false,
+      "latency_ms": 1266.026199911721
+    },
+    {
+      "id": "EN_OUT_02",
+      "lang": "en",
+      "expected": "outrage_hostility",
+      "predicted": "outrage_hostility",
+      "confidence": 0.9846,
+      "sarcasm_p": 0.0389,
+      "match": true,
+      "latency_ms": 1225.60689994134
+    },
+    {
+      "id": "EN_OUT_03",
+      "lang": "en",
+      "expected": "outrage_hostility",
+      "predicted": "outrage_hostility",
+      "confidence": 0.9611,
+      "sarcasm_p": 0.6284,
+      "match": true,
+      "latency_ms": 1256.0444000409916
+    },
+    {
+      "id": "EN_DIS_01",
+      "lang": "en",
+      "expected": "disappointed_sad",
+      "predicted": "disappointed_sad",
+      "confidence": 0.9914,
+      "sarcasm_p": 0.0095,
+      "match": true,
+      "latency_ms": 1260.1233000168577
+    },
+    {
+      "id": "EN_DIS_02",
+      "lang": "en",
+      "expected": "disappointed_sad",
+      "predicted": "disappointed_sad",
+      "confidence": 0.9914,
+      "sarcasm_p": 0.0016,
+      "match": true,
+      "latency_ms": 1222.4830999039114
+    },
+    {
+      "id": "EN_DIS_03",
+      "lang": "en",
+      "expected": "disappointed_sad",
+      "predicted": "disappointed_sad",
+      "confidence": 0.9479,
+      "sarcasm_p": 0.0003,
+      "match": true,
+      "latency_ms": 1218.8537999754772
+    },
+    {
+      "id": "EN_SAR_01",
+      "lang": "en",
+      "expected": "sarcasm_passive_aggression",
+      "predicted": "sarcasm_passive_aggression",
+      "confidence": 0.4663,
+      "sarcasm_p": 0.3616,
+      "match": true,
+      "latency_ms": 1275.597900035791
+    },
+    {
+      "id": "EN_SAR_02",
+      "lang": "en",
+      "expected": "sarcasm_passive_aggression",
+      "predicted": "satisfaction_gratitude",
+      "confidence": 0.9994,
+      "sarcasm_p": 0.0642,
+      "match": false,
+      "latency_ms": 1233.0596999963745
+    },
+    {
+      "id": "EN_SAR_03",
+      "lang": "en",
+      "expected": "sarcasm_passive_aggression",
+      "predicted": "sarcasm_passive_aggression",
+      "confidence": 0.933,
+      "sarcasm_p": 0.1239,
+      "match": true,
+      "latency_ms": 1225.4792000167072
+    },
+    {
+      "id": "EN_ANX_01",
+      "lang": "en",
+      "expected": "anxiety_confusion",
+      "predicted": "neutral_inquiry",
+      "confidence": 0.2882,
+      "sarcasm_p": 0.023,
+      "match": false,
+      "latency_ms": 1277.731499983929
+    },
+    {
+      "id": "EN_ANX_02",
+      "lang": "en",
+      "expected": "anxiety_confusion",
+      "predicted": "anxiety_confusion",
+      "confidence": 0.8301,
+      "sarcasm_p": 0.0255,
+      "match": true,
+      "latency_ms": 1278.6112999310717
+    },
+    {
+      "id": "EN_ANX_03",
+      "lang": "en",
+      "expected": "anxiety_confusion",
+      "predicted": "frustration_irritation",
+      "confidence": 0.2402,
+      "sarcasm_p": 0.0188,
+      "match": false,
+      "latency_ms": 1269.8682000627741
+    },
+    {
+      "id": "EN_URG_01",
+      "lang": "en",
+      "expected": "urgency_panic",
+      "predicted": "urgency_panic",
+      "confidence": 0.8483,
+      "sarcasm_p": 0.3465,
+      "match": true,
+      "latency_ms": 1223.3711000299081
+    },
+    {
+      "id": "EN_URG_02",
+      "lang": "en",
+      "expected": "urgency_panic",
+      "predicted": "outrage_hostility",
+      "confidence": 0.983,
+      "sarcasm_p": 0.1932,
+      "match": false,
+      "latency_ms": 1289.5471999654546
+    },
+    {
+      "id": "EN_URG_03",
+      "lang": "en",
+      "expected": "urgency_panic",
+      "predicted": "urgency_panic",
+      "confidence": 0.2872,
+      "sarcasm_p": 0.0019,
+      "match": true,
+      "latency_ms": 1225.7583999307826
+    }
+  ],
+  "japanese_results": [
+    {
+      "id": "JA_SAT_01",
+      "lang": "ja",
+      "expected": "satisfaction_gratitude",
+      "predicted": "satisfaction_gratitude",
+      "confidence": 0.9943,
+      "sarcasm_p": 0.0,
+      "match": true,
+      "latency_ms": 1426.6776000149548
+    },
+    {
+      "id": "JA_SAT_02",
+      "lang": "ja",
+      "expected": "satisfaction_gratitude",
+      "predicted": "satisfaction_gratitude",
+      "confidence": 0.7607,
+      "sarcasm_p": 0.0017,
+      "match": true,
+      "latency_ms": 1293.182999943383
+    },
+    {
+      "id": "JA_SAT_03",
+      "lang": "ja",
+      "expected": "satisfaction_gratitude",
+      "predicted": "satisfaction_gratitude",
+      "confidence": 0.9952,
+      "sarcasm_p": 0.0001,
+      "match": true,
+      "latency_ms": 1299.6616000309587
+    },
+    {
+      "id": "JA_NEU_01",
+      "lang": "ja",
+      "expected": "neutral_inquiry",
+      "predicted": "neutral_inquiry",
+      "confidence": 0.7274,
+      "sarcasm_p": 0.0007,
+      "match": true,
+      "latency_ms": 1272.5284000625834
+    },
+    {
+      "id": "JA_NEU_02",
+      "lang": "ja",
+      "expected": "neutral_inquiry",
+      "predicted": "neutral_inquiry",
+      "confidence": 0.6475,
+      "sarcasm_p": 0.0001,
+      "match": true,
+      "latency_ms": 1266.780599951744
+    },
+    {
+      "id": "JA_NEU_03",
+      "lang": "ja",
+      "expected": "neutral_inquiry",
+      "predicted": "neutral_inquiry",
+      "confidence": 0.6225,
+      "sarcasm_p": 0.0002,
+      "match": true,
+      "latency_ms": 1260.0389999570325
+    },
+    {
+      "id": "JA_FRU_01",
+      "lang": "ja",
+      "expected": "frustration_irritation",
+      "predicted": "frustration_irritation",
+      "confidence": 0.9169,
+      "sarcasm_p": 0.0444,
+      "match": true,
+      "latency_ms": 1281.86290001031
+    },
+    {
+      "id": "JA_FRU_02",
+      "lang": "ja",
+      "expected": "frustration_irritation",
+      "predicted": "frustration_irritation",
+      "confidence": 0.9635,
+      "sarcasm_p": 0.0125,
+      "match": true,
+      "latency_ms": 1291.821200051345
+    },
+    {
+      "id": "JA_FRU_03",
+      "lang": "ja",
+      "expected": "frustration_irritation",
+      "predicted": "frustration_irritation",
+      "confidence": 0.9735,
+      "sarcasm_p": 0.0615,
+      "match": true,
+      "latency_ms": 1274.7784000821412
+    },
+    {
+      "id": "JA_OUT_01",
+      "lang": "ja",
+      "expected": "outrage_hostility",
+      "predicted": "frustration_irritation",
+      "confidence": 0.4161,
+      "sarcasm_p": 0.0603,
+      "match": false,
+      "latency_ms": 1397.8370999684557
+    },
+    {
+      "id": "JA_OUT_02",
+      "lang": "ja",
+      "expected": "outrage_hostility",
+      "predicted": "outrage_hostility",
+      "confidence": 0.9818,
+      "sarcasm_p": 0.0973,
+      "match": true,
+      "latency_ms": 1296.3562000077218
+    },
+    {
+      "id": "JA_OUT_03",
+      "lang": "ja",
+      "expected": "outrage_hostility",
+      "predicted": "outrage_hostility",
+      "confidence": 0.5771,
+      "sarcasm_p": 0.7865,
+      "match": true,
+      "latency_ms": 1283.0791999585927
+    },
+    {
+      "id": "JA_DIS_01",
+      "lang": "ja",
+      "expected": "disappointed_sad",
+      "predicted": "disappointed_sad",
+      "confidence": 0.9993,
+      "sarcasm_p": 0.0017,
+      "match": true,
+      "latency_ms": 1287.8499999642372
+    },
+    {
+      "id": "JA_DIS_02",
+      "lang": "ja",
+      "expected": "disappointed_sad",
+      "predicted": "disappointed_sad",
+      "confidence": 0.9413,
+      "sarcasm_p": 0.0338,
+      "match": true,
+      "latency_ms": 1275.2361999591812
+    },
+    {
+      "id": "JA_DIS_03",
+      "lang": "ja",
+      "expected": "disappointed_sad",
+      "predicted": "frustration_irritation",
+      "confidence": 0.4692,
+      "sarcasm_p": 0.0094,
+      "match": false,
+      "latency_ms": 1277.5261000497267
+    },
+    {
+      "id": "JA_SAR_01",
+      "lang": "ja",
+      "expected": "sarcasm_passive_aggression",
+      "predicted": "outrage_hostility",
+      "confidence": 0.6628,
+      "sarcasm_p": 0.6744,
+      "match": false,
+      "latency_ms": 1303.829099982977
+    },
+    {
+      "id": "JA_SAR_02",
+      "lang": "ja",
+      "expected": "sarcasm_passive_aggression",
+      "predicted": "satisfaction_gratitude",
+      "confidence": 0.9505,
+      "sarcasm_p": 0.101,
+      "match": false,
+      "latency_ms": 1273.9895000122488
+    },
+    {
+      "id": "JA_SAR_03",
+      "lang": "ja",
+      "expected": "sarcasm_passive_aggression",
+      "predicted": "sarcasm_passive_aggression",
+      "confidence": 0.6496,
+      "sarcasm_p": 0.0363,
+      "match": true,
+      "latency_ms": 1294.9899000814185
+    },
+    {
+      "id": "JA_ANX_01",
+      "lang": "ja",
+      "expected": "anxiety_confusion",
+      "predicted": "anxiety_confusion",
+      "confidence": 0.5782,
+      "sarcasm_p": 0.0135,
+      "match": true,
+      "latency_ms": 1382.6879999833182
+    },
+    {
+      "id": "JA_ANX_02",
+      "lang": "ja",
+      "expected": "anxiety_confusion",
+      "predicted": "anxiety_confusion",
+      "confidence": 0.8167,
+      "sarcasm_p": 0.0053,
+      "match": true,
+      "latency_ms": 1298.506300081499
+    },
+    {
+      "id": "JA_ANX_03",
+      "lang": "ja",
+      "expected": "anxiety_confusion",
+      "predicted": "anxiety_confusion",
+      "confidence": 0.7306,
+      "sarcasm_p": 0.022,
+      "match": true,
+      "latency_ms": 1289.7802999941632
+    },
+    {
+      "id": "JA_URG_01",
+      "lang": "ja",
+      "expected": "urgency_panic",
+      "predicted": "urgency_panic",
+      "confidence": 0.8172,
+      "sarcasm_p": 0.0147,
+      "match": true,
+      "latency_ms": 1386.0113000264391
+    },
+    {
+      "id": "JA_URG_02",
+      "lang": "ja",
+      "expected": "urgency_panic",
+      "predicted": "frustration_irritation",
+      "confidence": 0.266,
+      "sarcasm_p": 0.1128,
+      "match": false,
+      "latency_ms": 1282.684399979189
+    },
+    {
+      "id": "JA_URG_03",
+      "lang": "ja",
+      "expected": "urgency_panic",
+      "predicted": "urgency_panic",
+      "confidence": 0.9497,
+      "sarcasm_p": 0.0282,
+      "match": true,
+      "latency_ms": 1300.8291000733152
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "model": "whisper-small.en",
+    "desc": "English STT (Small .en INT8)",
+    "language": "en",
+    "audio_dur_s": 6.1,
+    "load_time_s": 4.39,
+    "avg_latency_ms": 916.0,
+    "rtf": 0.1502,
+    "speedup": 6.7,
+    "transcript": "Just one addition to that, Steve, is that we started earlier on the wood-free coated sites."
+  },
+  {
+    "model": "kotoba-whisper-v2.0",
+    "desc": "Japanese STT (Kotoba v2.0 Distilled Large-v3 INT8)",
+    "language": "ja",
+    "audio_dur_s": 7.19,
+    "load_time_s": 9.47,
+    "avg_latency_ms": 2313.5,
+    "rtf": 0.3218,
+    "speedup": 3.1,
+    "transcript": "今も相手にロンバルトの方に肩腰で握られてもすぐそも流れを切る引き込み返しに切り替えたという"
+  },
+  {
+    "model": "whisper-large-v3-turbo (EN)",
+    "desc": "Multilingual Turbo (EN Audio INT8)",
+    "language": "en",
+    "audio_dur_s": 6.1,
+    "load_time_s": 8.38,
+    "avg_latency_ms": 2243.8,
+    "rtf": 0.3678,
+    "speedup": 2.7,
+    "transcript": "Just one addition to that, Steve, is that we started earlier on the wood-recoated side."
+  },
+  {
+    "model": "whisper-large-v3-turbo (JA)",
+    "desc": "Multilingual Turbo (JA Audio INT8)",
+    "language": "ja",
+    "audio_dur_s": 7.19,
+    "load_time_s": 9.22,
+    "avg_latency_ms": 2470.6,
+    "rtf": 0.3437,
+    "speedup": 2.9,
+    "transcript": "今も相手にロンバルトの方に肩腰で握られてもすぐ流れを切る引き込み返しに切り替えたと。"
+  }
+]

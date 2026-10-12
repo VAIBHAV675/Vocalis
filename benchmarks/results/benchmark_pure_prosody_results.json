@@ -1,0 +1,1628 @@
+{
+  "overall_accuracy": 0.13333333333333333,
+  "english_accuracy": 0.13333333333333333,
+  "japanese_accuracy": 0.13333333333333333,
+  "average_latency_ms": 1229.4976900021236,
+  "records": [
+    {
+      "sample_id": "en_ib_sample_01",
+      "language": "en",
+      "transcript": "I'll talk a little more about that in a few minutes.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.424,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 2352.600699989125,
+      "prosody": {
+        "duration_sec": 3.5400625,
+        "pitch_str": "145.6 Hz (std: 83.2 Hz, natural melodic modulation)",
+        "energy_str": "69.4 dB (moderate baseline business volume)",
+        "tempo_str": "5.1 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 145.6066415715407,
+          "std_f0": 83.22377320404357,
+          "rms_db": 69.44368673205135,
+          "syll_rate": 5.084655991243093,
+          "centroid": 934.108316628806,
+          "flatness": 0.0006549625541083515
+        },
+        "latency_ms": 6139.438800048083
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_02",
+      "language": "en",
+      "transcript": "Just, just, just one addition to that, uh, Steve, is that we, we started earlier on the, on the wood-free coated side.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3496,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1226.826199912466,
+      "prosody": {
+        "duration_sec": 6.1004375,
+        "pitch_str": "127.5 Hz (std: 46.0 Hz, downward falling terminal contour)",
+        "energy_str": "75.5 dB (moderate baseline business volume)",
+        "tempo_str": "7.0 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 127.45609031863677,
+          "std_f0": 45.98203179531376,
+          "rms_db": 75.46910581492347,
+          "syll_rate": 7.048674787668917,
+          "centroid": 920.3224895042699,
+          "flatness": 0.00017707400547806174
+        },
+        "latency_ms": 57.13309999555349
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_03",
+      "language": "en",
+      "transcript": "Please go ahead sir.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.2812,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1174.046600004658,
+      "prosody": {
+        "duration_sec": 3.1800625,
+        "pitch_str": "209.7 Hz (std: 115.0 Hz, downward falling terminal contour)",
+        "energy_str": "62.3 dB (moderate baseline business volume)",
+        "tempo_str": "3.5 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 209.74250078292684,
+          "std_f0": 114.95991538954452,
+          "rms_db": 62.31824753618024,
+          "syll_rate": 3.4590515123523518,
+          "centroid": 1438.0780923273653,
+          "flatness": 0.0028918790630996227
+        },
+        "latency_ms": 34.49769993312657
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_04",
+      "language": "en",
+      "transcript": "and it continues to go inaudible, critical companies and organizations that we partner with us to continue to drive our innovation.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.4396,
+      "sarcasm_p": 0.0096,
+      "match": false,
+      "latency_ms": 1203.6523999413475,
+      "prosody": {
+        "duration_sec": 11.3401875,
+        "pitch_str": "203.9 Hz (std: 50.3 Hz, downward falling terminal contour)",
+        "energy_str": "69.2 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 203.92601678572174,
+          "std_f0": 50.307473753391335,
+          "rms_db": 69.23570872227812,
+          "syll_rate": 7.054557078531549,
+          "centroid": 1425.8122947970123,
+          "flatness": 0.0031349030323326588
+        },
+        "latency_ms": 114.92880003061146
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_05",
+      "language": "en",
+      "transcript": "But overall, over the year, as m as mentioned, we're, we uh…",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.3391,
+      "sarcasm_p": 0.0007,
+      "match": false,
+      "latency_ms": 1199.5063000358641,
+      "prosody": {
+        "duration_sec": 3.7000625,
+        "pitch_str": "139.0 Hz (std: 69.0 Hz, rising intonation / questioning / tension)",
+        "energy_str": "73.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.0 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 139.02500384061193,
+          "std_f0": 68.95404350859795,
+          "rms_db": 73.25893351734402,
+          "syll_rate": 7.026908329251195,
+          "centroid": 1347.799017632941,
+          "flatness": 0.006199148017913103
+        },
+        "latency_ms": 38.226100034080446
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_06",
+      "language": "en",
+      "transcript": "Uh, in terms of uh, uh, other things that are going on within the business, although we're focused on uh, the textiles and the c- and the construction, uh we also have a number of other agreements in place, where we're developing uh, through Steve's team, uh things like, uh materials for the packaging industry, and uh, we're very pleased to be working with some of the large dispatching companies that are ou- are out there.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "satisfaction_gratitude",
+      "confidence": 0.2119,
+      "sarcasm_p": 0.0001,
+      "match": true,
+      "latency_ms": 1442.9504999425262,
+      "prosody": {
+        "duration_sec": 23.6800625,
+        "pitch_str": "141.6 Hz (std: 80.7 Hz, natural melodic modulation)",
+        "energy_str": "72.2 dB (moderate baseline business volume)",
+        "tempo_str": "7.3 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 141.59867763526586,
+          "std_f0": 80.71179192613275,
+          "rms_db": 72.2155344551633,
+          "syll_rate": 7.305723960821473,
+          "centroid": 1966.8263264234372,
+          "flatness": 0.016102692112326622
+        },
+        "latency_ms": 253.16409999504685
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_07",
+      "language": "en",
+      "transcript": "Retained billings in the fourth quarter amounted to 133 million, reflecting a net retention rate of 105%.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.4934,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1213.2081999443471,
+      "prosody": {
+        "duration_sec": 7.6,
+        "pitch_str": "161.0 Hz (std: 71.4 Hz, downward falling terminal contour)",
+        "energy_str": "77.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 161.04382682118504,
+          "std_f0": 71.38482712091705,
+          "rms_db": 77.3214782547973,
+          "syll_rate": 7.5,
+          "centroid": 1382.1901029326484,
+          "flatness": 0.00017252523684874177
+        },
+        "latency_ms": 65.34550001379102
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_08",
+      "language": "en",
+      "transcript": "The share of Icee Packages reached to 32% in Turkey.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.9688,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1183.782699983567,
+      "prosody": {
+        "duration_sec": 4.3601875,
+        "pitch_str": "160.3 Hz (std: 48.6 Hz, natural melodic modulation)",
+        "energy_str": "70.5 dB (moderate baseline business volume)",
+        "tempo_str": "7.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 160.33660586176183,
+          "std_f0": 48.606997434529106,
+          "rms_db": 70.5475524065329,
+          "syll_rate": 7.568481860011754,
+          "centroid": 1456.897106661835,
+          "flatness": 0.0002534489904064685
+        },
+        "latency_ms": 45.05509999580681
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_09",
+      "language": "en",
+      "transcript": "So, we've gotta look at what this is relative, so the big growth here is Other Asia, and that is China, effectively.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.4256,
+      "sarcasm_p": 0.0002,
+      "match": false,
+      "latency_ms": 1207.855899934657,
+      "prosody": {
+        "duration_sec": 6.5399375,
+        "pitch_str": "127.4 Hz (std: 42.8 Hz, downward falling terminal contour)",
+        "energy_str": "70.2 dB (moderate baseline business volume)",
+        "tempo_str": "6.9 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 127.42250318083968,
+          "std_f0": 42.77553742734487,
+          "rms_db": 70.18160797316189,
+          "syll_rate": 6.8807997018320135,
+          "centroid": 1213.158840778666,
+          "flatness": 0.007177028339356184
+        },
+        "latency_ms": 56.42549996264279
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_10",
+      "language": "en",
+      "transcript": "In particular driven for the same reasons that you highlighted.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.4443,
+      "sarcasm_p": 0.0001,
+      "match": false,
+      "latency_ms": 1176.1207000818104,
+      "prosody": {
+        "duration_sec": 8.48,
+        "pitch_str": "159.0 Hz (std: 41.0 Hz, natural melodic modulation)",
+        "energy_str": "76.9 dB (moderate baseline business volume)",
+        "tempo_str": "7.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 158.95482479905925,
+          "std_f0": 41.00396270998094,
+          "rms_db": 76.85224276480425,
+          "syll_rate": 7.429245283018868,
+          "centroid": 868.3735177941652,
+          "flatness": 0.00028862530598416924
+        },
+        "latency_ms": 74.20789997559041
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_11",
+      "language": "en",
+      "transcript": "We will keep this healthy balance sheet while doing this growth.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3997,
+      "sarcasm_p": 0.0012,
+      "match": false,
+      "latency_ms": 1186.470599961467,
+      "prosody": {
+        "duration_sec": 3.8799375,
+        "pitch_str": "143.0 Hz (std: 68.6 Hz, downward falling terminal contour)",
+        "energy_str": "66.6 dB (moderate baseline business volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 142.99479797586034,
+          "std_f0": 68.57278043663096,
+          "rms_db": 66.63924129644765,
+          "syll_rate": 8.247555534077547,
+          "centroid": 1320.822309388809,
+          "flatness": 0.0005938506801612675
+        },
+        "latency_ms": 43.08089998085052
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_12",
+      "language": "en",
+      "transcript": "On July 12, we show non interest expenses for the quarter, which had been, which had remained very much under control, decreasing 0.4% quarter over quarter, while the efficiency ratio improved by five percentage points.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.9969,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1273.466799990274,
+      "prosody": {
+        "duration_sec": 17.2600625,
+        "pitch_str": "189.5 Hz (std: 90.1 Hz, natural melodic modulation)",
+        "energy_str": "76.0 dB (moderate baseline business volume)",
+        "tempo_str": "6.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 189.4933294981022,
+          "std_f0": 90.11635144051222,
+          "rms_db": 75.98511729993875,
+          "syll_rate": 6.720717262756146,
+          "centroid": 1296.3405462992002,
+          "flatness": 0.003628672333434224
+        },
+        "latency_ms": 165.75879999436438
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_13",
+      "language": "en",
+      "transcript": "If we look at the top line performance across the sexment…",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3454,
+      "sarcasm_p": 0.0002,
+      "match": false,
+      "latency_ms": 1188.1007000338286,
+      "prosody": {
+        "duration_sec": 6.0200625,
+        "pitch_str": "169.0 Hz (std: 90.1 Hz, natural melodic modulation)",
+        "energy_str": "72.8 dB (moderate baseline business volume)",
+        "tempo_str": "7.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 169.03840612761678,
+          "std_f0": 90.10592936455998,
+          "rms_db": 72.82402365531033,
+          "syll_rate": 7.475005450524808,
+          "centroid": 1561.9752144820282,
+          "flatness": 0.0013777022249996662
+        },
+        "latency_ms": 56.81780003942549
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_14",
+      "language": "en",
+      "transcript": "So, we've got two levels of exchange rate we're working with here.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3336,
+      "sarcasm_p": 0.0002,
+      "match": false,
+      "latency_ms": 1196.0189000237733,
+      "prosody": {
+        "duration_sec": 4.36,
+        "pitch_str": "126.4 Hz (std: 57.6 Hz, downward falling terminal contour)",
+        "energy_str": "60.6 dB (moderate baseline business volume)",
+        "tempo_str": "6.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 126.44724466861697,
+          "std_f0": 57.56279173063129,
+          "rms_db": 60.62200874908338,
+          "syll_rate": 6.192660550458715,
+          "centroid": 1214.061696854328,
+          "flatness": 0.01566915027797222
+        },
+        "latency_ms": 43.688499950803816
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_15",
+      "language": "en",
+      "transcript": "Uh, we have, uh, negative like for like of 2.1, mainly, as commented, given the dragging effect of a bad first half.",
+      "expected_emotion": "disappointed_sad",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.8964,
+      "sarcasm_p": 0.0012,
+      "match": true,
+      "latency_ms": 1210.7562000164762,
+      "prosody": {
+        "duration_sec": 10.960125,
+        "pitch_str": "144.5 Hz (std: 64.3 Hz, natural melodic modulation)",
+        "energy_str": "75.0 dB (moderate baseline business volume)",
+        "tempo_str": "6.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 144.50011568161696,
+          "std_f0": 64.34683135341652,
+          "rms_db": 74.9904864541862,
+          "syll_rate": 6.113068965910517,
+          "centroid": 1002.154255149732,
+          "flatness": 0.00046350734191946685
+        },
+        "latency_ms": 102.95959992799908
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_16",
+      "language": "en",
+      "transcript": "I- I would say both effects, higher delivers in Super Tucano and the, uh, adjustments in the contracts lead us to this 25% margin in Q2.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3861,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1254.6837000409141,
+      "prosody": {
+        "duration_sec": 11.9000625,
+        "pitch_str": "138.5 Hz (std: 58.6 Hz, natural melodic modulation)",
+        "energy_str": "65.9 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 138.51586471245298,
+          "std_f0": 58.55126177464251,
+          "rms_db": 65.85816933949124,
+          "syll_rate": 7.058786455953487,
+          "centroid": 1457.5199184274366,
+          "flatness": 0.014087092131376266
+        },
+        "latency_ms": 122.02869995962828
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_17",
+      "language": "en",
+      "transcript": "1.2 percentage point rise in payroll and outsource staff expenses and 0.8 percentage point rise in other OpEx item, excluding the cost inventory sold and depreciation, and amortization.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "confidence": 0.8059,
+      "sarcasm_p": 0.0,
+      "match": true,
+      "latency_ms": 1256.9798999466002,
+      "prosody": {
+        "duration_sec": 13.9600625,
+        "pitch_str": "126.7 Hz (std: 47.5 Hz, natural melodic modulation)",
+        "energy_str": "61.1 dB (moderate baseline business volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 126.73644648720186,
+          "std_f0": 47.49067402825465,
+          "rms_db": 61.077318199984504,
+          "syll_rate": 8.166152551251114,
+          "centroid": 798.0573394298962,
+          "flatness": 0.0006616977625526488
+        },
+        "latency_ms": 119.30509994272143
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_18",
+      "language": "en",
+      "transcript": "Pleasure to be here with you talking about the Q1 results.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.5998,
+      "sarcasm_p": 0.0003,
+      "match": false,
+      "latency_ms": 1184.8164000548422,
+      "prosody": {
+        "duration_sec": 3.660125,
+        "pitch_str": "167.8 Hz (std: 84.1 Hz, downward falling terminal contour)",
+        "energy_str": "64.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.9 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 167.81120798940182,
+          "std_f0": 84.11045956391231,
+          "rms_db": 64.32002892993339,
+          "syll_rate": 7.923226665755951,
+          "centroid": 1136.962294079964,
+          "flatness": 0.00028106439276598394
+        },
+        "latency_ms": 37.501499988138676
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_19",
+      "language": "en",
+      "transcript": "The current ESG linked syndicated credit facility is a confirmation of our ambition to expanding our industry leadership in sustainability.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "neutral_inquiry",
+      "confidence": 0.3962,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1192.9247999796644,
+      "prosody": {
+        "duration_sec": 10.3800625,
+        "pitch_str": "170.8 Hz (std: 95.8 Hz, natural melodic modulation)",
+        "energy_str": "62.6 dB (moderate baseline business volume)",
+        "tempo_str": "3.8 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 170.7614533980993,
+          "std_f0": 95.84667646538122,
+          "rms_db": 62.60430763029331,
+          "syll_rate": 3.757202810676718,
+          "centroid": 1495.9932419225581,
+          "flatness": 0.003034191904589534
+        },
+        "latency_ms": 94.15499994065613
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_20",
+      "language": "en",
+      "transcript": "In the U.S. we've added skip gear two to our water capacity and the U.S interior department recently kicked off the process for the New York bites.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.4116,
+      "sarcasm_p": 0.0017,
+      "match": false,
+      "latency_ms": 1251.1771999998018,
+      "prosody": {
+        "duration_sec": 8.04,
+        "pitch_str": "146.1 Hz (std: 59.2 Hz, natural melodic modulation)",
+        "energy_str": "63.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 146.13854782502744,
+          "std_f0": 59.24624960412183,
+          "rms_db": 63.26948271743088,
+          "syll_rate": 7.089552238805971,
+          "centroid": 1767.8095582797241,
+          "flatness": 0.024097273126244545
+        },
+        "latency_ms": 68.36389994714409
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_21",
+      "language": "en",
+      "transcript": "Would that impact the finding the successor of the chairman.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.9613,
+      "sarcasm_p": 0.0005,
+      "match": false,
+      "latency_ms": 1188.241200055927,
+      "prosody": {
+        "duration_sec": 4.2600625,
+        "pitch_str": "159.1 Hz (std: 49.5 Hz, downward falling terminal contour)",
+        "energy_str": "81.8 dB (high intensity / elevated volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 159.10297539480808,
+          "std_f0": 49.49011922865299,
+          "rms_db": 81.78975403090826,
+          "syll_rate": 8.215841903727938,
+          "centroid": 1453.0135209502878,
+          "flatness": 0.0009878015844151378
+        },
+        "latency_ms": 48.721699975430965
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_22",
+      "language": "en",
+      "transcript": "Turning to slide six, during the fourth quarter of 2021, we took delivery of the remaining four LNG carriers, namely the inaudible.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.4039,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1216.256199986674,
+      "prosody": {
+        "duration_sec": 11.2600625,
+        "pitch_str": "168.4 Hz (std: 95.1 Hz, rising intonation / questioning / tension)",
+        "energy_str": "81.4 dB (high intensity / elevated volume)",
+        "tempo_str": "5.7 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 168.35132656048316,
+          "std_f0": 95.11247416201257,
+          "rms_db": 81.37300303219297,
+          "syll_rate": 5.683805041046619,
+          "centroid": 1611.1906381794674,
+          "flatness": 0.011516660451889038
+        },
+        "latency_ms": 105.99840001668781
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_23",
+      "language": "en",
+      "transcript": "A, we continue to post monetization free users as we talked about, that's still, that still the case.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.321,
+      "sarcasm_p": 0.0011,
+      "match": false,
+      "latency_ms": 1203.6218999419361,
+      "prosody": {
+        "duration_sec": 4.8600625,
+        "pitch_str": "150.5 Hz (std: 74.3 Hz, natural melodic modulation)",
+        "energy_str": "73.4 dB (moderate baseline business volume)",
+        "tempo_str": "9.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 150.50129864121288,
+          "std_f0": 74.28633421424475,
+          "rms_db": 73.40286135526873,
+          "syll_rate": 9.053381515155413,
+          "centroid": 1506.0634905452948,
+          "flatness": 0.0004459007759578526
+        },
+        "latency_ms": 47.68399999011308
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_24",
+      "language": "en",
+      "transcript": "We expect to continually generate cash in the second half of 2021 and beyond so our leverage will naturally decrease.",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.2657,
+      "sarcasm_p": 0.0025,
+      "match": false,
+      "latency_ms": 1204.5617999974638,
+      "prosody": {
+        "duration_sec": 10.2200625,
+        "pitch_str": "146.6 Hz (std: 76.7 Hz, downward falling terminal contour)",
+        "energy_str": "68.0 dB (moderate baseline business volume)",
+        "tempo_str": "6.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 146.63143169255537,
+          "std_f0": 76.66842474303368,
+          "rms_db": 67.99015746587823,
+          "syll_rate": 6.066499104090607,
+          "centroid": 1913.2884704589464,
+          "flatness": 0.02502651885151863
+        },
+        "latency_ms": 87.23059995099902
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_25",
+      "language": "en",
+      "transcript": "So I wouldn't say these 16 states, the Q4, the compound calculation in 16%, I wouldn't use these for 2002.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.3876,
+      "sarcasm_p": 0.0001,
+      "match": false,
+      "latency_ms": 1221.2366999592632,
+      "prosody": {
+        "duration_sec": 11.4200625,
+        "pitch_str": "138.8 Hz (std: 79.0 Hz, natural melodic modulation)",
+        "energy_str": "77.4 dB (moderate baseline business volume)",
+        "tempo_str": "5.7 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 138.79449514162494,
+          "std_f0": 78.97726785981885,
+          "rms_db": 77.36925479352925,
+          "syll_rate": 5.691737676567007,
+          "centroid": 893.0290241339117,
+          "flatness": 8.911014447221532e-05
+        },
+        "latency_ms": 131.1950000235811
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_26",
+      "language": "en",
+      "transcript": "We are putting transactions a day of…",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.2644,
+      "sarcasm_p": 0.0001,
+      "match": false,
+      "latency_ms": 1176.6320000169799,
+      "prosody": {
+        "duration_sec": 2.9600625,
+        "pitch_str": "120.2 Hz (std: 26.8 Hz, natural melodic modulation)",
+        "energy_str": "78.3 dB (high intensity / elevated volume)",
+        "tempo_str": "7.8 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 120.17169899164601,
+          "std_f0": 26.826717011965822,
+          "rms_db": 78.31887206736181,
+          "syll_rate": 7.770106205527755,
+          "centroid": 1668.1923426735357,
+          "flatness": 0.023349925875663757
+        },
+        "latency_ms": 36.141399992629886
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_27",
+      "language": "en",
+      "transcript": "Um, it's been a, a problem for new projects.",
+      "expected_emotion": "frustration_irritation",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.8013,
+      "sarcasm_p": 0.0037,
+      "match": false,
+      "latency_ms": 1184.8266000160947,
+      "prosody": {
+        "duration_sec": 3.42025,
+        "pitch_str": "151.1 Hz (std: 77.1 Hz, rising intonation / questioning / tension)",
+        "energy_str": "70.5 dB (moderate baseline business volume)",
+        "tempo_str": "8.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 151.14272863330967,
+          "std_f0": 77.05699796525617,
+          "rms_db": 70.5054101946692,
+          "syll_rate": 8.478912360207588,
+          "centroid": 988.070225254854,
+          "flatness": 0.0011508857132866979
+        },
+        "latency_ms": 34.688199986703694
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_28",
+      "language": "en",
+      "transcript": "That's that's as much as we can say, the decision will be announced when it's when it's ready to be announced.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3283,
+      "sarcasm_p": 0.0001,
+      "match": false,
+      "latency_ms": 1211.2665000604466,
+      "prosody": {
+        "duration_sec": 4.820125,
+        "pitch_str": "146.9 Hz (std: 81.7 Hz, natural melodic modulation)",
+        "energy_str": "65.2 dB (moderate baseline business volume)",
+        "tempo_str": "8.3 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 146.86546745187545,
+          "std_f0": 81.74411533185109,
+          "rms_db": 65.24750031374896,
+          "syll_rate": 8.298539975623038,
+          "centroid": 1285.1740544174065,
+          "flatness": 0.0004588342271745205
+        },
+        "latency_ms": 51.10989999957383
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_29",
+      "language": "en",
+      "transcript": "The first one is on the current order backlog in Europe and North America.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.4673,
+      "sarcasm_p": 0.0149,
+      "match": false,
+      "latency_ms": 1190.0460000615567,
+      "prosody": {
+        "duration_sec": 4.68,
+        "pitch_str": "147.4 Hz (std: 89.5 Hz, rising intonation / questioning / tension)",
+        "energy_str": "69.9 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 147.37395106871793,
+          "std_f0": 89.47854951469694,
+          "rms_db": 69.91496992556225,
+          "syll_rate": 7.051282051282052,
+          "centroid": 1329.4787790612986,
+          "flatness": 0.004628732800483704
+        },
+        "latency_ms": 46.396299963817
+      }
+    },
+    {
+      "sample_id": "en_ib_sample_30",
+      "language": "en",
+      "transcript": "So in relation to, to your first question, um, just how much asset rotation is in the recurring numbers I was talking about.",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "neutral_inquiry",
+      "confidence": 0.3388,
+      "sarcasm_p": 0.0,
+      "match": true,
+      "latency_ms": 1208.478600019589,
+      "prosody": {
+        "duration_sec": 9.3599375,
+        "pitch_str": "153.2 Hz (std: 78.1 Hz, downward falling terminal contour)",
+        "energy_str": "65.4 dB (moderate baseline business volume)",
+        "tempo_str": "5.8 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 153.21785127451804,
+          "std_f0": 78.09349261201906,
+          "rms_db": 65.42289584253035,
+          "syll_rate": 5.769269292663546,
+          "centroid": 1283.8859108071542,
+          "flatness": 0.000746427511330694
+        },
+        "latency_ms": 92.86889992654324
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_01",
+      "language": "ja",
+      "transcript": "今も相手にロンバルドのほうに肩口で握られてもすぐさま流れを切る引き込み返しに変えたと。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.5644,
+      "sarcasm_p": 0.0044,
+      "match": false,
+      "latency_ms": 1206.1711999122053,
+      "prosody": {
+        "duration_sec": 7.1883125,
+        "pitch_str": "147.9 Hz (std: 38.1 Hz, downward falling terminal contour)",
+        "energy_str": "72.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 147.8615720699683,
+          "std_f0": 38.05186551336775,
+          "rms_db": 72.31660962290287,
+          "syll_rate": 7.651308982462852,
+          "centroid": 1606.9382667808477,
+          "flatness": 0.029765993356704712
+        },
+        "latency_ms": 55.53680006414652
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_02",
+      "language": "ja",
+      "transcript": "僕はタクシーのことに関してはあんまりこう。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3395,
+      "sarcasm_p": 0.0148,
+      "match": false,
+      "latency_ms": 1182.9865999752656,
+      "prosody": {
+        "duration_sec": 2.9360625,
+        "pitch_str": "188.6 Hz (std: 68.6 Hz, downward falling terminal contour)",
+        "energy_str": "73.2 dB (moderate baseline business volume)",
+        "tempo_str": "6.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 188.63474117977822,
+          "std_f0": 68.59207451614564,
+          "rms_db": 73.24245651787083,
+          "syll_rate": 6.471251889222386,
+          "centroid": 2296.354068982779,
+          "flatness": 0.09808702021837234
+        },
+        "latency_ms": 29.50900001451373
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_03",
+      "language": "ja",
+      "transcript": "［バーミヤンズオンエア獲得も疑惑浮上］",
+      "expected_emotion": "anxiety_confusion",
+      "predicted_emotion": "neutral_inquiry",
+      "confidence": 0.9966,
+      "sarcasm_p": 0.0034,
+      "match": false,
+      "latency_ms": 1187.0510000735521,
+      "prosody": {
+        "duration_sec": 3.6035,
+        "pitch_str": "105.7 Hz (std: 29.0 Hz, rising intonation / questioning / tension)",
+        "energy_str": "74.2 dB (moderate baseline business volume)",
+        "tempo_str": "5.3 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 105.74960215272864,
+          "std_f0": 28.99937191192987,
+          "rms_db": 74.16142929460136,
+          "syll_rate": 5.272651588733177,
+          "centroid": 1778.4691322450224,
+          "flatness": 0.04929026588797569
+        },
+        "latency_ms": 38.57510001398623
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_04",
+      "language": "ja",
+      "transcript": "そしてもう一枚がこちら。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.5208,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1175.196300027892,
+      "prosody": {
+        "duration_sec": 3.28,
+        "pitch_str": "147.1 Hz (std: 60.8 Hz, downward falling terminal contour)",
+        "energy_str": "72.8 dB (moderate baseline business volume)",
+        "tempo_str": "7.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 147.1304122977056,
+          "std_f0": 60.8071990561416,
+          "rms_db": 72.78313077593789,
+          "syll_rate": 7.621951219512195,
+          "centroid": 1297.2382746726935,
+          "flatness": 0.010567269288003445
+        },
+        "latency_ms": 37.866099970415235
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_05",
+      "language": "ja",
+      "transcript": "積極的にお金を使うべきだと主張する政治家や省庁と支出を抑えたい財務省との間でせめぎ合いが続きます。",
+      "expected_emotion": "frustration_irritation",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.948,
+      "sarcasm_p": 0.0537,
+      "match": true,
+      "latency_ms": 1216.3313999772072,
+      "prosody": {
+        "duration_sec": 7.8464375,
+        "pitch_str": "203.6 Hz (std: 76.3 Hz, downward falling terminal contour)",
+        "energy_str": "72.7 dB (moderate baseline business volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 203.5860936576662,
+          "std_f0": 76.28761761911807,
+          "rms_db": 72.6887122388738,
+          "syll_rate": 8.156567869176298,
+          "centroid": 1731.5659949285719,
+          "flatness": 0.03338367119431496
+        },
+        "latency_ms": 68.102499935776
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_06",
+      "language": "ja",
+      "transcript": "今大会のボキの泳ぎ杉内さんはどう感じてらっしゃいますか？",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.6131,
+      "sarcasm_p": 0.0019,
+      "match": false,
+      "latency_ms": 1199.5324000017717,
+      "prosody": {
+        "duration_sec": 4.7963125,
+        "pitch_str": "150.8 Hz (std: 57.0 Hz, downward falling terminal contour)",
+        "energy_str": "71.3 dB (moderate baseline business volume)",
+        "tempo_str": "7.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 150.81851898963964,
+          "std_f0": 57.04418099991771,
+          "rms_db": 71.25547612612326,
+          "syll_rate": 7.714259652597699,
+          "centroid": 1861.6425796935366,
+          "flatness": 0.06569165736436844
+        },
+        "latency_ms": 44.454699964262545
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_07",
+      "language": "ja",
+      "transcript": "そして得点を阻止するため相手はボールを発射！",
+      "expected_emotion": "urgency_panic",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.7263,
+      "sarcasm_p": 0.0097,
+      "match": false,
+      "latency_ms": 1199.604200082831,
+      "prosody": {
+        "duration_sec": 4.64,
+        "pitch_str": "182.4 Hz (std: 104.0 Hz, natural melodic modulation)",
+        "energy_str": "74.0 dB (moderate baseline business volume)",
+        "tempo_str": "7.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 182.3942934218502,
+          "std_f0": 104.00480236255385,
+          "rms_db": 73.97900896387841,
+          "syll_rate": 7.543103448275863,
+          "centroid": 2080.717406357533,
+          "flatness": 0.05947233363986015
+        },
+        "latency_ms": 45.502400025725365
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_08",
+      "language": "ja",
+      "transcript": "やはりオウミ初の女性役員は夏目さんかな。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.4498,
+      "sarcasm_p": 0.0005,
+      "match": false,
+      "latency_ms": 1192.9216000717133,
+      "prosody": {
+        "duration_sec": 4.972375,
+        "pitch_str": "169.4 Hz (std: 60.4 Hz, downward falling terminal contour)",
+        "energy_str": "73.7 dB (moderate baseline business volume)",
+        "tempo_str": "7.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "deep / dark / chest resonance",
+        "raw_features": {
+          "mean_f0": 169.40417468597332,
+          "std_f0": 60.391351071372775,
+          "rms_db": 73.66718274343278,
+          "syll_rate": 7.441112144598908,
+          "centroid": 1188.4361212785361,
+          "flatness": 0.008664692752063274
+        },
+        "latency_ms": 47.66049992758781
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_09",
+      "language": "ja",
+      "transcript": "予定を大幅に狂わせる、交通機関の乱れ。",
+      "expected_emotion": "frustration_irritation",
+      "predicted_emotion": "outrage_hostility",
+      "confidence": 0.4548,
+      "sarcasm_p": 0.055,
+      "match": false,
+      "latency_ms": 1204.9807000439614,
+      "prosody": {
+        "duration_sec": 4.8,
+        "pitch_str": "165.1 Hz (std: 54.3 Hz, natural melodic modulation)",
+        "energy_str": "72.9 dB (moderate baseline business volume)",
+        "tempo_str": "9.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 165.08216212782372,
+          "std_f0": 54.30692057866641,
+          "rms_db": 72.85659313051019,
+          "syll_rate": 9.375,
+          "centroid": 1560.0678024386748,
+          "flatness": 0.023467982187867165
+        },
+        "latency_ms": 44.08110002987087
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_10",
+      "language": "ja",
+      "transcript": "そこから漏れ出してくるから細菌とか泥とかは外出ていけないので水だけが出てくるっていう仕組みなんですけどシンプルですけどいいですね",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.4198,
+      "sarcasm_p": 0.0013,
+      "match": false,
+      "latency_ms": 1216.534800012596,
+      "prosody": {
+        "duration_sec": 11.42,
+        "pitch_str": "129.0 Hz (std: 63.1 Hz, natural melodic modulation)",
+        "energy_str": "70.2 dB (moderate baseline business volume)",
+        "tempo_str": "6.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 128.97481248826682,
+          "std_f0": 63.137820217351596,
+          "rms_db": 70.18723372379176,
+          "syll_rate": 6.217162872154115,
+          "centroid": 1458.2667687190803,
+          "flatness": 0.017015930265188217
+        },
+        "latency_ms": 128.69409995619208
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_11",
+      "language": "ja",
+      "transcript": "今すぐチェックしてみてくださいね。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3025,
+      "sarcasm_p": 0.0002,
+      "match": false,
+      "latency_ms": 1177.2157000377774,
+      "prosody": {
+        "duration_sec": 2.671,
+        "pitch_str": "190.4 Hz (std: 87.7 Hz, downward falling terminal contour)",
+        "energy_str": "73.0 dB (moderate baseline business volume)",
+        "tempo_str": "8.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 190.41785711038082,
+          "std_f0": 87.71029549435119,
+          "rms_db": 73.0314057727021,
+          "syll_rate": 8.61100711344066,
+          "centroid": 2259.095222709561,
+          "flatness": 0.07037623971700668
+        },
+        "latency_ms": 33.36849994957447
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_12",
+      "language": "ja",
+      "transcript": "あの男と通じていたのですね？",
+      "expected_emotion": "anxiety_confusion",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.5643,
+      "sarcasm_p": 0.0067,
+      "match": false,
+      "latency_ms": 1189.6487000631168,
+      "prosody": {
+        "duration_sec": 3.04,
+        "pitch_str": "182.1 Hz (std: 110.8 Hz, rising intonation / questioning / tension)",
+        "energy_str": "68.4 dB (moderate baseline business volume)",
+        "tempo_str": "8.2 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 182.06225401650775,
+          "std_f0": 110.78167961268163,
+          "rms_db": 68.35538085021884,
+          "syll_rate": 8.223684210526315,
+          "centroid": 2184.1042752272497,
+          "flatness": 0.04448574408888817
+        },
+        "latency_ms": 36.6725999629125
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_13",
+      "language": "ja",
+      "transcript": "さてここまで直線を表す方程式がどのような直線になるかを見てきましたがここからは逆にある１点を通って傾きｍの直線がどのような方程式で表されるのかを考えてみましょう。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.4104,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1264.6882000844926,
+      "prosody": {
+        "duration_sec": 16.5303125,
+        "pitch_str": "147.6 Hz (std: 65.8 Hz, downward falling terminal contour)",
+        "energy_str": "71.6 dB (moderate baseline business volume)",
+        "tempo_str": "6.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 147.61955134796406,
+          "std_f0": 65.76627388028034,
+          "rms_db": 71.59554088998195,
+          "syll_rate": 6.109987333875266,
+          "centroid": 1587.2506467670862,
+          "flatness": 0.027576513588428497
+        },
+        "latency_ms": 156.43079997971654
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_14",
+      "language": "ja",
+      "transcript": "最後はセカンドフライで１回を三者凡退に抑えた大谷投手。",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.3459,
+      "sarcasm_p": 0.0001,
+      "match": false,
+      "latency_ms": 1201.5569999348372,
+      "prosody": {
+        "duration_sec": 4.3336875,
+        "pitch_str": "264.5 Hz (std: 72.4 Hz, rising intonation / questioning / tension)",
+        "energy_str": "73.3 dB (moderate baseline business volume)",
+        "tempo_str": "10.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 264.54137444729963,
+          "std_f0": 72.42979889371652,
+          "rms_db": 73.27997340701407,
+          "syll_rate": 10.383766711374552,
+          "centroid": 1593.6510309655946,
+          "flatness": 0.020016074180603027
+        },
+        "latency_ms": 45.83459999412298
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_15",
+      "language": "ja",
+      "transcript": "それと現実性、後半は特になんですが、ワラビーズ、オーストラリアがボールを保持する時間がほぼないですね。",
+      "expected_emotion": "disappointed_sad",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.272,
+      "sarcasm_p": 0.0008,
+      "match": true,
+      "latency_ms": 1209.9431999959052,
+      "prosody": {
+        "duration_sec": 7.0400625,
+        "pitch_str": "180.2 Hz (std: 75.5 Hz, rising intonation / questioning / tension)",
+        "energy_str": "72.9 dB (moderate baseline business volume)",
+        "tempo_str": "8.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 180.2250145028127,
+          "std_f0": 75.5449800534653,
+          "rms_db": 72.88846789235201,
+          "syll_rate": 8.664695803481857,
+          "centroid": 1578.6524572241412,
+          "flatness": 0.024852054193615913
+        },
+        "latency_ms": 74.57960001192987
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_16",
+      "language": "ja",
+      "transcript": "僕らだって意地悪で言ってるわけじゃないんです。",
+      "expected_emotion": "frustration_irritation",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3971,
+      "sarcasm_p": 0.003,
+      "match": false,
+      "latency_ms": 1188.4731999598444,
+      "prosody": {
+        "duration_sec": 4.32,
+        "pitch_str": "160.8 Hz (std: 120.7 Hz, natural melodic modulation)",
+        "energy_str": "67.6 dB (moderate baseline business volume)",
+        "tempo_str": "5.1 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 160.82606231673682,
+          "std_f0": 120.73263286699928,
+          "rms_db": 67.58381296099155,
+          "syll_rate": 5.092592592592593,
+          "centroid": 2430.590332309018,
+          "flatness": 0.11969016492366791
+        },
+        "latency_ms": 41.647799895145
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_17",
+      "language": "ja",
+      "transcript": "大相撲春場所は千秋楽、関脇の若隆景が初めての優勝を果たし地元、福島県は喜びに沸いています。",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "satisfaction_gratitude",
+      "confidence": 0.5628,
+      "sarcasm_p": 0.0,
+      "match": true,
+      "latency_ms": 1214.9036000482738,
+      "prosody": {
+        "duration_sec": 8.96,
+        "pitch_str": "112.3 Hz (std: 50.4 Hz, natural melodic modulation)",
+        "energy_str": "70.7 dB (moderate baseline business volume)",
+        "tempo_str": "9.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 112.29973902395669,
+          "std_f0": 50.44172728218114,
+          "rms_db": 70.69482032925313,
+          "syll_rate": 9.486607142857142,
+          "centroid": 1569.369258819529,
+          "flatness": 0.04317524656653404
+        },
+        "latency_ms": 79.24440002534539
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_18",
+      "language": "ja",
+      "transcript": "悔しくて涙がっていうときは見たことはあったんですけども、こういったすばらしい演技したあと、やはり坂本選手の笑顔が出る印象があったんですけれども、この涙は私もきっと本当にいろんなことを抱えて、オリンピックに向かって頑張ってきたんだろうなっていうのが、すごく感じる、こみ上げてくるような涙だったんじゃないかなと思います。",
+      "expected_emotion": "disappointed_sad",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.9868,
+      "sarcasm_p": 0.0,
+      "match": true,
+      "latency_ms": 1373.5621999949217,
+      "prosody": {
+        "duration_sec": 21.3618125,
+        "pitch_str": "252.8 Hz (std: 71.8 Hz, downward falling terminal contour)",
+        "energy_str": "71.3 dB (moderate baseline business volume)",
+        "tempo_str": "6.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 252.79559023020346,
+          "std_f0": 71.78279621379541,
+          "rms_db": 71.34738203959989,
+          "syll_rate": 6.600563505554597,
+          "centroid": 1836.6929005616544,
+          "flatness": 0.02673620730638504
+        },
+        "latency_ms": 192.10370001383126
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_19",
+      "language": "ja",
+      "transcript": "市内では抗原検査キットが不足している医療機関も増え待ったなしの状況です。",
+      "expected_emotion": "urgency_panic",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.2888,
+      "sarcasm_p": 0.0043,
+      "match": false,
+      "latency_ms": 1203.7156999576837,
+      "prosody": {
+        "duration_sec": 7.0400625,
+        "pitch_str": "163.4 Hz (std: 63.2 Hz, natural melodic modulation)",
+        "energy_str": "69.3 dB (moderate baseline business volume)",
+        "tempo_str": "6.7 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 163.4149329612154,
+          "std_f0": 63.19068911782851,
+          "rms_db": 69.25044578375007,
+          "syll_rate": 6.676077094486022,
+          "centroid": 2253.919391950035,
+          "flatness": 0.09720917046070099
+        },
+        "latency_ms": 62.014800030738115
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_20",
+      "language": "ja",
+      "transcript": "西洋画科を首席で卒業しました。",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.9746,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1189.9450999917462,
+      "prosody": {
+        "duration_sec": 3.52,
+        "pitch_str": "128.4 Hz (std: 58.1 Hz, natural melodic modulation)",
+        "energy_str": "72.8 dB (moderate baseline business volume)",
+        "tempo_str": "6.5 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 128.4395271711797,
+          "std_f0": 58.08283063936167,
+          "rms_db": 72.79342676887691,
+          "syll_rate": 6.534090909090909,
+          "centroid": 1762.7034059778157,
+          "flatness": 0.018787233158946037
+        },
+        "latency_ms": 33.95690000616014
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_21",
+      "language": "ja",
+      "transcript": "そのうち入選作が展示されているのが、こちら。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.3359,
+      "sarcasm_p": 0.0001,
+      "match": false,
+      "latency_ms": 1183.778600068763,
+      "prosody": {
+        "duration_sec": 5.2000625,
+        "pitch_str": "162.9 Hz (std: 90.9 Hz, downward falling terminal contour)",
+        "energy_str": "70.6 dB (moderate baseline business volume)",
+        "tempo_str": "7.3 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 162.86582154848492,
+          "std_f0": 90.93076458028985,
+          "rms_db": 70.5777998255235,
+          "syll_rate": 7.307604475907742,
+          "centroid": 1502.5412723384227,
+          "flatness": 0.017341699451208115
+        },
+        "latency_ms": 48.45470003783703
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_22",
+      "language": "ja",
+      "transcript": "この家に住んでいる親子とみられます。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.3254,
+      "sarcasm_p": 0.0002,
+      "match": false,
+      "latency_ms": 1181.0560999438167,
+      "prosody": {
+        "duration_sec": 3.12,
+        "pitch_str": "108.2 Hz (std: 43.0 Hz, downward falling terminal contour)",
+        "energy_str": "68.1 dB (moderate baseline business volume)",
+        "tempo_str": "5.1 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 108.23007344532628,
+          "std_f0": 43.0073736993539,
+          "rms_db": 68.0850960918431,
+          "syll_rate": 5.128205128205128,
+          "centroid": 2255.1123804363774,
+          "flatness": 0.08757366240024567
+        },
+        "latency_ms": 30.04230000078678
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_23",
+      "language": "ja",
+      "transcript": "蓬莱さん、東京ちょっと、雲がね、出てますけども、積乱雲。",
+      "expected_emotion": "anxiety_confusion",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.6481,
+      "sarcasm_p": 0.0028,
+      "match": false,
+      "latency_ms": 1200.6474999943748,
+      "prosody": {
+        "duration_sec": 3.4048125,
+        "pitch_str": "155.1 Hz (std: 65.6 Hz, downward falling terminal contour)",
+        "energy_str": "72.5 dB (moderate baseline business volume)",
+        "tempo_str": "9.4 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 155.09646174430506,
+          "std_f0": 65.56696922651156,
+          "rms_db": 72.50316545945743,
+          "syll_rate": 9.39846173614553,
+          "centroid": 1433.8163669264209,
+          "flatness": 0.03325967490673065
+        },
+        "latency_ms": 31.5299000358209
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_24",
+      "language": "ja",
+      "transcript": "ずいぶん見晴らしがよくなったのう。",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.8033,
+      "sarcasm_p": 0.0001,
+      "match": false,
+      "latency_ms": 1187.6387000083923,
+      "prosody": {
+        "duration_sec": 2.5014375,
+        "pitch_str": "229.5 Hz (std: 64.1 Hz, downward falling terminal contour)",
+        "energy_str": "73.9 dB (moderate baseline business volume)",
+        "tempo_str": "6.0 onsets/sec (steady comfortable conversational tempo)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 229.45710307069353,
+          "std_f0": 64.0911499832472,
+          "rms_db": 73.90358058778827,
+          "syll_rate": 5.996551982609999,
+          "centroid": 1874.2741688755746,
+          "flatness": 0.008896570652723312
+        },
+        "latency_ms": 26.916800066828728
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_25",
+      "language": "ja",
+      "transcript": "あとはもう１つは鉄道って信頼性がある要するに分単位で旅行ができる。",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.448,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1203.0284999636933,
+      "prosody": {
+        "duration_sec": 5.4336875,
+        "pitch_str": "188.6 Hz (std: 57.6 Hz, downward falling terminal contour)",
+        "energy_str": "71.7 dB (moderate baseline business volume)",
+        "tempo_str": "7.0 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 188.63532445537103,
+          "std_f0": 57.60316609705053,
+          "rms_db": 71.67010811153416,
+          "syll_rate": 6.993409171948148,
+          "centroid": 1532.0583055280515,
+          "flatness": 0.030871598049998283
+        },
+        "latency_ms": 45.83200009074062
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_26",
+      "language": "ja",
+      "transcript": "ご覧のとおり、午前６時からずっと夜の９時まで晴れマークが並びますね。",
+      "expected_emotion": "satisfaction_gratitude",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.3018,
+      "sarcasm_p": 0.0003,
+      "match": false,
+      "latency_ms": 1223.5679000150412,
+      "prosody": {
+        "duration_sec": 5.435375,
+        "pitch_str": "162.4 Hz (std: 72.6 Hz, downward falling terminal contour)",
+        "energy_str": "72.3 dB (moderate baseline business volume)",
+        "tempo_str": "9.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 162.40348292581845,
+          "std_f0": 72.63059574685528,
+          "rms_db": 72.31012060282643,
+          "syll_rate": 9.56695720166502,
+          "centroid": 1657.4690259828076,
+          "flatness": 0.025725487619638443
+        },
+        "latency_ms": 53.549200063571334
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_27",
+      "language": "ja",
+      "transcript": "彼展示作業のほうもやるんで成瀬さんにご挨拶だけでもと思ってこの間お会いしましたよね",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.275,
+      "sarcasm_p": 0.0,
+      "match": false,
+      "latency_ms": 1207.4097999138758,
+      "prosody": {
+        "duration_sec": 5.52,
+        "pitch_str": "116.1 Hz (std: 47.4 Hz, downward falling terminal contour)",
+        "energy_str": "70.8 dB (moderate baseline business volume)",
+        "tempo_str": "6.3 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 116.0878862285397,
+          "std_f0": 47.43693749843817,
+          "rms_db": 70.81052475617157,
+          "syll_rate": 6.340579710144928,
+          "centroid": 2018.5510806281038,
+          "flatness": 0.04853949323296547
+        },
+        "latency_ms": 53.51100000552833
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_28",
+      "language": "ja",
+      "transcript": "樹齢１３０年の八重紅",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "sarcasm_passive_aggression",
+      "confidence": 0.4158,
+      "sarcasm_p": 0.0001,
+      "match": false,
+      "latency_ms": 1191.9165999861434,
+      "prosody": {
+        "duration_sec": 2.68175,
+        "pitch_str": "133.1 Hz (std: 53.9 Hz, natural melodic modulation)",
+        "energy_str": "73.6 dB (moderate baseline business volume)",
+        "tempo_str": "8.6 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 133.0761141313779,
+          "std_f0": 53.85384352000752,
+          "rms_db": 73.64532497293655,
+          "syll_rate": 8.576489232777105,
+          "centroid": 1448.6607436657614,
+          "flatness": 0.022011395543813705
+        },
+        "latency_ms": 36.86560003552586
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_29",
+      "language": "ja",
+      "transcript": "でも、このジャーナリストが言っている言葉の中で一番僕に刺さったのはなくならないだろうという。",
+      "expected_emotion": "disappointed_sad",
+      "predicted_emotion": "frustration_irritation",
+      "confidence": 0.6294,
+      "sarcasm_p": 0.1027,
+      "match": false,
+      "latency_ms": 1212.3961000470445,
+      "prosody": {
+        "duration_sec": 7.226875,
+        "pitch_str": "115.2 Hz (std: 50.1 Hz, downward falling terminal contour)",
+        "energy_str": "70.7 dB (moderate baseline business volume)",
+        "tempo_str": "7.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "breathy / aspirated phonation",
+        "raw_features": {
+          "mean_f0": 115.21450667432326,
+          "std_f0": 50.05193395935101,
+          "rms_db": 70.70687127030119,
+          "syll_rate": 7.056992130070051,
+          "centroid": 1657.2519690557097,
+          "flatness": 0.052386436611413956
+        },
+        "latency_ms": 70.27080003172159
+      }
+    },
+    {
+      "sample_id": "ja_ib_sample_30",
+      "language": "ja",
+      "transcript": "この最初の２０分南アフリカ、データでは最初の２０分は失点が非常に少ないチームなんですが。",
+      "expected_emotion": "neutral_inquiry",
+      "predicted_emotion": "disappointed_sad",
+      "confidence": 0.9602,
+      "sarcasm_p": 0.0006,
+      "match": false,
+      "latency_ms": 1202.3459000047296,
+      "prosody": {
+        "duration_sec": 7.0150625,
+        "pitch_str": "206.6 Hz (std: 84.8 Hz, natural melodic modulation)",
+        "energy_str": "71.3 dB (moderate baseline business volume)",
+        "tempo_str": "8.1 onsets/sec (fast / rushed / tense speaking rate)",
+        "voice_quality_str": "standard modal phonation, clean harmonic structure",
+        "raw_features": {
+          "mean_f0": 206.64184451605632,
+          "std_f0": 84.80511762680196,
+          "rms_db": 71.27626459889713,
+          "syll_rate": 8.125373081137909,
+          "centroid": 1548.5620042996188,
+          "flatness": 0.027806781232357025
+        },
+        "latency_ms": 62.74870003107935
+      }
+    }
+  ]
+}
