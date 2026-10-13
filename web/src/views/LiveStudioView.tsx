@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Mic, Square, Upload, Play, Pause, Save, CheckCircle2, Sparkles, RefreshCw, Layers } from 'lucide-react';
 import { WavRecorder, formatSeconds } from '../utils/audio';
 import type { PipelineResult, SavedRecordingItem } from '../types';
+import { SENTIMENT_META, emotionToSentiment } from '../types';
 import { SegmentCard } from '../components/SegmentCard';
 import { EmotionBarChart } from '../components/EmotionBarChart';
 
@@ -420,10 +421,21 @@ export const LiveStudioView: React.FC<LiveStudioViewProps> = ({ onInspectResult 
                       <span className="text-[11px] text-slate-500 font-mono">{item.saved_at.split(' ')[0]}</span>
                     </div>
 
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-300 font-mono text-[11px]">
-                        {item.dominant_emotion} ({Math.round(item.dominant_probability * 100)}%)
-                      </span>
+                    <div className="flex items-center justify-between text-xs gap-1.5">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        {(() => {
+                          const sk = item.dominant_sentiment || emotionToSentiment(item.dominant_emotion);
+                          const sm = SENTIMENT_META[sk] || SENTIMENT_META.neutral;
+                          return (
+                            <span className={`px-2 py-0.5 rounded-md border text-[10px] font-semibold uppercase ${sm.badgeBg}`}>
+                              {sm.shortLabel}
+                            </span>
+                          );
+                        })()}
+                        <span className="px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-300 font-mono text-[11px]">
+                          {item.dominant_emotion} ({Math.round(item.dominant_probability * 100)}%)
+                        </span>
+                      </div>
 
                       <button
                         onClick={async () => {
@@ -457,7 +469,17 @@ export const LiveStudioView: React.FC<LiveStudioViewProps> = ({ onInspectResult 
               <div>
                 <span className="text-sm font-semibold text-white">Pipeline Execution Complete</span>
                 <p className="text-xs text-indigo-300">
-                  Dominant: <strong>{analysisResult.dominant_emotion}</strong> ({(analysisResult.dominant_probability * 100).toFixed(1)}%) across {analysisResult.total_segments} speech segment(s).
+                  Sentiment:{' '}
+                  <strong className="uppercase">
+                    {analysisResult.dominant_sentiment ||
+                      emotionToSentiment(
+                        analysisResult.dominant_emotion,
+                        analysisResult.sarcastic_segments_count > 0
+                      )}
+                  </strong>{' '}
+                  • Dominant Emotion: <strong>{analysisResult.dominant_emotion}</strong> (
+                  {(analysisResult.dominant_probability * 100).toFixed(1)}%) across{' '}
+                  {analysisResult.total_segments} speech segment(s).
                 </p>
               </div>
             </div>

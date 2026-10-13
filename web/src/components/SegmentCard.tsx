@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Play, Pause, ChevronDown, ChevronUp, AlertCircle, Waves, Gauge, Zap } from 'lucide-react';
-import { CANONICAL_EMOTIONS } from '../types';
+import { CANONICAL_EMOTIONS, SENTIMENT_META, emotionToSentiment, computeSentimentProbabilities } from '../types';
 import type { Segment } from '../types';
 import { formatSeconds } from '../utils/audio';
 
@@ -27,6 +27,15 @@ export const SegmentCard: React.FC<SegmentCardProps> = ({
     textColor: 'text-slate-400',
   };
 
+  const sentKey = segment.predicted_sentiment || emotionToSentiment(segment.predicted_emotion, segment.sarcasm_flag);
+  const sentimentMeta = SENTIMENT_META[sentKey] || SENTIMENT_META.neutral;
+  const sentProbs = segment.sentiment_probabilities || computeSentimentProbabilities(
+    segment.probabilities as unknown as Record<string, number>,
+    segment.sarcasm_probability,
+    segment.sarcasm_flag
+  );
+  const sentPct = Math.round((sentProbs[sentKey] || 0.5) * 100);
+
   const confidencePct = Math.round((segment.confidence <= 1 ? segment.confidence * 100 : segment.confidence));
 
   return (
@@ -38,8 +47,8 @@ export const SegmentCard: React.FC<SegmentCardProps> = ({
           : 'bg-slate-900/60 border-slate-800/80 hover:bg-slate-900 hover:border-slate-700'
       }`}
     >
-      {/* Top Header: Index, Time range, and Emotion Badge */}
-      <div className="flex items-center justify-between gap-2 mb-2.5">
+      {/* Top Header: Index, Time range, Sentiment Badge, and Emotion Badge */}
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-2.5">
         <div className="flex items-center space-x-2.5">
           <button
             onClick={(e) => {
@@ -70,10 +79,23 @@ export const SegmentCard: React.FC<SegmentCardProps> = ({
           </span>
         </div>
 
-        {/* Emotion Badge */}
-        <div className="flex items-center space-x-1.5">
+        {/* Sentiment Polarity + Fine-Grained Emotion Badges */}
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span
+            className={`text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-full font-semibold border flex items-center space-x-1.5 shadow-sm ${sentimentMeta.badgeBg}`}
+            title="3-Way Sentiment Polarity (Positive / Neutral / Negative)"
+          >
+            <span
+              className="w-2 h-2 rounded-full inline-block"
+              style={{ backgroundColor: sentimentMeta.color }}
+            />
+            <span>{sentimentMeta.shortLabel}</span>
+            <span className="font-mono opacity-80">{sentPct}%</span>
+          </span>
+
           <span
             className={`text-xs px-2.5 py-1 rounded-full font-medium border flex items-center space-x-1.5 shadow-sm ${emotionMeta.badgeBg}`}
+            title="8-Class Canonical Emotion"
           >
             <span
               className="w-2 h-2 rounded-full inline-block"

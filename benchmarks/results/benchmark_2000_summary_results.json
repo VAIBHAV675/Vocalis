@@ -15,7 +15,13 @@
       "ja_total": 1000,
       "overall_acc": 0.5315,
       "overall_correct": 1063,
-      "overall_total": 2000
+      "overall_total": 2000,
+      "en_sentiment_acc": 0.808,
+      "en_sentiment_correct": 808,
+      "ja_sentiment_acc": 0.295,
+      "ja_sentiment_correct": 295,
+      "overall_sentiment_acc": 0.5515,
+      "overall_sentiment_correct": 1103
     },
     {
       "model": "Kev-0.8B Pre-Quantized",
@@ -28,7 +34,13 @@
       "overall_acc": 0.6515,
       "overall_correct": 1303,
       "overall_total": 2000,
-      "avg_latency_ms": 712.371231250756
+      "avg_latency_ms": 712.371231250756,
+      "en_sentiment_acc": 0.834,
+      "en_sentiment_correct": 834,
+      "ja_sentiment_acc": 0.509,
+      "ja_sentiment_correct": 509,
+      "overall_sentiment_acc": 0.6715,
+      "overall_sentiment_correct": 1343
     },
     {
       "model": "Kev-4B INT4 (Q4_K_M)",
@@ -41,19 +53,31 @@
       "overall_acc": 0.6385,
       "overall_correct": 1277,
       "overall_total": 2000,
-      "avg_latency_ms": 3272.6747124525136
+      "avg_latency_ms": 3272.6747124525136,
+      "en_sentiment_acc": 0.843,
+      "en_sentiment_correct": 843,
+      "ja_sentiment_acc": 0.477,
+      "ja_sentiment_correct": 477,
+      "overall_sentiment_acc": 0.66,
+      "overall_sentiment_correct": 1320
     },
     {
-      "model": "Vocalis Production Hybrid (0.8B EN + 4B JA)",
-      "en_acc": 0.83,
-      "en_correct": 830,
+      "model": "Vocalis Production Hybrid (4B EN + 0.8B JA)",
+      "en_acc": 0.835,
+      "en_correct": 835,
       "en_total": 1000,
-      "ja_acc": 0.442,
-      "ja_correct": 442,
+      "ja_acc": 0.473,
+      "ja_correct": 473,
       "ja_total": 1000,
-      "overall_acc": 0.636,
-      "overall_correct": 1272,
-      "overall_total": 2000
+      "overall_acc": 0.654,
+      "overall_correct": 1308,
+      "overall_total": 2000,
+      "en_sentiment_acc": 0.843,
+      "en_sentiment_correct": 843,
+      "ja_sentiment_acc": 0.509,
+      "ja_sentiment_correct": 509,
+      "overall_sentiment_acc": 0.676,
+      "overall_sentiment_correct": 1352
     }
   ]
 }

@@ -7,8 +7,10 @@ def extract_prosody_features(wav_path: str) -> dict:
     Extracts self-contained prosodic and acoustic cues using librosa.
     Returns human-interpretable and LLM-ready descriptions.
     """
-    y, sr = librosa.load(wav_path, sr=16000)
-    duration = len(y) / sr
+    y_raw, sr = librosa.load(wav_path, sr=16000)
+    y_trimmed, _ = librosa.effects.trim(y_raw, top_db=25)
+    y = y_trimmed if len(y_trimmed) > int(0.25 * sr) else y_raw
+    duration = max(len(y) / sr, 0.25)
     
     # 1. Pitch (F0) using YIN
     f0 = librosa.yin(y, fmin=50, fmax=400, sr=sr)
@@ -19,9 +21,9 @@ def extract_prosody_features(wav_path: str) -> dict:
         # Contour description
         if std_pitch < 15:
             contour_desc = "flat monotonic contour"
-        elif np.mean(valid_f0[-len(valid_f0)//4:]) > np.mean(valid_f0[:len(valid_f0)//4]) + 20:
+        elif np.mean(valid_f0[- max(1, len(valid_f0)//4):]) > np.mean(valid_f0[:max(1, len(valid_f0)//4)]) + 20:
             contour_desc = "rising intonation / questioning / tension"
-        elif np.mean(valid_f0[-len(valid_f0)//4:]) < np.mean(valid_f0[:len(valid_f0)//4]) - 20:
+        elif np.mean(valid_f0[- max(1, len(valid_f0)//4):]) < np.mean(valid_f0[:max(1, len(valid_f0)//4)]) - 20:
             contour_desc = "downward falling terminal contour"
         else:
             contour_desc = "natural melodic modulation"
@@ -29,26 +31,30 @@ def extract_prosody_features(wav_path: str) -> dict:
     else:
         pitch_str = "unvoiced / whispering / low energy"
     
-    # 2. Energy (RMS dB)
+    # 2. Energy (RMS dB) on true un-normalized signal
     rms = librosa.feature.rms(y=y)[0]
     mean_rms = float(np.mean(rms))
     # dB calculation relative to full scale
     rms_db = float(20 * np.log10(mean_rms + 1e-6) + 100) # normalized ~30-90 dB scale
     if rms_db > 78:
         energy_desc = f"{rms_db:.1f} dB (high intensity / elevated volume)"
-    elif rms_db < 55:
+    elif rms_db < 68:
         energy_desc = f"{rms_db:.1f} dB (subdued / quiet / low intensity)"
     else:
         energy_desc = f"{rms_db:.1f} dB (moderate baseline business volume)"
         
-    # 3. Tempo (Onset strength / speaking rate)
+    # 3. Tempo (Onset strength / speaking rate) with normalized envelope to avoid breath/noise triggers
     onset_env = librosa.onset.onset_strength(y=y, sr=sr)
-    onsets = librosa.onset.onset_detect(onset_envelope=onset_env, sr=sr)
+    if np.max(onset_env) > 0:
+        onset_env_norm = onset_env / np.max(onset_env)
+    else:
+        onset_env_norm = onset_env
+    onsets = librosa.onset.onset_detect(onset_envelope=onset_env_norm, sr=sr, delta=0.15, wait=4)
     syll_rate = len(onsets) / max(duration, 0.5)
     if syll_rate > 6.0:
         tempo_desc = f"{syll_rate:.1f} onsets/sec (fast / rushed / tense speaking rate)"
-    elif syll_rate < 3.0:
-        tempo_desc = f"{syll_rate:.1f} onsets/sec (slow / measured / hesitant pace)"
+    elif syll_rate < 3.6:
+        tempo_desc = f"{syll_rate:.1f} onsets/sec (slow / measured / subdued pace)"
     else:
         tempo_desc = f"{syll_rate:.1f} onsets/sec (steady comfortable conversational tempo)"
         

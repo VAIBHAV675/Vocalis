@@ -151,6 +151,51 @@ flowchart LR
   7. `anxiety_confusion` — Nervous uncertainty, worried distress, hesitation, or fear.
   8. `urgency_panic` — Critical crisis, immediate freeze/stop demand, or high-arousal urgent alert.
 
+#### 📋 Exact Kev `SystemOne` Prompt & Payload Structure
+In [`backend/vocalis_segmented_pipeline.py`](backend/vocalis_segmented_pipeline.py), each spoken segment is formatted into a structured `SystemOne` request consisting of a **Tri-Modal `state` string** (`format_state()`) and the **`questions` decision schema** (`IB_QUESTIONS`):
+
+**1. Synthesized `state` Prompt (`format_state`):**
+```text
+Speaker transcript: 「I'm very happy in my life. Life is doing very good.」
+Acoustic speech emotion prior: sad (confidence: 82%)
+Prosodic acoustic features:
+- Pitch contour: 193.0 Hz (std: 49.0 Hz, downward falling terminal contour)
+- Speech tempo: 3.4 onsets/sec (slow / measured / subdued pace)
+- Energy & vocal intensity: 73.5 dB (moderate baseline business volume)
+- Voice quality: standard modal phonation, clean harmonic structure
+```
+
+**2. Complete `/v1/systemone` JSON Request Sent to `Kev-0.8B` / `Kev-4B`:**
+```json
+{
+  "state": "Speaker transcript: 「I'm very happy in my life. Life is doing very good.」\nAcoustic speech emotion prior: sad (confidence: 82%)\nProsodic acoustic features:\n- Pitch contour: 193.0 Hz (std: 49.0 Hz, downward falling terminal contour)\n- Speech tempo: 3.4 onsets/sec (slow / measured / subdued pace)\n- Energy & vocal intensity: 73.5 dB (moderate baseline business volume)\n- Voice quality: standard modal phonation, clean harmonic structure",
+  "questions": {
+    "detected_emotion": {
+      "type": "choice",
+      "instructions": "Analyze the caller's spoken statement in the full context of their vocal acoustics and delivery. Resolve any tension between the words and vocal tone (e.g. sarcasm, polite complaints, subdued relief). Classify the customer's true emotional state into one of the 8 canonical categories.",
+      "criteria": {
+        "satisfaction_gratitude": "Delight, genuine satisfaction, heartfelt gratitude, relief, happiness, warm appreciation.",
+        "neutral_inquiry": "Calm routine business inquiry, objective questions, matter-of-fact tone, operational transaction queries.",
+        "frustration_irritation": "Annoyance, impatient complaints, repeated friction, irritation, vocal exasperation.",
+        "outrage_hostility": "Extreme fury, aggressive hostility, shouting, legal threats, intense confrontation.",
+        "disappointed_sad": "Sorrow, deep sadness, grief, emotional dejection, heavy sighing, depressed hopeless tone.",
+        "sarcasm_passive_aggression": "Ironic praise, mocking cynicism, polite words concealing sharp anger and contempt.",
+        "anxiety_confusion": "Nervous panic, trembling uncertainty, fear, worried distress, helpless confusion.",
+        "urgency_panic": "Critical crisis, urgent emergency, immediate stop or freeze demand, frantic alarm."
+      }
+    },
+    "sarcasm_detected": {
+      "type": "noul",
+      "instructions": "Is the speaker using sarcasm, irony, or passive-aggressive politeness that contradicts their vocal tone?"
+    }
+  }
+}
+```
+
+> **Why Both the `Emotion2Vec+` SER Prior AND `Librosa` Physical Prosody Are Required in the Prompt:**
+> * **Why Physical Prosody Alone Fails (`13.3%` Accuracy in Ablation #1):** Raw acoustic measurements like `"115 Hz pitch, 65 dB, deep chest resonance"` are physiologically ambiguous to a text LLM—a calm adult male voice naturally sits around `100–130 Hz`, causing the LLM to misclassify calm male speakers as `disappointed_sad` on >80% of clips when the `Emotion2Vec+` neural prior is omitted.
+> * **Why `Emotion2Vec+` SER Prior Alone Fails on Broadcasts (`26.1%` JA Accuracy):** `Emotion2Vec+` captures deep 1024-dim vocal affect (`sad`, `angry`, `happy`) that simple Hz/dB numbers cannot, but it over-triggers `happy` on animated Japanese pitch contours. Including `Librosa` prosody (`dB` intensity, syllable rate, pitch slope) alongside the transcript gives `Kev` the physical grounding needed to verify or override the SER prior.
+
 ### Stage 5: Continuous Duration-Weighted Temporal Integration
 For long-form multi-segment calls, weighting segments by count allows brief 0.5-second filler interjections (*"uh-huh"*, *"okay"*) to skew call-level analytics. Vocalis computes a **duration-weighted global probability distribution** across $N$ spoken segments of duration $d_i$:
 

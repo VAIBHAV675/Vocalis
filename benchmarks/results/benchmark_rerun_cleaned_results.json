@@ -11,7 +11,13 @@
       "ja_total": 30,
       "overall_acc": 0.6166666666666667,
       "overall_correct": 37,
-      "overall_total": 60
+      "overall_total": 60,
+      "en_sentiment_acc": 0.8333,
+      "en_sentiment_correct": 25,
+      "ja_sentiment_acc": 0.5,
+      "ja_sentiment_correct": 15,
+      "overall_sentiment_acc": 0.6667,
+      "overall_sentiment_correct": 40
     },
     {
       "model": "Laya mmBERT",
@@ -23,7 +29,13 @@
       "ja_total": 30,
       "overall_acc": 0.5333333333333333,
       "overall_correct": 32,
-      "overall_total": 60
+      "overall_total": 60,
+      "en_sentiment_acc": 0.7,
+      "en_sentiment_correct": 21,
+      "ja_sentiment_acc": 0.5,
+      "ja_sentiment_correct": 15,
+      "overall_sentiment_acc": 0.6,
+      "overall_sentiment_correct": 36
     },
     {
       "model": "Kev-0.8B FP16",
@@ -35,7 +47,13 @@
       "ja_total": 30,
       "overall_acc": 0.6833333333333333,
       "overall_correct": 41,
-      "overall_total": 60
+      "overall_total": 60,
+      "en_sentiment_acc": 0.9333,
+      "en_sentiment_correct": 28,
+      "ja_sentiment_acc": 0.5333,
+      "ja_sentiment_correct": 16,
+      "overall_sentiment_acc": 0.7333,
+      "overall_sentiment_correct": 44
     },
     {
       "model": "Kev-0.8B INT4 (NF4)",
@@ -47,7 +65,13 @@
       "ja_total": 30,
       "overall_acc": 0.6833333333333333,
       "overall_correct": 41,
-      "overall_total": 60
+      "overall_total": 60,
+      "en_sentiment_acc": 0.9667,
+      "en_sentiment_correct": 29,
+      "ja_sentiment_acc": 0.5333,
+      "ja_sentiment_correct": 16,
+      "overall_sentiment_acc": 0.75,
+      "overall_sentiment_correct": 45
     },
     {
       "model": "Kev-4B INT4 (Q4_K_M)",
@@ -59,7 +83,13 @@
       "ja_total": 30,
       "overall_acc": 0.7666666666666667,
       "overall_correct": 46,
-      "overall_total": 60
+      "overall_total": 60,
+      "en_sentiment_acc": 0.9,
+      "en_sentiment_correct": 27,
+      "ja_sentiment_acc": 0.7667,
+      "ja_sentiment_correct": 23,
+      "overall_sentiment_acc": 0.8333,
+      "overall_sentiment_correct": 50
     }
   ]
 }

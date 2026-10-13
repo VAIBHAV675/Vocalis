@@ -43,7 +43,10 @@
         "ser_ms": 1266.571400105022,
         "laya_ms": 2133.2184000639245,
         "total_ms": 9539.22860021703
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_02",
@@ -77,7 +80,10 @@
         "ser_ms": 220.60559992678463,
         "laya_ms": 1293.4645999921486,
         "total_ms": 1571.2032999144867
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_03",
@@ -111,7 +117,10 @@
         "ser_ms": 87.3583999928087,
         "laya_ms": 1253.4787999466062,
         "total_ms": 1375.3348998725414
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_04",
@@ -145,7 +154,10 @@
         "ser_ms": 308.5571000119671,
         "laya_ms": 1267.964500002563,
         "total_ms": 1691.4504000451416
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_05",
@@ -179,7 +191,10 @@
         "ser_ms": 106.65420000441372,
         "laya_ms": 1264.0798999927938,
         "total_ms": 1408.960200031288
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_06",
@@ -213,7 +228,10 @@
         "ser_ms": 748.658699914813,
         "laya_ms": 1454.8313999548554,
         "total_ms": 2456.6541998647153
-      }
+      },
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_07",
@@ -247,7 +265,10 @@
         "ser_ms": 188.72550001833588,
         "laya_ms": 1278.8938999874517,
         "total_ms": 1532.9649000195786
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_08",
@@ -281,7 +302,10 @@
         "ser_ms": 106.64930008351803,
         "laya_ms": 1259.628599975258,
         "total_ms": 1411.333000054583
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_09",
@@ -315,7 +339,10 @@
         "ser_ms": 166.4272000780329,
         "laya_ms": 1272.273400099948,
         "total_ms": 1495.1261001406237
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_10",
@@ -349,7 +376,10 @@
         "ser_ms": 204.1889000684023,
         "laya_ms": 1214.0248999930918,
         "total_ms": 1492.4217000370845
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_11",
@@ -383,7 +413,10 @@
         "ser_ms": 109.22370001208037,
         "laya_ms": 1243.4469000436366,
         "total_ms": 1395.7515000365674
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_12",
@@ -417,7 +450,10 @@
         "ser_ms": 430.30310003086925,
         "laya_ms": 1371.6088000219315,
         "total_ms": 1967.6707000471652
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_13",
@@ -451,7 +487,10 @@
         "ser_ms": 152.79159997589886,
         "laya_ms": 1241.361299995333,
         "total_ms": 1450.9707000106573
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_14",
@@ -485,7 +524,10 @@
         "ser_ms": 109.05899992212653,
         "laya_ms": 1250.4538999637589,
         "total_ms": 1403.2013998366892
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_15",
@@ -519,7 +561,10 @@
         "ser_ms": 271.8260999536142,
         "laya_ms": 1274.156600004062,
         "total_ms": 1648.9422998856753
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_16",
@@ -553,7 +598,10 @@
         "ser_ms": 289.8754000198096,
         "laya_ms": 1280.879299971275,
         "total_ms": 1692.783399950713
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_17",
@@ -587,7 +635,10 @@
         "ser_ms": 343.06830004788935,
         "laya_ms": 1282.6920999214053,
         "total_ms": 1745.065499912016
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_18",
@@ -621,7 +672,10 @@
         "ser_ms": 85.2366000181064,
         "laya_ms": 1242.5716000143439,
         "total_ms": 1365.309700020589
-      }
+      },
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_19",
@@ -655,7 +709,10 @@
         "ser_ms": 254.67039993964136,
         "laya_ms": 1254.4371000258252,
         "total_ms": 1603.2624999061227
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_20",
@@ -689,7 +746,10 @@
         "ser_ms": 191.54530006926507,
         "laya_ms": 1276.5986999729648,
         "total_ms": 1536.507899989374
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_21",
@@ -723,7 +783,10 @@
         "ser_ms": 115.75149989221245,
         "laya_ms": 1246.9006000319496,
         "total_ms": 1411.373799899593
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_22",
@@ -757,7 +820,10 @@
         "ser_ms": 284.50599999632686,
         "laya_ms": 1282.6965000713244,
         "total_ms": 1673.200900084339
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_23",
@@ -791,7 +857,10 @@
         "ser_ms": 110.51649996079504,
         "laya_ms": 1282.404200057499,
         "total_ms": 1440.6047000084072
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_24",
@@ -825,7 +894,10 @@
         "ser_ms": 249.17159997858107,
         "laya_ms": 1248.0569999897853,
         "total_ms": 1584.4591999193653
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_25",
@@ -859,7 +931,10 @@
         "ser_ms": 279.2115999618545,
         "laya_ms": 1285.8267000410706,
         "total_ms": 1696.2333000265062
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_26",
@@ -893,7 +968,10 @@
         "ser_ms": 81.3516000052914,
         "laya_ms": 1317.2381999902427,
         "total_ms": 1434.731199988164
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_27",
@@ -927,7 +1005,10 @@
         "ser_ms": 83.90929992310703,
         "laya_ms": 1116.5891999844462,
         "total_ms": 1235.186699894257
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_28",
@@ -961,7 +1042,10 @@
         "ser_ms": 116.91280000377446,
         "laya_ms": 1139.723000000231,
         "total_ms": 1307.7457000035793
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_29",
@@ -995,7 +1079,10 @@
         "ser_ms": 113.13290009275079,
         "laya_ms": 1123.3273999532685,
         "total_ms": 1282.8566000098363
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_30",
@@ -1029,7 +1116,10 @@
         "ser_ms": 226.62949992809445,
         "laya_ms": 1132.532799965702,
         "total_ms": 1452.0311998203397
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_01",
@@ -1063,7 +1153,10 @@
         "ser_ms": 163.29270007554442,
         "laya_ms": 1285.4376999894157,
         "total_ms": 1504.2672001291066
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_02",
@@ -1097,7 +1190,10 @@
         "ser_ms": 80.83260001149029,
         "laya_ms": 1082.7105999924242,
         "total_ms": 1193.0522000184283
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_03",
@@ -1131,7 +1227,10 @@
         "ser_ms": 151.7129000276327,
         "laya_ms": 1111.3309999927878,
         "total_ms": 1301.6190000344068
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_04",
@@ -1165,7 +1264,10 @@
         "ser_ms": 95.13179992791265,
         "laya_ms": 1075.683500035666,
         "total_ms": 1208.6813999339938
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_05",
@@ -1199,7 +1301,10 @@
         "ser_ms": 174.42499997559935,
         "laya_ms": 1140.0910000083968,
         "total_ms": 1382.6184999197721
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_06",
@@ -1233,7 +1338,10 @@
         "ser_ms": 107.42969997227192,
         "laya_ms": 1122.784800012596,
         "total_ms": 1274.6691999491304
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_07",
@@ -1267,7 +1375,10 @@
         "ser_ms": 113.75340004451573,
         "laya_ms": 1084.3241000548005,
         "total_ms": 1243.5799001250416
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_08",
@@ -1301,7 +1412,10 @@
         "ser_ms": 136.2993000075221,
         "laya_ms": 1140.0573999853805,
         "total_ms": 1324.0171999204904
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_09",
@@ -1335,7 +1449,10 @@
         "ser_ms": 117.25790007039905,
         "laya_ms": 1109.913499909453,
         "total_ms": 1271.252500009723
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_10",
@@ -1369,7 +1486,10 @@
         "ser_ms": 282.75820007547736,
         "laya_ms": 1135.8575000194833,
         "total_ms": 1547.3098000511527
-      }
+      },
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_11",
@@ -1403,7 +1523,10 @@
         "ser_ms": 93.15740002784878,
         "laya_ms": 1075.0195999862626,
         "total_ms": 1201.5454999636859
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_12",
@@ -1437,7 +1560,10 @@
         "ser_ms": 100.06650001741946,
         "laya_ms": 1081.5850000362843,
         "total_ms": 1218.3241000166163
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_13",
@@ -1471,7 +1597,10 @@
         "ser_ms": 415.750699932687,
         "laya_ms": 1200.4347000038251,
         "total_ms": 1772.6161999162287
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_14",
@@ -1505,7 +1634,10 @@
         "ser_ms": 106.63970001041889,
         "laya_ms": 1125.5002999678254,
         "total_ms": 1277.9745999723673
-      }
+      },
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_15",
@@ -1539,7 +1671,10 @@
         "ser_ms": 166.95870005059987,
         "laya_ms": 1134.6668000333011,
         "total_ms": 1376.2051000958309
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_16",
@@ -1573,7 +1708,10 @@
         "ser_ms": 110.94269994646311,
         "laya_ms": 1097.0213999971747,
         "total_ms": 1249.6118998387828
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_17",
@@ -1607,7 +1745,10 @@
         "ser_ms": 222.7732000174001,
         "laya_ms": 1138.7178000295535,
         "total_ms": 1440.735400072299
-      }
+      },
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_18",
@@ -1641,7 +1782,10 @@
         "ser_ms": 627.5484999641776,
         "laya_ms": 1254.228699952364,
         "total_ms": 2073.880899930373
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_19",
@@ -1675,7 +1819,10 @@
         "ser_ms": 165.56539991870522,
         "laya_ms": 1121.6319999657571,
         "total_ms": 1349.2121999152005
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_20",
@@ -1709,7 +1856,10 @@
         "ser_ms": 87.85919996444136,
         "laya_ms": 1080.8213000418618,
         "total_ms": 1202.6374000124633
-      }
+      },
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_21",
@@ -1743,7 +1893,10 @@
         "ser_ms": 138.40769999660552,
         "laya_ms": 1112.6246999483556,
         "total_ms": 1299.487099982798
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_22",
@@ -1777,7 +1930,10 @@
         "ser_ms": 76.19300007354468,
         "laya_ms": 1075.5150000331923,
         "total_ms": 1181.7503001075238
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_23",
@@ -1811,7 +1967,10 @@
         "ser_ms": 80.98580001387745,
         "laya_ms": 1120.663300040178,
         "total_ms": 1233.1790000898764
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_24",
@@ -1845,7 +2004,10 @@
         "ser_ms": 75.19889995455742,
         "laya_ms": 1080.8703999500722,
         "total_ms": 1182.9860999714583
-      }
+      },
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_25",
@@ -1879,7 +2041,10 @@
         "ser_ms": 144.34999995864928,
         "laya_ms": 1118.7552000628784,
         "total_ms": 1308.9372001122683
-      }
+      },
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_26",
@@ -1913,7 +2078,10 @@
         "ser_ms": 150.5788000067696,
         "laya_ms": 1121.3809000328183,
         "total_ms": 1325.5089001031592
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_27",
@@ -1947,7 +2115,10 @@
         "ser_ms": 150.98369994666427,
         "laya_ms": 1128.0973000684753,
         "total_ms": 1332.592000020668
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_28",
@@ -1981,7 +2152,10 @@
         "ser_ms": 143.38519994635135,
         "laya_ms": 1079.8771999543533,
         "total_ms": 1260.1279999362305
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_29",
@@ -2015,7 +2189,10 @@
         "ser_ms": 221.16130008362234,
         "laya_ms": 1124.3258999893442,
         "total_ms": 1415.758000104688
-      }
+      },
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_30",
@@ -2049,7 +2226,13 @@
         "ser_ms": 199.55819996539503,
         "laya_ms": 1128.6174000706524,
         "total_ms": 1390.9243000671268
-      }
+      },
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     }
-  ]
+  ],
+  "en_sentiment_acc": 0.7,
+  "ja_sentiment_acc": 0.5,
+  "overall_sentiment_acc": 0.6
 }

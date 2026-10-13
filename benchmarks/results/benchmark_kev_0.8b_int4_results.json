@@ -17,7 +17,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9999473094940186,
       "contradicted_ser": true,
-      "latency_ms": 3399.204700021073
+      "latency_ms": 3399.204700021073,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_02",
@@ -30,7 +33,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9849430322647095,
       "contradicted_ser": true,
-      "latency_ms": 2489.5180000457913
+      "latency_ms": 2489.5180000457913,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_03",
@@ -43,7 +49,10 @@
       "ser_prior": "<unk>",
       "ser_confidence": 0.508136510848999,
       "contradicted_ser": true,
-      "latency_ms": 2294.5127999410033
+      "latency_ms": 2294.5127999410033,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_04",
@@ -56,7 +65,10 @@
       "ser_prior": "<unk>",
       "ser_confidence": 0.564531147480011,
       "contradicted_ser": true,
-      "latency_ms": 2469.2557000089437
+      "latency_ms": 2469.2557000089437,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_05",
@@ -69,7 +81,10 @@
       "ser_prior": "<unk>",
       "ser_confidence": 0.9459455013275146,
       "contradicted_ser": true,
-      "latency_ms": 2465.37630003877
+      "latency_ms": 2465.37630003877,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_06",
@@ -82,7 +97,10 @@
       "ser_prior": "<unk>",
       "ser_confidence": 0.7827308773994446,
       "contradicted_ser": true,
-      "latency_ms": 2678.569099982269
+      "latency_ms": 2678.569099982269,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_07",
@@ -95,7 +113,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9837042689323425,
       "contradicted_ser": true,
-      "latency_ms": 2467.6942999940366
+      "latency_ms": 2467.6942999940366,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_08",
@@ -108,7 +129,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9930620789527893,
       "contradicted_ser": true,
-      "latency_ms": 2256.7096001002938
+      "latency_ms": 2256.7096001002938,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_09",
@@ -121,7 +145,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.99985671043396,
       "contradicted_ser": true,
-      "latency_ms": 2473.907300038263
+      "latency_ms": 2473.907300038263,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_10",
@@ -134,7 +161,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9774850010871887,
       "contradicted_ser": true,
-      "latency_ms": 2293.2828000048175
+      "latency_ms": 2293.2828000048175,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_11",
@@ -147,7 +177,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9999878406524658,
       "contradicted_ser": true,
-      "latency_ms": 2255.765500012785
+      "latency_ms": 2255.765500012785,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_12",
@@ -160,7 +193,10 @@
       "ser_prior": "<unk>",
       "ser_confidence": 0.4104556143283844,
       "contradicted_ser": true,
-      "latency_ms": 2478.5588000668213
+      "latency_ms": 2478.5588000668213,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_13",
@@ -173,7 +209,10 @@
       "ser_prior": "<unk>",
       "ser_confidence": 0.9751660823822021,
       "contradicted_ser": true,
-      "latency_ms": 2255.544100073166
+      "latency_ms": 2255.544100073166,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_14",
@@ -186,7 +225,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9957764744758606,
       "contradicted_ser": true,
-      "latency_ms": 2262.228299980052
+      "latency_ms": 2262.228299980052,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_15",
@@ -199,7 +241,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9981704950332642,
       "contradicted_ser": true,
-      "latency_ms": 2471.8218001071364
+      "latency_ms": 2471.8218001071364,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_16",
@@ -212,7 +257,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.991346538066864,
       "contradicted_ser": true,
-      "latency_ms": 2473.3182000927627
+      "latency_ms": 2473.3182000927627,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_17",
@@ -225,7 +273,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.996817946434021,
       "contradicted_ser": true,
-      "latency_ms": 2473.3584000496194
+      "latency_ms": 2473.3584000496194,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_18",
@@ -238,7 +289,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.46572741866111755,
       "contradicted_ser": true,
-      "latency_ms": 2256.416300078854
+      "latency_ms": 2256.416300078854,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_19",
@@ -251,7 +305,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.8865982890129089,
       "contradicted_ser": true,
-      "latency_ms": 2254.7556000063196
+      "latency_ms": 2254.7556000063196,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_20",
@@ -264,7 +321,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.8517888188362122,
       "contradicted_ser": true,
-      "latency_ms": 2477.171799982898
+      "latency_ms": 2477.171799982898,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_21",
@@ -277,7 +337,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 1.0,
       "contradicted_ser": true,
-      "latency_ms": 2260.086499969475
+      "latency_ms": 2260.086499969475,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_22",
@@ -290,7 +353,10 @@
       "ser_prior": "sad",
       "ser_confidence": 0.8902201652526855,
       "contradicted_ser": true,
-      "latency_ms": 2477.058499935083
+      "latency_ms": 2477.058499935083,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_23",
@@ -303,7 +369,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9502571821212769,
       "contradicted_ser": true,
-      "latency_ms": 2468.213799991645
+      "latency_ms": 2468.213799991645,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_24",
@@ -316,7 +385,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9993898868560791,
       "contradicted_ser": true,
-      "latency_ms": 2479.659999953583
+      "latency_ms": 2479.659999953583,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_25",
@@ -329,7 +401,10 @@
       "ser_prior": "<unk>",
       "ser_confidence": 0.9145742654800415,
       "contradicted_ser": true,
-      "latency_ms": 2480.5931999580935
+      "latency_ms": 2480.5931999580935,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_26",
@@ -342,7 +417,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.7855308651924133,
       "contradicted_ser": true,
-      "latency_ms": 2292.8910000482574
+      "latency_ms": 2292.8910000482574,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_27",
@@ -355,7 +433,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.7733321785926819,
       "contradicted_ser": true,
-      "latency_ms": 2255.6519999634475
+      "latency_ms": 2255.6519999634475,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_28",
@@ -368,7 +449,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.7220156192779541,
       "contradicted_ser": true,
-      "latency_ms": 2471.366999903694
+      "latency_ms": 2471.366999903694,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_29",
@@ -381,7 +465,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9994713664054871,
       "contradicted_ser": true,
-      "latency_ms": 2256.0323999496177
+      "latency_ms": 2256.0323999496177,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_30",
@@ -394,7 +481,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.8077964782714844,
       "contradicted_ser": true,
-      "latency_ms": 2474.2859000107273
+      "latency_ms": 2474.2859000107273,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_01",
@@ -407,7 +497,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9063956141471863,
       "contradicted_ser": true,
-      "latency_ms": 2467.239800025709
+      "latency_ms": 2467.239800025709,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_02",
@@ -420,7 +513,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.5775315165519714,
       "contradicted_ser": true,
-      "latency_ms": 2291.1261999979615
+      "latency_ms": 2291.1261999979615,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_03",
@@ -433,7 +529,10 @@
       "ser_prior": "sad",
       "ser_confidence": 0.552989661693573,
       "contradicted_ser": true,
-      "latency_ms": 2256.657899939455
+      "latency_ms": 2256.657899939455,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_04",
@@ -446,7 +545,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.4037970006465912,
       "contradicted_ser": true,
-      "latency_ms": 2290.416399948299
+      "latency_ms": 2290.416399948299,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_05",
@@ -459,7 +561,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.8258758783340454,
       "contradicted_ser": true,
-      "latency_ms": 2474.2318999487907
+      "latency_ms": 2474.2318999487907,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_06",
@@ -472,7 +577,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.5390312671661377,
       "contradicted_ser": true,
-      "latency_ms": 2259.43939993158
+      "latency_ms": 2259.43939993158,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_07",
@@ -485,7 +593,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.9997177720069885,
       "contradicted_ser": true,
-      "latency_ms": 2291.253300034441
+      "latency_ms": 2291.253300034441,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_08",
@@ -498,7 +609,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.6901123523712158,
       "contradicted_ser": true,
-      "latency_ms": 2291.8044000398368
+      "latency_ms": 2291.8044000398368,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_09",
@@ -511,7 +625,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.7176939249038696,
       "contradicted_ser": true,
-      "latency_ms": 2259.358700015582
+      "latency_ms": 2259.358700015582,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_10",
@@ -524,7 +641,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.6752868890762329,
       "contradicted_ser": true,
-      "latency_ms": 2474.4017999619246
+      "latency_ms": 2474.4017999619246,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_11",
@@ -537,7 +657,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.6618707776069641,
       "contradicted_ser": true,
-      "latency_ms": 2293.6812000116333
+      "latency_ms": 2293.6812000116333,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_12",
@@ -550,7 +673,10 @@
       "ser_prior": "surprised",
       "ser_confidence": 0.9794415235519409,
       "contradicted_ser": true,
-      "latency_ms": 2262.322499998845
+      "latency_ms": 2262.322499998845,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_13",
@@ -563,7 +689,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.5599103569984436,
       "contradicted_ser": true,
-      "latency_ms": 2473.845599917695
+      "latency_ms": 2473.845599917695,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_14",
@@ -576,7 +705,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.9945468902587891,
       "contradicted_ser": true,
-      "latency_ms": 2466.428200015798
+      "latency_ms": 2466.428200015798,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_15",
@@ -589,7 +721,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.892448902130127,
       "contradicted_ser": true,
-      "latency_ms": 2472.4994000280276
+      "latency_ms": 2472.4994000280276,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_16",
@@ -602,7 +737,10 @@
       "ser_prior": "angry",
       "ser_confidence": 0.3870261609554291,
       "contradicted_ser": true,
-      "latency_ms": 2291.9691000133753
+      "latency_ms": 2291.9691000133753,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_17",
@@ -615,7 +753,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9602857828140259,
       "contradicted_ser": true,
-      "latency_ms": 2472.3222999600694
+      "latency_ms": 2472.3222999600694,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_18",
@@ -628,7 +769,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.33230823278427124,
       "contradicted_ser": true,
-      "latency_ms": 2481.622699997388
+      "latency_ms": 2481.622699997388,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_19",
@@ -641,7 +785,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.9868870377540588,
       "contradicted_ser": true,
-      "latency_ms": 2257.4713999638334
+      "latency_ms": 2257.4713999638334,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_20",
@@ -654,7 +801,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.9990463852882385,
       "contradicted_ser": true,
-      "latency_ms": 2293.367499951273
+      "latency_ms": 2293.367499951273,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_21",
@@ -667,7 +817,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.9995156526565552,
       "contradicted_ser": true,
-      "latency_ms": 2257.6008000178263
+      "latency_ms": 2257.6008000178263,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_22",
@@ -680,7 +833,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.8631795048713684,
       "contradicted_ser": true,
-      "latency_ms": 2294.5130999432877
+      "latency_ms": 2294.5130999432877,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_23",
@@ -693,7 +849,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.8148213624954224,
       "contradicted_ser": true,
-      "latency_ms": 2258.4004999371246
+      "latency_ms": 2258.4004999371246,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_24",
@@ -706,7 +865,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.9935757517814636,
       "contradicted_ser": true,
-      "latency_ms": 2290.921299951151
+      "latency_ms": 2290.921299951151,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_25",
@@ -719,7 +881,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.8813441395759583,
       "contradicted_ser": true,
-      "latency_ms": 2257.420500041917
+      "latency_ms": 2257.420500041917,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_26",
@@ -732,7 +897,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.6106668710708618,
       "contradicted_ser": true,
-      "latency_ms": 2259.801400010474
+      "latency_ms": 2259.801400010474,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_27",
@@ -745,7 +913,10 @@
       "ser_prior": "happy",
       "ser_confidence": 0.8999807238578796,
       "contradicted_ser": true,
-      "latency_ms": 2465.7785000745207
+      "latency_ms": 2465.7785000745207,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_28",
@@ -758,7 +929,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9604488015174866,
       "contradicted_ser": true,
-      "latency_ms": 2293.1240999605507
+      "latency_ms": 2293.1240999605507,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_29",
@@ -771,7 +945,10 @@
       "ser_prior": "neutral",
       "ser_confidence": 0.9061487913131714,
       "contradicted_ser": true,
-      "latency_ms": 2467.880600015633
+      "latency_ms": 2467.880600015633,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_30",
@@ -784,7 +961,13 @@
       "ser_prior": "happy",
       "ser_confidence": 0.9964938759803772,
       "contradicted_ser": true,
-      "latency_ms": 2467.918899958022
+      "latency_ms": 2467.918899958022,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     }
-  ]
+  ],
+  "en_sentiment_acc": 0.9667,
+  "ja_sentiment_acc": 0.5333,
+  "overall_sentiment_acc": 0.75
 }

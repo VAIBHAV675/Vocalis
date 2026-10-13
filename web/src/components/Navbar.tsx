@@ -75,8 +75,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange, systemIn
               }`}
             >
               <Layers className="w-4 h-4" />
-              <span className="hidden md:inline">62 Clip Explorer</span>
-              <span className="md:hidden">Clips (62)</span>
+              <span className="hidden md:inline">2,000+ Clip Explorer</span>
+              <span className="md:hidden">Clips (2K+)</span>
             </button>
 
             <button
@@ -88,8 +88,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange, systemIn
               }`}
             >
               <Info className="w-4 h-4" />
-              <span className="hidden md:inline">Architecture</span>
-              <span className="md:hidden">Architecture</span>
+              <span className="hidden md:inline">Architecture & Benchmarks</span>
+              <span className="md:hidden">Benchmarks</span>
             </button>
           </nav>
 

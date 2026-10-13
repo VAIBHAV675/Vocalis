@@ -63,7 +63,7 @@ IB_QUESTIONS = {
     },
     "sarcasm_detected": {
         "type": "noul",
-        "instructions": "Is the speaker using polite or formal business language sarcastically to mask severe hostility?"
+        "instructions": "Is the speaker using sarcasm, irony, or passive-aggressive politeness that contradicts their vocal tone?"
     }
 }
 
@@ -74,8 +74,24 @@ EMOTION_MAP_E2V = {
     "sad": "disappointed_sad",
     "fearful": "urgency_panic",
     "disgusted": "frustration_irritation",
-    "surprised": "anxiety_confusion"
+    "surprised": "anxiety_confusion",
+    "<unk>": "neutral_inquiry",
+    "unk": "neutral_inquiry",
+    "other": "neutral_inquiry"
 }
+
+
+def clean_e2v_label(raw_label: str) -> str:
+    """Normalizes bilingual Emotion2Vec+ labels like '难过/sad' -> 'sad'."""
+    if not raw_label:
+        return "neutral"
+    cleaned = str(raw_label).strip().lower()
+    if "/" in cleaned:
+        cleaned = cleaned.split("/")[-1].strip()
+    if cleaned in ("<unk>", "unk", "other", "其他"):
+        return "neutral"
+    return cleaned
+
 
 def evict_vram(stage_name: str = "Stage"):
     gc.collect()
@@ -90,16 +106,19 @@ def evict_vram(stage_name: str = "Stage"):
     else:
         print(f"[Eviction] {stage_name} evicted from RAM.")
 
+
 def format_state(transcript: str, ser_prior: str, ser_conf: float, prosody: dict) -> str:
+    clean_ser = clean_e2v_label(ser_prior)
     return (
         f"Speaker transcript: 「{transcript}」\n"
-        f"Acoustic speech emotion prior: {ser_prior} (confidence: {ser_conf:.0%})\n"
+        f"Acoustic speech emotion prior: {clean_ser} (confidence: {ser_conf:.0%})\n"
         f"Prosodic acoustic features:\n"
         f"- Pitch contour: {prosody.get('pitch_str', 'Normal')}\n"
         f"- Speech tempo: {prosody.get('tempo_str', 'Normal')}\n"
         f"- Energy & vocal intensity: {prosody.get('energy_str', 'Normal')}\n"
         f"- Voice quality: {prosody.get('voice_quality_str', 'Normal')}"
     )
+
 
 class VocalisMultimodalPipeline:
     def __init__(self, device: str = "cuda:0"):
@@ -117,7 +136,7 @@ class VocalisMultimodalPipeline:
         print(f"\n>>> PROCESSING AUDIO WITH SEQUENTIAL VRAM EVICTION: {audio_path} (Language: {lang.upper()})")
 
         # -------------------------------------------------------------------
-        # 0. Load & Resample Audio to 16,000 Hz Mono (Prevent robotic audio)
+        # 0. Load & Resample Audio to 16,000 Hz Mono (Preserve true dynamics for Prosody!)
         # -------------------------------------------------------------------
         full_audio, orig_sr = sf.read(audio_path)
         if full_audio.ndim > 1:
@@ -130,12 +149,16 @@ class VocalisMultimodalPipeline:
             full_audio = librosa.resample(full_audio, orig_sr=orig_sr, target_sr=target_sr, res_type="soxr_hq")
             orig_sr = target_sr
 
-        # Soft normalize
-        max_val = np.max(np.abs(full_audio))
-        if max_val > 0.01:
-            full_audio = (full_audio / max_val) * 0.95
+        # Preserve raw un-normalized audio for accurate dB energy & onset prosody extraction
+        raw_audio = full_audio.copy()
 
-        total_duration_sec = len(full_audio) / target_sr
+        # Soft normalize a copy for Whisper ASR only if audio is extremely quiet (<0.15 peak)
+        asr_audio = full_audio.copy()
+        max_val = np.max(np.abs(asr_audio))
+        if 0.005 < max_val < 0.15:
+            asr_audio = (asr_audio / max_val) * 0.50
+
+        total_duration_sec = len(raw_audio) / target_sr
         print(f"[+] Audio loaded: {total_duration_sec:.2f}s ({total_duration_sec/60:.2f} min) at {target_sr} Hz")
 
         # -------------------------------------------------------------------
@@ -150,7 +173,7 @@ class VocalisMultimodalPipeline:
         whisper_model = WhisperModel(self.whisper_turbo_path, device=device_str, compute_type=compute_type)
         t_w0 = time.time()
         segments_raw, info = whisper_model.transcribe(
-            full_audio,
+            asr_audio,
             language=lang,
             beam_size=5,
             vad_filter=True,
@@ -193,8 +216,8 @@ class VocalisMultimodalPipeline:
             seg_dur = max(end_s - start_s, 0.05)
 
             start_sample = max(0, int(start_s * target_sr))
-            end_sample = min(len(full_audio), int(end_s * target_sr))
-            seg_audio = full_audio[start_sample:end_sample].copy()
+            end_sample = min(len(raw_audio), int(end_s * target_sr))
+            seg_audio = raw_audio[start_sample:end_sample].copy()
 
             # Gentle 3ms fade-in/fade-out to eliminate edge clicking
             fade_len = min(int(0.003 * target_sr), len(seg_audio) // 4)
@@ -205,7 +228,7 @@ class VocalisMultimodalPipeline:
 
             sf.write(temp_slice_wav, seg_audio, target_sr, subtype="PCM_16")
 
-            # Extract Prosody features
+            # Extract Prosody features on true un-normalized signal
             try:
                 prosody = extract_prosody_features(temp_slice_wav)
             except Exception:
@@ -214,6 +237,7 @@ class VocalisMultimodalPipeline:
             # Emotion2Vec+ Inference
             ser_prior = "neutral"
             ser_conf = 0.50
+            e2v_canonical_probs = {}
             try:
                 e2v_res = e2v_model.generate(seg_audio, output_dir=None, granularity="utterance", extract_embedding=False)
                 if isinstance(e2v_res, list) and len(e2v_res) > 0:
@@ -221,8 +245,12 @@ class VocalisMultimodalPipeline:
                     scores = e2v_res[0].get("scores", [])
                     if len(labels) > 0 and len(scores) > 0:
                         top_idx = int(np.argmax(scores))
-                        ser_prior = str(labels[top_idx]).lower()
+                        ser_prior = clean_e2v_label(str(labels[top_idx]))
                         ser_conf = float(scores[top_idx])
+                        for lbl, sc in zip(labels, scores):
+                            c_lbl = clean_e2v_label(str(lbl))
+                            can_k = EMOTION_MAP_E2V.get(c_lbl, "neutral_inquiry")
+                            e2v_canonical_probs[can_k] = max(e2v_canonical_probs.get(can_k, 0.0), float(sc))
             except Exception as e_err:
                 print(f"  [!] E2V warning on segment {idx}: {e_err}")
 
@@ -234,6 +262,7 @@ class VocalisMultimodalPipeline:
                 "transcript": text,
                 "ser_acoustic_prior": ser_prior,
                 "ser_confidence": ser_conf,
+                "e2v_canonical_probs": e2v_canonical_probs,
                 "prosody": prosody
             })
 
@@ -248,15 +277,16 @@ class VocalisMultimodalPipeline:
         final_segments = []
 
         # Check if Kev-4B INT4 GGUF is available via llama-server
-        server_exe = Path("tools/llama/llama-server.exe")
-        model_path = Path("data/models/Kev-4B-Q4_K_M.gguf")
+        root_dir = Path(__file__).resolve().parent.parent
+        server_exe = root_dir / "tools" / "llama" / "llama-server.exe"
+        model_path = root_dir / "data" / "models" / "Kev-4B-Q4_K_M.gguf"
         can_use_kev4b = use_kev4b and server_exe.exists() and model_path.exists()
 
         if can_use_kev4b:
             print("[STAGE 3] Running Kev-4B INT4 (GGUF Q4_K_M) via dedicated process...")
             port = 8089
             proc = subprocess.Popen(
-                [str(server_exe.resolve()), "-m", str(model_path.resolve()), "--port", str(port), "-ngl", "30", "-np", "1"],
+                [str(server_exe.resolve()), "-m", str(model_path.resolve()), "--port", str(port), "-ngl", "28", "-np", "1", "-c", "2048"],
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
             )
             # Wait for Kev-4B server ready
@@ -280,6 +310,7 @@ class VocalisMultimodalPipeline:
                     pred_emo = EMOTION_MAP_E2V.get(item["ser_acoustic_prior"], "neutral_inquiry")
                     pred_conf = item["ser_confidence"]
                     sarc_p = 0.15
+                    raw_probs = {}
 
                     try:
                         resp = requests.post(f"http://127.0.0.1:{port}/v1/systemone", json=req_payload, timeout=30)
@@ -288,18 +319,21 @@ class VocalisMultimodalPipeline:
                             det = answers.get("detected_emotion", {})
                             pred_emo = det.get("choice", pred_emo)
                             pred_conf = det.get("confidence", pred_conf)
+                            if isinstance(det.get("probabilities"), dict):
+                                raw_probs = det["probabilities"]
                             sarc_p = answers.get("sarcasm_detected", {}).get("noul", sarc_p)
                     except Exception as k_err:
                         print(f"  [!] Kev-4B request error: {k_err}")
 
-                    probs = {k: round((1.0 - pred_conf) / 7.0, 4) for k in IB_QUESTIONS["detected_emotion"]["criteria"].keys()}
-                    probs[pred_emo] = round(pred_conf, 4)
+                    if not raw_probs:
+                        raw_probs = {k: round((1.0 - pred_conf) / 7.0, 4) for k in IB_QUESTIONS["detected_emotion"]["criteria"].keys()}
+                        raw_probs[pred_emo] = round(pred_conf, 4)
 
                     item["predicted_emotion"] = pred_emo
-                    item["confidence"] = round(pred_conf, 4)
-                    item["probabilities"] = probs
-                    item["sarcasm_probability"] = round(sarc_p, 4)
-                    item["sarcasm_flag"] = bool(sarc_p > 0.40)
+                    item["confidence"] = round(float(pred_conf), 4)
+                    item["probabilities"] = raw_probs
+                    item["sarcasm_probability"] = round(float(sarc_p), 4)
+                    item["sarcasm_flag"] = bool(sarc_p > 0.45 or pred_emo == "sarcasm_passive_aggression")
                     final_segments.append(item)
 
                 # Terminate and EVICT Kev-4B
@@ -347,7 +381,8 @@ class VocalisMultimodalPipeline:
                 pred_emo = EMOTION_MAP_E2V.get(item["ser_acoustic_prior"], "neutral_inquiry")
                 pred_conf = item["ser_confidence"]
                 sarc_p = 0.12
-                probs = {k: 0.05 for k in IB_QUESTIONS["detected_emotion"]["criteria"].keys()}
+                probs = {k: round((1.0 - pred_conf) / 7.0, 4) for k in IB_QUESTIONS["detected_emotion"]["criteria"].keys()}
+                probs[pred_emo] = round(pred_conf, 4)
 
                 try:
                     with torch.no_grad():
@@ -358,7 +393,10 @@ class VocalisMultimodalPipeline:
                             pred_emo = det.choice
                             pred_conf = det.confidence
                             if hasattr(det, "probabilities") and det.probabilities:
-                                probs = {k: float(v) for k, v in det.probabilities.items()}
+                                probs = {k: round(float(v), 4) for k, v in det.probabilities.items()}
+                            else:
+                                probs = {k: round((1.0 - pred_conf) / 7.0, 4) for k in IB_QUESTIONS["detected_emotion"]["criteria"].keys()}
+                                probs[pred_emo] = round(pred_conf, 4)
                         sarc = answers.get("sarcasm_detected")
                         if sarc:
                             sarc_p = sarc.noul
@@ -366,10 +404,10 @@ class VocalisMultimodalPipeline:
                     print(f"  [!] Kev-0.8B inference error: {k_err}")
 
                 item["predicted_emotion"] = pred_emo
-                item["confidence"] = round(pred_conf, 4)
+                item["confidence"] = round(float(pred_conf), 4)
                 item["probabilities"] = probs
-                item["sarcasm_probability"] = round(sarc_p, 4)
-                item["sarcasm_flag"] = bool(sarc_p > 0.40)
+                item["sarcasm_probability"] = round(float(sarc_p), 4)
+                item["sarcasm_flag"] = bool(sarc_p > 0.45 or pred_emo == "sarcasm_passive_aggression")
                 final_segments.append(item)
 
             # EVICTION STAGE 3
@@ -410,8 +448,50 @@ class VocalisMultimodalPipeline:
         dominant_emo = max(time_dist_pct, key=time_dist_pct.get)
         dominant_prob = global_prob_vec.get(dominant_emo, 0.5)
 
+        def _emo_to_sent(emo_key: str, s_flag: bool = False) -> str:
+            if s_flag:
+                return "negative"
+            if emo_key == "satisfaction_gratitude":
+                return "positive"
+            if emo_key == "neutral_inquiry":
+                return "neutral"
+            return "negative"
+
+        def _probs_to_sent_probs(p_dict: dict, s_prob: float = 0.0, s_flag: bool = False) -> dict:
+            p_sat = float(p_dict.get("satisfaction_gratitude", 0.0))
+            p_neu = float(p_dict.get("neutral_inquiry", 0.0))
+            neg_keys = [
+                "frustration_irritation", "outrage_hostility", "disappointed_sad",
+                "sarcasm_passive_aggression", "anxiety_confusion", "urgency_panic"
+            ]
+            p_neg = sum(float(p_dict.get(k, 0.0)) for k in neg_keys)
+            if s_flag or float(s_prob) > 0.45:
+                shift = p_sat * max(float(s_prob), 0.5)
+                p_sat -= shift
+                p_neg += shift
+            tot = p_sat + p_neu + p_neg
+            if tot > 0:
+                return {
+                    "positive": round(p_sat / tot, 4),
+                    "neutral": round(p_neu / tot, 4),
+                    "negative": round(p_neg / tot, 4),
+                }
+            return {"positive": 0.0, "neutral": 1.0, "negative": 0.0}
+
+        sent_dur_accum = {"positive": 0.0, "neutral": 0.0, "negative": 0.0}
+        sent_prob_accum = {"positive": 0.0, "neutral": 0.0, "negative": 0.0}
+        sent_counts = {"positive": 0, "neutral": 0, "negative": 0}
+
         clean_segments = []
         for s in final_segments:
+            pred_sent = _emo_to_sent(s["predicted_emotion"], bool(s.get("sarcasm_flag", False)))
+            sent_probs = _probs_to_sent_probs(s["probabilities"], float(s.get("sarcasm_probability", 0.0)), bool(s.get("sarcasm_flag", False)))
+            dur = s["duration_sec"]
+            sent_dur_accum[pred_sent] += dur
+            sent_counts[pred_sent] += 1
+            for sk, sv in sent_probs.items():
+                sent_prob_accum[sk] += sv * dur
+
             clean_segments.append({
                 "segment_index": s["segment_index"],
                 "start_sec": s["start_sec"],
@@ -427,11 +507,23 @@ class VocalisMultimodalPipeline:
                     "voice_quality": s["prosody"].get("voice_quality_str", "Normal")
                 },
                 "predicted_emotion": s["predicted_emotion"],
+                "predicted_sentiment": pred_sent,
                 "confidence": s["confidence"],
                 "probabilities": s["probabilities"],
+                "sentiment_probabilities": sent_probs,
                 "sarcasm_probability": s["sarcasm_probability"],
                 "sarcasm_flag": s["sarcasm_flag"]
             })
+
+        if total_spoken_duration > 0:
+            sent_time_pct = {k: round((v / total_spoken_duration) * 100, 2) for k, v in sent_dur_accum.items()}
+            global_sent_prob_vec = {k: round(v / total_spoken_duration, 4) for k, v in sent_prob_accum.items()}
+        else:
+            sent_time_pct = {"positive": 0.0, "neutral": 100.0, "negative": 0.0}
+            global_sent_prob_vec = {"positive": 0.0, "neutral": 1.0, "negative": 0.0}
+
+        dominant_sent = max(sent_time_pct, key=sent_time_pct.get)
+        dominant_sent_prob = global_sent_prob_vec.get(dominant_sent, 0.5)
 
         results = {
             "file": audio_path,
@@ -441,9 +533,14 @@ class VocalisMultimodalPipeline:
             "total_segments": len(clean_segments),
             "dominant_emotion": dominant_emo,
             "dominant_probability": dominant_prob,
+            "dominant_sentiment": dominant_sent,
+            "dominant_sentiment_probability": dominant_sent_prob,
             "time_distribution_percent": time_dist_pct,
+            "sentiment_time_distribution_percent": sent_time_pct,
             "segment_counts": segment_counts,
+            "sentiment_counts": sent_counts,
             "global_probability_vector": global_prob_vec,
+            "global_sentiment_probability_vector": global_sent_prob_vec,
             "sarcastic_segments_count": sarcastic_count,
             "segments": clean_segments
         }

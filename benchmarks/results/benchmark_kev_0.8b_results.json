@@ -18,7 +18,10 @@
       "ser_confidence": 0.9999473094940186,
       "contradicted_ser": true,
       "latency_ms": 3663.4555000346154,
-      "state_length_tokens": 397
+      "state_length_tokens": 397,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_02",
@@ -32,7 +35,10 @@
       "ser_confidence": 0.9849430322647095,
       "contradicted_ser": true,
       "latency_ms": 2456.196599989198,
-      "state_length_tokens": 416
+      "state_length_tokens": 416,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_03",
@@ -46,7 +52,10 @@
       "ser_confidence": 0.508136510848999,
       "contradicted_ser": true,
       "latency_ms": 2272.6679999614134,
-      "state_length_tokens": 393
+      "state_length_tokens": 393,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_04",
@@ -60,7 +69,10 @@
       "ser_confidence": 0.564531147480011,
       "contradicted_ser": true,
       "latency_ms": 2426.94469995331,
-      "state_length_tokens": 414
+      "state_length_tokens": 414,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_05",
@@ -74,7 +86,10 @@
       "ser_confidence": 0.9459455013275146,
       "contradicted_ser": true,
       "latency_ms": 2427.906599943526,
-      "state_length_tokens": 409
+      "state_length_tokens": 409,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_06",
@@ -88,7 +103,10 @@
       "ser_confidence": 0.7827308773994446,
       "contradicted_ser": true,
       "latency_ms": 2655.814899946563,
-      "state_length_tokens": 485
+      "state_length_tokens": 485,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_07",
@@ -102,7 +120,10 @@
       "ser_confidence": 0.9837042689323425,
       "contradicted_ser": true,
       "latency_ms": 2429.5496999984607,
-      "state_length_tokens": 414
+      "state_length_tokens": 414,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_08",
@@ -116,7 +137,10 @@
       "ser_confidence": 0.9930620789527893,
       "contradicted_ser": true,
       "latency_ms": 2233.9538000524044,
-      "state_length_tokens": 402
+      "state_length_tokens": 402,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_09",
@@ -130,7 +154,10 @@
       "ser_confidence": 0.99985671043396,
       "contradicted_ser": true,
       "latency_ms": 2434.078999911435,
-      "state_length_tokens": 416
+      "state_length_tokens": 416,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_10",
@@ -144,7 +171,10 @@
       "ser_confidence": 0.9774850010871887,
       "contradicted_ser": true,
       "latency_ms": 2270.7868999568745,
-      "state_length_tokens": 396
+      "state_length_tokens": 396,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_11",
@@ -158,7 +188,10 @@
       "ser_confidence": 0.9999878406524658,
       "contradicted_ser": true,
       "latency_ms": 2237.6704000635073,
-      "state_length_tokens": 400
+      "state_length_tokens": 400,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_12",
@@ -172,7 +205,10 @@
       "ser_confidence": 0.4104556143283844,
       "contradicted_ser": true,
       "latency_ms": 2434.151800000109,
-      "state_length_tokens": 436
+      "state_length_tokens": 436,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_13",
@@ -186,7 +222,10 @@
       "ser_confidence": 0.9751660823822021,
       "contradicted_ser": true,
       "latency_ms": 2234.010300016962,
-      "state_length_tokens": 401
+      "state_length_tokens": 401,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_14",
@@ -200,7 +239,10 @@
       "ser_confidence": 0.9957764744758606,
       "contradicted_ser": true,
       "latency_ms": 2236.7235000710934,
-      "state_length_tokens": 404
+      "state_length_tokens": 404,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_15",
@@ -214,7 +256,10 @@
       "ser_confidence": 0.9981704950332642,
       "contradicted_ser": true,
       "latency_ms": 2435.112899984233,
-      "state_length_tokens": 418
+      "state_length_tokens": 418,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_16",
@@ -228,7 +273,10 @@
       "ser_confidence": 0.991346538066864,
       "contradicted_ser": true,
       "latency_ms": 2441.9744999613613,
-      "state_length_tokens": 423
+      "state_length_tokens": 423,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_17",
@@ -242,7 +290,10 @@
       "ser_confidence": 0.996817946434021,
       "contradicted_ser": true,
       "latency_ms": 2433.78289998509,
-      "state_length_tokens": 425
+      "state_length_tokens": 425,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_18",
@@ -256,7 +307,10 @@
       "ser_confidence": 0.46572741866111755,
       "contradicted_ser": true,
       "latency_ms": 2233.2700999686494,
-      "state_length_tokens": 400
+      "state_length_tokens": 400,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_19",
@@ -270,7 +324,10 @@
       "ser_confidence": 0.8865982890129089,
       "contradicted_ser": true,
       "latency_ms": 2227.359800017439,
-      "state_length_tokens": 407
+      "state_length_tokens": 407,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "en_ib_sample_20",
@@ -284,7 +341,10 @@
       "ser_confidence": 0.8517888188362122,
       "contradicted_ser": true,
       "latency_ms": 2431.2474000034854,
-      "state_length_tokens": 419
+      "state_length_tokens": 419,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_21",
@@ -298,7 +358,10 @@
       "ser_confidence": 1.0,
       "contradicted_ser": true,
       "latency_ms": 2236.3979999208823,
-      "state_length_tokens": 399
+      "state_length_tokens": 399,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_22",
@@ -312,7 +375,10 @@
       "ser_confidence": 0.8902201652526855,
       "contradicted_ser": true,
       "latency_ms": 2432.416300056502,
-      "state_length_tokens": 420
+      "state_length_tokens": 420,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_23",
@@ -326,7 +392,10 @@
       "ser_confidence": 0.9502571821212769,
       "contradicted_ser": true,
       "latency_ms": 2428.502000053413,
-      "state_length_tokens": 411
+      "state_length_tokens": 411,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_24",
@@ -340,7 +409,10 @@
       "ser_confidence": 0.9993898868560791,
       "contradicted_ser": true,
       "latency_ms": 2425.9559999918565,
-      "state_length_tokens": 413
+      "state_length_tokens": 413,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_25",
@@ -354,7 +426,10 @@
       "ser_confidence": 0.9145742654800415,
       "contradicted_ser": true,
       "latency_ms": 2433.950300095603,
-      "state_length_tokens": 420
+      "state_length_tokens": 420,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_26",
@@ -368,7 +443,10 @@
       "ser_confidence": 0.7855308651924133,
       "contradicted_ser": true,
       "latency_ms": 2273.448400082998,
-      "state_length_tokens": 394
+      "state_length_tokens": 394,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_27",
@@ -382,7 +460,10 @@
       "ser_confidence": 0.7733321785926819,
       "contradicted_ser": true,
       "latency_ms": 2233.953799935989,
-      "state_length_tokens": 401
+      "state_length_tokens": 401,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_28",
@@ -396,7 +477,10 @@
       "ser_confidence": 0.7220156192779541,
       "contradicted_ser": true,
       "latency_ms": 2428.604199900292,
-      "state_length_tokens": 414
+      "state_length_tokens": 414,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_29",
@@ -410,7 +494,10 @@
       "ser_confidence": 0.9994713664054871,
       "contradicted_ser": true,
       "latency_ms": 2234.2096000211313,
-      "state_length_tokens": 406
+      "state_length_tokens": 406,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "en_ib_sample_30",
@@ -424,7 +511,10 @@
       "ser_confidence": 0.8077964782714844,
       "contradicted_ser": true,
       "latency_ms": 2425.249799969606,
-      "state_length_tokens": 412
+      "state_length_tokens": 412,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_01",
@@ -438,7 +528,10 @@
       "ser_confidence": 0.9063956141471863,
       "contradicted_ser": true,
       "latency_ms": 2426.84519989416,
-      "state_length_tokens": 413
+      "state_length_tokens": 413,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_02",
@@ -452,7 +545,10 @@
       "ser_confidence": 0.5775315165519714,
       "contradicted_ser": true,
       "latency_ms": 2269.1968000726774,
-      "state_length_tokens": 393
+      "state_length_tokens": 393,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_03",
@@ -466,7 +562,10 @@
       "ser_confidence": 0.552989661693573,
       "contradicted_ser": true,
       "latency_ms": 2234.484100015834,
-      "state_length_tokens": 402
+      "state_length_tokens": 402,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_04",
@@ -480,7 +579,10 @@
       "ser_confidence": 0.4037970006465912,
       "contradicted_ser": true,
       "latency_ms": 2270.7050000317395,
-      "state_length_tokens": 393
+      "state_length_tokens": 393,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_05",
@@ -494,7 +596,10 @@
       "ser_confidence": 0.8258758783340454,
       "contradicted_ser": true,
       "latency_ms": 2436.1865000100806,
-      "state_length_tokens": 415
+      "state_length_tokens": 415,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_06",
@@ -508,7 +613,10 @@
       "ser_confidence": 0.5390312671661377,
       "contradicted_ser": true,
       "latency_ms": 2234.941600007005,
-      "state_length_tokens": 403
+      "state_length_tokens": 403,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_07",
@@ -522,7 +630,10 @@
       "ser_confidence": 0.9997177720069885,
       "contradicted_ser": true,
       "latency_ms": 2271.180700045079,
-      "state_length_tokens": 398
+      "state_length_tokens": 398,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_08",
@@ -536,7 +647,10 @@
       "ser_confidence": 0.6901123523712158,
       "contradicted_ser": true,
       "latency_ms": 2269.813899998553,
-      "state_length_tokens": 397
+      "state_length_tokens": 397,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_09",
@@ -550,7 +664,10 @@
       "ser_confidence": 0.7176939249038696,
       "contradicted_ser": true,
       "latency_ms": 2233.937600045465,
-      "state_length_tokens": 399
+      "state_length_tokens": 399,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_10",
@@ -564,7 +681,10 @@
       "ser_confidence": 0.6752868890762329,
       "contradicted_ser": true,
       "latency_ms": 2433.5851999931037,
-      "state_length_tokens": 415
+      "state_length_tokens": 415,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_11",
@@ -578,7 +698,10 @@
       "ser_confidence": 0.6618707776069641,
       "contradicted_ser": true,
       "latency_ms": 2270.322199910879,
-      "state_length_tokens": 391
+      "state_length_tokens": 391,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "negative",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_12",
@@ -592,7 +715,10 @@
       "ser_confidence": 0.9794415235519409,
       "contradicted_ser": true,
       "latency_ms": 2236.2916000420228,
-      "state_length_tokens": 399
+      "state_length_tokens": 399,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_13",
@@ -606,7 +732,10 @@
       "ser_confidence": 0.5599103569984436,
       "contradicted_ser": true,
       "latency_ms": 2443.027100060135,
-      "state_length_tokens": 425
+      "state_length_tokens": 425,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_14",
@@ -620,7 +749,10 @@
       "ser_confidence": 0.9945468902587891,
       "contradicted_ser": true,
       "latency_ms": 2426.657700096257,
-      "state_length_tokens": 410
+      "state_length_tokens": 410,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_15",
@@ -634,7 +766,10 @@
       "ser_confidence": 0.892448902130127,
       "contradicted_ser": true,
       "latency_ms": 2435.6082000304013,
-      "state_length_tokens": 419
+      "state_length_tokens": 419,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_16",
@@ -648,7 +783,10 @@
       "ser_confidence": 0.3870261609554291,
       "contradicted_ser": true,
       "latency_ms": 2272.7062000194564,
-      "state_length_tokens": 397
+      "state_length_tokens": 397,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_17",
@@ -662,7 +800,10 @@
       "ser_confidence": 0.9602857828140259,
       "contradicted_ser": true,
       "latency_ms": 2437.011000001803,
-      "state_length_tokens": 415
+      "state_length_tokens": 415,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_18",
@@ -676,7 +817,10 @@
       "ser_confidence": 0.33230823278427124,
       "contradicted_ser": true,
       "latency_ms": 2435.723999980837,
-      "state_length_tokens": 451
+      "state_length_tokens": 451,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_19",
@@ -690,7 +834,10 @@
       "ser_confidence": 0.9868870377540588,
       "contradicted_ser": true,
       "latency_ms": 2236.040399991907,
-      "state_length_tokens": 405
+      "state_length_tokens": 405,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_20",
@@ -704,7 +851,10 @@
       "ser_confidence": 0.9990463852882385,
       "contradicted_ser": true,
       "latency_ms": 2271.1156000150368,
-      "state_length_tokens": 396
+      "state_length_tokens": 396,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_21",
@@ -718,7 +868,10 @@
       "ser_confidence": 0.9995156526565552,
       "contradicted_ser": true,
       "latency_ms": 2235.041999956593,
-      "state_length_tokens": 399
+      "state_length_tokens": 399,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_22",
@@ -732,7 +885,10 @@
       "ser_confidence": 0.8631795048713684,
       "contradicted_ser": true,
       "latency_ms": 2270.6484999507666,
-      "state_length_tokens": 392
+      "state_length_tokens": 392,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_23",
@@ -746,7 +902,10 @@
       "ser_confidence": 0.8148213624954224,
       "contradicted_ser": true,
       "latency_ms": 2236.565899918787,
-      "state_length_tokens": 405
+      "state_length_tokens": 405,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_24",
@@ -760,7 +919,10 @@
       "ser_confidence": 0.9935757517814636,
       "contradicted_ser": true,
       "latency_ms": 2281.1783000361174,
-      "state_length_tokens": 396
+      "state_length_tokens": 396,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_25",
@@ -774,7 +936,10 @@
       "ser_confidence": 0.8813441395759583,
       "contradicted_ser": true,
       "latency_ms": 2248.2500000623986,
-      "state_length_tokens": 404
+      "state_length_tokens": 404,
+      "expected_sentiment": "positive",
+      "predicted_sentiment": "positive",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_26",
@@ -788,7 +953,10 @@
       "ser_confidence": 0.6106668710708618,
       "contradicted_ser": true,
       "latency_ms": 2235.8457999071106,
-      "state_length_tokens": 405
+      "state_length_tokens": 405,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_27",
@@ -802,7 +970,10 @@
       "ser_confidence": 0.8999807238578796,
       "contradicted_ser": true,
       "latency_ms": 2421.000299975276,
-      "state_length_tokens": 408
+      "state_length_tokens": 408,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_28",
@@ -816,7 +987,10 @@
       "ser_confidence": 0.9604488015174866,
       "contradicted_ser": true,
       "latency_ms": 2272.0788000151515,
-      "state_length_tokens": 396
+      "state_length_tokens": 396,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "positive",
+      "sentiment_match": false
     },
     {
       "sample_id": "ja_ib_sample_29",
@@ -830,7 +1004,10 @@
       "ser_confidence": 0.9061487913131714,
       "contradicted_ser": true,
       "latency_ms": 2422.1438999520615,
-      "state_length_tokens": 408
+      "state_length_tokens": 408,
+      "expected_sentiment": "negative",
+      "predicted_sentiment": "negative",
+      "sentiment_match": true
     },
     {
       "sample_id": "ja_ib_sample_30",
@@ -844,7 +1021,13 @@
       "ser_confidence": 0.9964938759803772,
       "contradicted_ser": true,
       "latency_ms": 2429.4618000276387,
-      "state_length_tokens": 411
+      "state_length_tokens": 411,
+      "expected_sentiment": "neutral",
+      "predicted_sentiment": "neutral",
+      "sentiment_match": true
     }
-  ]
+  ],
+  "en_sentiment_acc": 0.9333,
+  "ja_sentiment_acc": 0.5333,
+  "overall_sentiment_acc": 0.7333
 }
