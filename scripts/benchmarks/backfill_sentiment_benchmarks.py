@@ -5,12 +5,10 @@ from pathlib import Path
 def emo_to_sentiment(emo: str, sarcasm_flag: bool = False) -> str:
     """
     Maps the 8 canonical Vocalis emotions onto 3-way Sentiment Polarity:
-    - positive: satisfaction_gratitude (unless sarcasm_flag is True)
+    - positive: satisfaction_gratitude
     - neutral: neutral_inquiry
-    - negative: all 6 negative/escalation classes, OR satisfaction_gratitude with sarcasm_flag=True
+    - negative: all 6 negative/escalation classes (including sarcasm_passive_aggression)
     """
-    if sarcasm_flag:
-        return "negative"
     if emo == "satisfaction_gratitude":
         return "positive"
     if emo == "neutral_inquiry":
@@ -30,10 +28,6 @@ def probs_to_sentiment_probs(probs: dict, sarcasm_prob: float = 0.0, sarcasm_fla
         "urgency_panic",
     ]
     p_neg = sum(float(probs.get(k, 0.0)) for k in neg_keys)
-    if sarcasm_flag or float(sarcasm_prob) > 0.45:
-        shift = p_sat * max(float(sarcasm_prob), 0.5)
-        p_sat -= shift
-        p_neg += shift
     tot = p_sat + p_neu + p_neg
     if tot > 0:
         return {

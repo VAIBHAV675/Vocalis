@@ -1,7 +1,7 @@
 import React from 'react';
-import { Activity, Mic, Layers, Info, Cpu, Sparkles } from 'lucide-react';
+import { Activity, Mic, Layers, Info, Cpu, Sparkles, Award } from 'lucide-react';
 
-export type TabType = 'inspector' | 'studio' | 'clips' | 'architecture';
+export type TabType = 'inspector' | 'studio' | 'clips' | 'ser_validation' | 'architecture';
 
 interface NavbarProps {
   activeTab: TabType;
@@ -77,6 +77,19 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange, systemIn
               <Layers className="w-4 h-4" />
               <span className="hidden md:inline">2,000+ Clip Explorer</span>
               <span className="md:hidden">Clips (2K+)</span>
+            </button>
+
+            <button
+              onClick={() => onTabChange('ser_validation')}
+              className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                activeTab === 'ser_validation'
+                  ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30'
+                  : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/60'
+              }`}
+            >
+              <Award className="w-4 h-4 text-amber-400" />
+              <span className="hidden md:inline">SER Validation (122)</span>
+              <span className="md:hidden">SER Demo</span>
             </button>
 
             <button

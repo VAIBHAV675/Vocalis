@@ -55,12 +55,14 @@ app.add_middleware(
 BASE_DIR = Path(__file__).resolve().parent.parent
 AUDIO_DIR = BASE_DIR / "data" / "audio_samples"
 SAVED_DIR = BASE_DIR / "data" / "saved_recordings"
+SER_VAL_DIR = BASE_DIR / "data" / "ser_validation_clips"
 SCRATCH_DIR = BASE_DIR / "scratch"
 BENCHMARKS_DIR = BASE_DIR / "benchmarks" / "results"
 WEB_DIST = BASE_DIR / "web" / "dist"
 
 SAVED_DIR.mkdir(parents=True, exist_ok=True)
 SCRATCH_DIR.mkdir(parents=True, exist_ok=True)
+SER_VAL_DIR.mkdir(parents=True, exist_ok=True)
 
 # Lazy Pipeline instance & Dataset Cache
 _PIPELINE = None
@@ -141,7 +143,7 @@ def get_dataset_cache() -> Dict[str, Any]:
 async def stream_audio(subpath: str, request: Request):
     # Resolve file path safely
     target_path = None
-    for search_dir in [AUDIO_DIR, SAVED_DIR, SCRATCH_DIR]:
+    for search_dir in [AUDIO_DIR, SAVED_DIR, SER_VAL_DIR, SCRATCH_DIR]:
         candidate = (search_dir / subpath).resolve()
         if candidate.is_file() and str(candidate).startswith(str(BASE_DIR)):
             target_path = candidate
@@ -213,8 +215,6 @@ def _is_audited_60_sample(sample_id: str) -> bool:
 
 
 def _emo_to_sentiment(emo: str, sarcasm_flag: bool = False) -> str:
-    if sarcasm_flag:
-        return "negative"
     if emo == "satisfaction_gratitude":
         return "positive"
     if emo == "neutral_inquiry":
@@ -230,10 +230,6 @@ def _probs_to_sentiment_probs(probs: dict, sarcasm_prob: float = 0.0, sarcasm_fl
         "sarcasm_passive_aggression", "anxiety_confusion", "urgency_panic"
     ]
     p_neg = sum(float(probs.get(k, 0.0)) for k in neg_keys)
-    if sarcasm_flag or float(sarcasm_prob) > 0.45:
-        shift = p_sat * max(float(sarcasm_prob), 0.5)
-        p_sat -= shift
-        p_neg += shift
     tot = p_sat + p_neu + p_neg
     if tot > 0:
         return {
@@ -606,6 +602,62 @@ def get_all_benchmarks():
 
 
 # ---------------------------------------------------------------------------
+# Cross-Corpus SER Validation Benchmark Endpoint (TESS + RAVDESS + SAVEE + JVNV-JA)
+# ---------------------------------------------------------------------------
+@app.get("/api/ser_validation")
+def get_ser_validation():
+    val_file = BENCHMARKS_DIR / "ser_validation_benchmark_results.json"
+    if not val_file.exists():
+        raise HTTPException(status_code=404, detail="SER validation benchmark results not found")
+    data = _load_json_safe(val_file, {})
+
+    kev08_map = {r["sample_id"]: r for r in data.get("kev_0.8b_records", [])}
+
+    merged_clips = []
+    for r4 in data.get("kev_4b_records", []):
+        sid = r4["sample_id"]
+        r08 = kev08_map.get(sid, {})
+        audio_filename = f"{sid}.wav"
+        merged_clips.append({
+            "sample_id": sid,
+            "filename": audio_filename,
+            "audio_url": f"/api/audio/{audio_filename}",
+            "dataset": r4.get("dataset"),
+            "language": r4.get("language"),
+            "raw_gt_emotion": r4.get("raw_gt_emotion"),
+            "gt_sentiment": r4.get("gt_sentiment"),
+            "ser_prior": r4.get("ser_prior"),
+            "ser_confidence": r4.get("ser_confidence", 0.0),
+            "kev_4b": {
+                "predicted_emotion": r4.get("predicted_emotion"),
+                "predicted_sentiment": r4.get("predicted_sentiment"),
+                "confidence": r4.get("confidence", 0.0),
+                "sarcasm_flag": r4.get("sarcasm_flag", False),
+                "emotion_match": r4.get("emotion_match", False),
+                "sentiment_match": r4.get("sentiment_match", False),
+                "latency_ms": r4.get("latency_ms", 0.0),
+            },
+            "kev_08b": {
+                "predicted_emotion": r08.get("predicted_emotion"),
+                "predicted_sentiment": r08.get("predicted_sentiment"),
+                "confidence": r08.get("confidence", 0.0),
+                "sarcasm_flag": r08.get("sarcasm_flag", False),
+                "emotion_match": r08.get("emotion_match", False),
+                "sentiment_match": r08.get("sentiment_match", False),
+                "latency_ms": r08.get("latency_ms", 0.0),
+            }
+        })
+
+    return {
+        "benchmark": data.get("benchmark"),
+        "total_clips": data.get("total_clips", len(merged_clips)),
+        "elapsed_sec": data.get("elapsed_sec"),
+        "summaries": data.get("summaries", {}),
+        "clips": merged_clips
+    }
+
+
+# ---------------------------------------------------------------------------
 # Precomputed or Single Clip Pipeline Inspection
 # ---------------------------------------------------------------------------
 @app.get("/api/pipeline/{clip_id}")
@@ -750,7 +802,11 @@ def get_pipeline_details(clip_id: str):
 # Live Pipeline Analysis (from Mic Recording or Upload)
 # ---------------------------------------------------------------------------
 @app.post("/api/analyze")
-async def analyze_audio(file: UploadFile = File(...), language: str = Form("en")):
+async def analyze_audio(
+    file: UploadFile = File(...),
+    language: str = Form("en"),
+    model: str = Form("kev-4b")
+):
     upload_id = str(uuid.uuid4())[:8]
     ext = Path(file.filename or "recording.wav").suffix or ".wav"
     raw_path = SCRATCH_DIR / f"upload_{upload_id}{ext}"
@@ -782,16 +838,20 @@ async def analyze_audio(file: UploadFile = File(...), language: str = Form("en")
             audio_data, sr = librosa.load(raw_path, sr=16000, mono=True)
             sf.write(str(wav_path), audio_data, sr, subtype="PCM_16")
 
-        # Run pipeline
+        # Run pipeline with requested Kev model (default Kev-4B INT4)
         pipeline = get_pipeline()
         lang_code = language.strip().lower()
         if lang_code not in ["en", "ja"]:
             lang_code = "en"
 
-        result = pipeline.process_file(str(wav_path), lang=lang_code)
+        chosen_model = model.strip().lower()
+        use_kev4b = chosen_model not in ["kev-0.8b", "kev-08b", "0.8b"]
+
+        result = pipeline.process_file(str(wav_path), lang=lang_code, use_kev4b=use_kev4b)
+        result["model_used"] = "Kev-4B INT4 (GGUF Q4_K_M)" if use_kev4b else "Kev-0.8B INT4 (BitsAndBytes NF4)"
         result["audio_url"] = f"/api/audio/upload_{upload_id}_16k.wav"
         result["clip_id"] = f"upload_{upload_id}"
-        result["title"] = f"Live Recording / Upload ({lang_code.upper()})"
+        result["title"] = f"Live Recording / Upload ({lang_code.upper()} · {result['model_used']})"
 
         return JSONResponse(content=result)
 

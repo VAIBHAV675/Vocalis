@@ -286,7 +286,7 @@ class VocalisMultimodalPipeline:
             print("[STAGE 3] Running Kev-4B INT4 (GGUF Q4_K_M) via dedicated process...")
             port = 8089
             proc = subprocess.Popen(
-                [str(server_exe.resolve()), "-m", str(model_path.resolve()), "--port", str(port), "-ngl", "28", "-np", "1", "-c", "2048"],
+                [str(server_exe.resolve()), "-m", str(model_path.resolve()), "--port", str(port), "-ngl", "28", "-np", "1", "-c", "2048", "-b", "2048", "-ub", "2048"],
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
             )
             # Wait for Kev-4B server ready
@@ -318,10 +318,11 @@ class VocalisMultimodalPipeline:
                             answers = resp.json().get("answers", {})
                             det = answers.get("detected_emotion", {})
                             pred_emo = det.get("choice", pred_emo)
-                            pred_conf = det.get("confidence", pred_conf)
+                            pred_conf = det.get("confidence", det.get("answer_confidence", pred_conf))
                             if isinstance(det.get("probabilities"), dict):
                                 raw_probs = det["probabilities"]
-                            sarc_p = answers.get("sarcasm_detected", {}).get("noul", sarc_p)
+                            raw_noul = answers.get("sarcasm_detected", {}).get("noul", sarc_p)
+                            sarc_p = float(raw_noul[0] if isinstance(raw_noul, list) else raw_noul)
                     except Exception as k_err:
                         print(f"  [!] Kev-4B request error: {k_err}")
 
@@ -449,8 +450,6 @@ class VocalisMultimodalPipeline:
         dominant_prob = global_prob_vec.get(dominant_emo, 0.5)
 
         def _emo_to_sent(emo_key: str, s_flag: bool = False) -> str:
-            if s_flag:
-                return "negative"
             if emo_key == "satisfaction_gratitude":
                 return "positive"
             if emo_key == "neutral_inquiry":
@@ -465,10 +464,6 @@ class VocalisMultimodalPipeline:
                 "sarcasm_passive_aggression", "anxiety_confusion", "urgency_panic"
             ]
             p_neg = sum(float(p_dict.get(k, 0.0)) for k in neg_keys)
-            if s_flag or float(s_prob) > 0.45:
-                shift = p_sat * max(float(s_prob), 0.5)
-                p_sat -= shift
-                p_neg += shift
             tot = p_sat + p_neu + p_neg
             if tot > 0:
                 return {

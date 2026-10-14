@@ -10,6 +10,11 @@
 [![React 19](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![CUDA INT4/INT8](https://img.shields.io/badge/CUDA-INT8%20%2F%20INT4%20Quantized-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone)
 [![Languages](https://img.shields.io/badge/Languages-English%20%7C%20Japanese-indigo?style=for-the-badge)](#)
+[![Presentation Deck](https://img.shields.io/badge/Presentation-19--Slide%20Visual%20Deck-c93b2b?style=for-the-badge&logo=powerpoint&logoColor=white)](VOCALIS_PRESENTATION.md)
+[![Interactive Gazette](https://img.shields.io/badge/GitHub%20Pages-122--Clip%20SER%20Gazette-15803d?style=for-the-badge&logo=githubpages&logoColor=white)](https://vaibhav675.github.io/Vocalis/)
+
+> 📊 **Visual Architecture Deck**: [**`VOCALIS_PRESENTATION.md`**](VOCALIS_PRESENTATION.md) — 19-slide executive briefing with vector renderings, architecture trade-offs, and edge VRAM charts.  
+> 📰 **Live 122-Clip SER Gazette**: [**`The Vocalis Chronicle` (docs/index.html)**](docs/index.html) — Swiss-editorial newspaper web page featuring playable audio clips, suffix-01 parallel contrast, Japanese Romaji & English translations, and arbitration disagreement analysis.
 
 </div>
 
@@ -278,12 +283,30 @@ Extended 33x to **1,000 English (`Earnings22`)** and **1,000 Japanese (`ReazonSp
 2. **Sustained High Accuracy on 1,000 Real Financial Calls (`83.50%`)**: Across 1,000 unscripted corporate earnings call segments, `Kev-4B INT4` reaches **83.50%** (`835/1,000`) and `Kev-0.8B` reaches **83.00%** (`830/1,000`), consistently resolving subtle executive disagreements, anxious analyst questioning, and grateful closing remarks.
 3. **3.7x C++ CUDA Speedup**: Running `ggml-org/Kev-0.8B-GGUF` via `llama.cpp` C++ CUDA kernels delivers **640 ms/clip** (`1.51 clips/s`), bypassing the Windows PyTorch Triton fallback (`2,388 ms/clip`).
 
+### 3. Multi-Corpus SER Validation Benchmark (`122 Clips`: TESS + RAVDESS + SAVEE + JVNV-JA)
+Cross-corpus evaluation comparing **Standalone Acoustic SER (`Emotion2Vec+ Large`)** against **Tri-Modal Cognitive Arbitration (`Kev-4B INT4`)** across 4 diverse emotional speech corpora ([`scripts/benchmarks/run_ser_validation_eval.py`](scripts/benchmarks/run_ser_validation_eval.py), [`benchmarks/results/ser_validation_benchmark_results.json`](benchmarks/results/ser_validation_benchmark_results.json)):
+
+| Benchmark Corpus | Primary Language & Characteristics | Standalone SER Acc (`Emotion2Vec+`) | Kev-4B Cognitive Pipeline Acc | Kev-4B Sentiment Polarity Acc | Cognitive Arbitration Gain |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **JVNV-JA** (`25`) | 🇯🇵 Natural Japanese Emotional Utterances | 64.0% (`16/25`) | **96.0% (`24/25`)** | **100.0% (`25/25`)** | **+32.0% Emotion (+12.0% Sentiment)** |
+| **TESS** (`36`) | 🇨🇦 English Carrier Phrases (*"Say the word..."*) | **100.0% (`36/36`)** | 91.7% (`33/36`) | **100.0% (`36/36`)** | Robust Prior Weighting |
+| **SAVEE** (`25`) | 🇬🇧 British Phonetically Rich Emotional Speech | **84.0% (`21/25`)** | 48.0% (`12/25`) | 88.0% (`22/25`) | Sarcasm & Suffix Contrast |
+| **RAVDESS** (`36`) | 🇨🇦 Acted Sentences (*"Dogs are sitting..."*) | **88.9% (`32/36`)** | 52.8% (`19/36`) | 97.2% (`35/36`) | Lexical-Acoustic Divergence |
+| **Overall Suite (`122`)** | 4 Multi-Corpus Balanced Split | **86.1% (`105/122`)** | 72.1% (`88/122`) | 94.3% (`115/122`) | **79 Dual Consensus / 9 Kev Wins** |
+
+> 📰 **Interactive Web Exploration**: Open [**`docs/index.html`**](docs/index.html) or visit the [**GitHub Pages Remote Deployment**](https://vaibhav675.github.io/Vocalis/) to listen to all 122 audio clips, inspect Hepburn Romaji & English translations for the Japanese corpus, explore parallel sentence contrast grouped by suffix `01`, and audit the arbitration disagreements between SER and Kev-4B.
+
 ---
 
 ## 📁 Repository Structure
 
 ```text
 Vocalis/
+├── VOCALIS_PRESENTATION.md                   # 19-Slide Architecture Briefing & Visual Deck Walkthrough
+├── docs/                                     # GitHub Pages Remote Deployment
+│   ├── index.html                            # "The Vocalis Chronicle" Swiss-Editorial SER Gazette (122 Clips)
+│   ├── audio/                                # 122 Checked-in Demonstration Audio Clips (30.6 MB)
+│   └── presentation_slides/                  # High-Resolution Vector PNG Renderings of Slides 1–19
 ├── backend/                                  # FastAPI Server & Core Multimodal Pipeline
 │   ├── app.py                                # HTTP 206 Audio Streaming + REST API Endpoints
 │   ├── vocalis_segmented_pipeline.py         # 5-Stage Sequential VRAM-Evicted Pipeline Engine

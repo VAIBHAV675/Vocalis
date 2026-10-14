@@ -17,6 +17,7 @@ export const LiveStudioView: React.FC<LiveStudioViewProps> = ({ onInspectResult 
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [language, setLanguage] = useState<'en' | 'ja'>('en');
+  const [decisionModel, setDecisionModel] = useState<'kev-4b' | 'kev-0.8b'>('kev-4b');
   const [analyzing, setAnalyzing] = useState(false);
   const [analysisStep, setAnalysisStep] = useState<string>('');
   const [analysisResult, setAnalysisResult] = useState<PipelineResult | null>(null);
@@ -158,6 +159,7 @@ export const LiveStudioView: React.FC<LiveStudioViewProps> = ({ onInspectResult 
       const formData = new FormData();
       formData.append('file', fileToSend, uploadedFile?.name || 'microphone_recording.wav');
       formData.append('language', language);
+      formData.append('model', decisionModel);
 
       const stepTimer1 = setTimeout(() => {
         setAnalysisStep('Transcribing speech segments & extracting Silero VAD timestamps...');
@@ -168,7 +170,11 @@ export const LiveStudioView: React.FC<LiveStudioViewProps> = ({ onInspectResult 
       }, 4000);
 
       const stepTimer3 = setTimeout(() => {
-        setAnalysisStep('Running Kev-0.8B INT4 decision model & arbitrating multimodal state...');
+        setAnalysisStep(
+          decisionModel === 'kev-4b'
+            ? 'Running Kev-4B INT4 (GGUF Q4_K_M) decision model & arbitrating multimodal state...'
+            : 'Running Kev-0.8B INT4 (BitsAndBytes NF4) decision model & arbitrating multimodal state...'
+        );
       }, 7000);
 
       const res = await fetch('/api/analyze', {
@@ -305,17 +311,31 @@ export const LiveStudioView: React.FC<LiveStudioViewProps> = ({ onInspectResult 
                 </button>
               )}
 
-              {/* Language Selector */}
-              <div className="flex items-center space-x-2 text-xs">
-                <span className="text-slate-400">Target Language:</span>
-                <select
-                  value={language}
-                  onChange={(e) => setLanguage(e.target.value as 'en' | 'ja')}
-                  className="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500"
-                >
-                  <option value="en">English (Earnings22 domain)</option>
-                  <option value="ja">Japanese (ReazonSpeech domain)</option>
-                </select>
+              {/* Language & Model Selectors */}
+              <div className="flex flex-wrap items-center gap-3 text-xs">
+                <div className="flex items-center space-x-2">
+                  <span className="text-slate-400">Target Language:</span>
+                  <select
+                    value={language}
+                    onChange={(e) => setLanguage(e.target.value as 'en' | 'ja')}
+                    className="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500 font-medium"
+                  >
+                    <option value="en">English (Earnings22 domain)</option>
+                    <option value="ja">Japanese (ReazonSpeech domain)</option>
+                  </select>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <span className="text-slate-400">Decision Model:</span>
+                  <select
+                    value={decisionModel}
+                    onChange={(e) => setDecisionModel(e.target.value as 'kev-4b' | 'kev-0.8b')}
+                    className="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-indigo-300 focus:outline-none focus:border-indigo-500 font-medium"
+                  >
+                    <option value="kev-4b">Kev-4B INT4 (Default · High-Capacity)</option>
+                    <option value="kev-0.8b">Kev-0.8B INT4 (Fast Lightweight)</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
@@ -378,7 +398,7 @@ export const LiveStudioView: React.FC<LiveStudioViewProps> = ({ onInspectResult 
                 ) : (
                   <>
                     <Sparkles className="w-4 h-4" />
-                    <span>Analyze with Finalized Pipeline (Whisper INT8 + Emotion2Vec+ + Kev INT4)</span>
+                    <span>Analyze with Finalized Pipeline (Whisper INT8 + Emotion2Vec+ + {decisionModel === 'kev-4b' ? 'Kev-4B' : 'Kev-0.8B'} INT4)</span>
                   </>
                 )}
               </button>

@@ -5,13 +5,14 @@ import { InspectorView } from './views/InspectorView';
 import { LiveStudioView } from './views/LiveStudioView';
 import { ClipsView } from './views/ClipsView';
 import { ArchitectureView } from './views/ArchitectureView';
+import { SERValidationView } from './views/SERValidationView';
 import type { PipelineResult } from './types';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabType>(() => {
     try {
       const saved = localStorage.getItem('vocalis_active_tab');
-      if (saved && ['inspector', 'studio', 'clips', 'architecture'].includes(saved)) {
+      if (saved && ['inspector', 'studio', 'clips', 'ser_validation', 'architecture'].includes(saved)) {
         return saved as TabType;
       }
     } catch {
@@ -105,6 +106,10 @@ export const App: React.FC = () => {
 
         {activeTab === 'clips' && (
           <ClipsView onInspectClip={handleInspectClip} />
+        )}
+
+        {activeTab === 'ser_validation' && (
+          <SERValidationView />
         )}
 
         {activeTab === 'architecture' && (

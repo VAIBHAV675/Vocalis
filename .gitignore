@@ -16,6 +16,8 @@ scratch/
 *.mp3
 *.ogg
 *.webm
+!docs/audio/
+!docs/audio/*.wav
 
 # =============================================================================
 # 3. Third-Party Cloned Repositories, Model Weights & Binaries
