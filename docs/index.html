@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Vocalis Chronicle — 122-Clip SER & Cognitive Arbitration Gazette</title>
+  <title>The Vocalis Chronicle</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -702,7 +702,7 @@
         <span>Edition: International Technical Research</span>
         <span>Corpora: TESS • RAVDESS • SAVEE • JVNV-JA</span>
       </div>
-      <div>Zürich &amp; Tokyo • Vol. IV, No. 122 • Open Science</div>
+      <div>Zürich &amp; Tokyo • Vol. IV • Open Science Research</div>
     </div>
 
     <!-- Newspaper Masthead -->
@@ -711,7 +711,7 @@
       <div class="masthead-subtitle">International Gazette of Speech Emotion Recognition, Acoustic Prosody &amp; Cognitive Arbitration</div>
       <div class="issue-bar">
         <span>Cross-Corpus Benchmark Edition</span>
-        <span>Evaluation Suite: 122 Acted &amp; Natural Audio Clips</span>
+        <span>Multimodal Speech Intelligence Suite</span>
         <span>Acoustic vs. Cognitive Analysis</span>
       </div>
     </header>
@@ -790,7 +790,7 @@
         🏆 Kev-4B Wins &amp; Disagreements <span class="nav-badge">9 Wins</span>
       </button>
       <button class="nav-tab" data-tab="contrast">
-        🎭 Suffix Contrast Groups (01 Parallel) <span class="nav-badge">6 Groups</span>
+        🎭 Parallel Sentence Contrast <span class="nav-badge">Clean Cohorts</span>
       </button>
       <button class="nav-tab" data-tab="court">
         ⚖️ Disagreement Court (SER vs. Kev) <span class="nav-badge">35 Cases</span>
@@ -1064,61 +1064,76 @@
           </div>
         `;
       } else if (activeTab === 'contrast') {
-        const ravdessClips = filtered.filter(c => c.dataset === 'RAVDESS');
-        const suffixes = ['01', '02', '03', '04', '05', '06'];
+        const cohortConfigs = [
+          {
+            title: 'Cohort 1: "Dogs are sitting by the door." — 4 Core Emotions (Suffix 01)',
+            subtitle: 'The exact same sentence spoken across Anger, Happiness, Sadness, and Disgust. Zero sentence mixing.',
+            stamp: '4-WAY CORE CONTRAST',
+            sids: ['ravdess_anger_01', 'ravdess_happiness_01', 'ravdess_sadness_01', 'ravdess_disgust_01'],
+            accent: 'border-top: 4px solid var(--accent-red);'
+          },
+          {
+            title: 'Cohort 2: "Dogs are sitting by the door." — Full 6-Emotion Spectrum',
+            subtitle: 'Statement 2 delivered across all 6 canonical emotions: Anger, Happiness, Sadness, Disgust, Fear, and Neutral.',
+            stamp: '6-WAY FULL SPECTRUM',
+            sids: ['ravdess_anger_02', 'ravdess_happiness_02', 'ravdess_sadness_02', 'ravdess_disgust_03', 'ravdess_fear_02', 'ravdess_neutral_02'],
+            accent: 'border-top: 4px solid var(--accent-blue);'
+          },
+          {
+            title: 'Cohort 3: "Kids are talking by the door." — Full 6-Emotion Spectrum',
+            subtitle: 'Statement 1 delivered across all 6 canonical emotions: Anger, Happiness, Sadness, Disgust, Fear, and Neutral.',
+            stamp: '6-WAY STATEMENT 1',
+            sids: ['ravdess_anger_03', 'ravdess_happiness_04', 'ravdess_sadness_03', 'ravdess_disgust_02', 'ravdess_fear_01', 'ravdess_neutral_01'],
+            accent: 'border-top: 4px solid var(--accent-green);'
+          },
+          {
+            title: 'Cohort 4: British SAVEE Phonetic Contrast — "She had your dark suit in greasy wash water..."',
+            subtitle: 'Identical British-accented sentence spoken across Happiness, Fear, Sadness, and Disgust.',
+            stamp: 'BRITISH PHONETICS',
+            sids: ['savee_happiness_02', 'savee_fear_04', 'savee_sadness_02', 'savee_disgust_05'],
+            accent: 'border-top: 4px solid #7c3aed;'
+          },
+          {
+            title: 'Cohort 5: TESS Carrier Phrase Contrast — "Say the word chat"',
+            subtitle: 'Identical Toronto carrier phrase delivered in Calm Neutral vs. Piercing Anger.',
+            stamp: 'CARRIER CONTRAST',
+            sids: ['tess_neutral_04', 'tess_angry_03'],
+            accent: 'border-top: 4px solid #ea580c;'
+          }
+        ];
 
-        let groupsHtml = suffixes.map(sfx => {
-          const sfxClips = ravdessClips.filter(c => c.suffix_id === sfx);
-          if (sfxClips.length === 0) return '';
-          const sampleText = sfxClips[0].transcript;
+        let groupsHtml = cohortConfigs.map(cfg => {
+          const cohortClips = cfg.sids.map(id => filtered.find(c => c.sample_id === id)).filter(Boolean);
+          if (cohortClips.length === 0) return '';
           return `
-            <div class="group-section">
+            <div class="group-section" style="${cfg.accent || ''}">
               <div class="group-header">
                 <div>
-                  <div class="group-title">Parallel Group Suffix ${sfx}: "${sampleText}"</div>
-                  <div class="group-subtitle">Contrasting ${sfxClips.length} different emotional deliveries of the exact same spoken sentence</div>
+                  <div class="group-title">${cfg.title}</div>
+                  <div class="group-subtitle">${cfg.subtitle}</div>
                 </div>
-                <span class="stamp stamp-agree">PARALLEL CONTRAST</span>
+                <span class="stamp stamp-agree">${cfg.stamp}</span>
               </div>
               <div class="group-grid">
-                ${sfxClips.map(c => renderClipCard(c)).join('')}
+                ${cohortClips.map(c => renderClipCard(c)).join('')}
               </div>
             </div>
           `;
         }).join('');
 
-        const saveeContrast = filtered.filter(c => c.dataset === 'SAVEE' && c.contrast_group.includes('Contrast'));
-        let saveeGroupHtml = '';
-        if (saveeContrast.length > 0) {
-          saveeGroupHtml = `
-            <div class="group-section" style="background:#f4f6fa; border-color:#3b82f6;">
-              <div class="group-header">
-                <div>
-                  <div class="group-title">SAVEE Phonetic Sentence Contrast</div>
-                  <div class="group-subtitle">Identical sentences ("She had your dark suit in greasy wash...") spoken across multiple emotional nuances</div>
-                </div>
-                <span class="stamp stamp-agree">BRITISH ACCENT CONTRAST</span>
-              </div>
-              <div class="group-grid">
-                ${saveeContrast.map(c => renderClipCard(c)).join('')}
-              </div>
-            </div>
-          `;
-        }
-
         container.innerHTML = `
           <div style="margin-bottom:20px;">
             <h3 style="font-family:var(--font-serif); font-size:24px; font-weight:800; margin-bottom:4px;">
-              Parallel Emotional Contrast — The Suffix Slices
+              Parallel Sentence Emotional Contrast — Clean Semantic Cohorts
             </h3>
             <p style="font-size:14px; color:var(--text-ink-muted);">
-              In speech science, the ultimate test is isolating acoustics: how does delivery alter meaning when the words are 100% identical? Below, listen to clips grouped by suffix <code>01</code>, <code>02</code>, etc., where the exact same words are delivered in Anger, Happiness, Sadness, Disgust, and Neutral.
+              In speech acoustics, the gold standard is isolating vocal delivery from lexical semantics. Below, each cohort presents the <strong>exact same sentence</strong> with <strong>zero text variation</strong>, allowing you to directly hear how pitch (F0), vocal tension, energy, and cadence transform identical words across different emotions.
             </p>
           </div>
           ${groupsHtml}
-          ${saveeGroupHtml}
         `;
-      } else if (activeTab === 'court') {
+      }
+ else if (activeTab === 'court') {
         const disagreements = filtered.filter(c => c.outcome_category === 'kev4b_win' || c.outcome_category === 'ser_win');
         const kevWins = disagreements.filter(c => c.outcome_category === 'kev4b_win');
         const serWins = disagreements.filter(c => c.outcome_category === 'ser_win');

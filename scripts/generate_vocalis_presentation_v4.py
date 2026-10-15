@@ -409,7 +409,7 @@ def add_header(slide, category, title, subtitle=None, page=1, total=19):
 
     tb_fl = slide.shapes.add_textbox(Inches(0.65), Inches(7.14), Inches(8.5), Inches(0.25))
     p_fl = tb_fl.text_frame.paragraphs[0]
-    p_fl.text = "Vocalis POC  |  Tri-Modal System One Architecture & Dual UIs  |  Vaibhav & Balram"
+    p_fl.text = "Vocalis POC  |  Tri-Modal System One Architecture & Dual UIs"
     p_fl.font.name = FONT_SANS
     p_fl.font.size = Pt(8.5)
     p_fl.font.color.rgb = TEXT_MUTED
@@ -547,8 +547,8 @@ def build_v4_deck():
 
     add_box(s1, 0.95, 3.95, 11.4, 1.05, bg=BG_LIGHT, border=BORDER_GRAY, left_bar=NAVY_PRIMARY)
     add_paragraphs(s1, 1.25, 4.12, 4.5, 0.75, [
-        {"text": "PRESENTED BY", "size": 9.5, "bold": True, "color": TEXT_MUTED, "space_after": 2},
-        {"text": "Vaibhav & Balram", "size": 20, "bold": True, "color": NAVY_PRIMARY},
+        {"text": "SYSTEM ARCHITECTURE", "size": 9.5, "bold": True, "color": TEXT_MUTED, "space_after": 2},
+        {"text": "Tri-Modal Cognitive Engine", "size": 20, "bold": True, "color": NAVY_PRIMARY},
     ])
     add_paragraphs(s1, 6.0, 4.12, 6.1, 0.75, [
         {"text": "PRESENTATION SCOPE", "size": 9.5, "bold": True, "color": BLUE_BRAND, "space_after": 2},
@@ -1437,7 +1437,7 @@ def build_v4_deck():
 
     add_box(s19, 0.65, 6.32, 12.033, 0.58, bg=NAVY_PRIMARY, border=None)
     add_paragraphs(s19, 0.90, 6.44, 11.5, 0.35, [
-        {"text": "Thank You  |  Vocalis POC Presentation by Vaibhav & Balram  |  Live Demo Running at http://localhost:5173", "size": 11.5, "bold": True, "color": TEXT_WHITE, "align": PP_ALIGN.CENTER}
+        {"text": "Thank You  |  Vocalis POC Architecture & Technical Briefing  |  Live Demo Running at http://localhost:5173", "size": 11.5, "bold": True, "color": TEXT_WHITE, "align": PP_ALIGN.CENTER}
     ])
 
     out_path = ROOT / "Vocalis_Business_Presentation_v4_Vaibhav_Balram.pptx"

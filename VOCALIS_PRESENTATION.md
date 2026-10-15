@@ -1,8 +1,6 @@
 # 🎙️ Vocalis: Technical POC & Architecture Presentation Deck
 
 > **19-Slide Visual Deck & Architectural Walkthrough**  
-> **Author**: Vaibhav Balram | Senior Systems & Applied AI Engineering  
-> **Presentation Source**: [`Vocalis_Business_Presentation_v4_Vaibhav_Balram.pptx`](./Vocalis_Business_Presentation_v4_Vaibhav_Balram.pptx)  
 > **Slide Renderings**: High-resolution PNGs exported directly from vector presentation shapes.  
 
 ---
