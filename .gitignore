@@ -30,6 +30,8 @@ tools/
 *.safetensors
 *.onnx
 *.whl
+*.pptx
+*.ppt
 
 # =============================================================================
 # 4. Python Virtual Environments & Bytecode
